@@ -1,6 +1,8 @@
 # 東京咖啡巡禮 · Tokyo Coffee Journal
 
-**網站：[herointene.github.io/tokyo-cafe-pilgrimage](https://herointene.github.io/tokyo-cafe-pilgrimage/)**
+**網站：[blog.wulited.com/tokyo-cafe-pilgrimage](https://blog.wulited.com/tokyo-cafe-pilgrimage/)**
+
+部署於 GitHub Pages，沿用帳號既有的自訂網域。原始 [GitHub Pages 網址](https://herointene.github.io/tokyo-cafe-pilgrimage/) 也會導向此站。
 
 一份可以帶著散步的東京咖啡手帖。從原始 Excel 收錄 **69 家店鋪、20 個行政區**：36 家咖啡館、28 家喫茶店、5 家甜點店。暖色紙感、日文店名與街區散步提案，支援手機瀏覽。
 
