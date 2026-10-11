@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "cafe-001",
+    "url": "https://shop.glitchcoffee.com/en/pages/store-tokyo",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://shop.glitchcoffee.com/en/pages/store-tokyo",
+    "title": " Store-Tokyo – GLITCH COFFEE & ROASTERS ONLINE SHOP | グリッチコーヒー ",
+    "mapLinks": [
+      "https://maps.app.goo.gl/QqnYaLirvpiRcK7D9"
+    ],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都中央区日本橋本町1-1-3 立石本町ビル１F "
+    ]
+  },
+  {
+    "id": "cafe-002",
+    "url": "https://kannocoffee.com/contents/shopinfo/factory_labo/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://kannocoffee.com/contents/shopinfo/factory_labo/",
+    "title": " Factory & Labo 神乃珈琲 | 店舗情報 | 神乃珈琲 公式サイト",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都目黒区中央町1-4-14 "
+    ]
+  },
+  {
+    "id": "cafe-003",
+    "url": "https://www.instagram.com/pluto_tokyo/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-004",
+    "url": "https://www.tysons.jp/roastery/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.tysons.jp/roastery/",
+    "title": "THE ROASTERY",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/the_roastery_by_nozycoffee/",
+      "https://www.facebook.com/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%BF%E3%82%A4%E3%82%BD%E3%83%B3%E3%82%BA%E3%82%A2%E3%83%B3%E3%83%89%E3%82%AB%E3%83%B3%E3%83%91%E3%83%8B%E3%83%BC-601346240031611",
+      "https://instagram.com/tysonsandcompany/"
+    ],
+    "addressSnippets": [
+      "東京都渋谷区神宮前5−17−13"
+    ]
+  },
+  {
+    "id": "cafe-005",
+    "url": "https://g-s.jp/?page_id=19",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://g-s.jp/?page_id=19",
+    "title": "cafe Felice｜03-3825-2992 - GARDEN SQUARE［ガーデン スクウェア］｜東京都練馬区のイタリアン",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/Garden-Square-ガーデンスクウェア-864002633715141/",
+      "//platform.twitter.com/widgets/tweet_button.html?url=https%3A%2F%2Fg-s.jp%2F%3Fpage_id%3D19&text=cafe%20Felice%EF%BD%9C03-3825-2992&lang=ja&count=horizontal"
+    ],
+    "addressSnippets": [
+      "東京都練馬区のイタリアン ",
+      "東京都練馬区のイタリアン  WP Theme by Minimal WP --"
+    ]
+  },
+  {
+    "id": "cafe-006",
+    "url": "https://connelcoffee.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://connelcoffee.jp/",
+    "title": "CONNEL COFFEE by bondolfi boncaffe | コーネルコーヒー",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-007",
+    "url": "https://www.imperialhotel.co.jp/tokyo/restaurant/rendezvous",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.imperialhotel.co.jp/tokyo/restaurant/rendezvous",
+    "title": "ラウンジ ランデブーラウンジ | レストラン・バーラウンジ | 帝国ホテル 東京",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/imperialhotel_jp_official/",
+      "https://www.facebook.com/imperialhoteljapan"
+    ],
+    "addressSnippets": [
+      "東京都現代美術館タイアップカクテル「Aube d'Or～黄金の夜明け～」［ランデブーラウンジ＆The Rendez-Vous AWA］ "
+    ]
+  },
+  {
+    "id": "cafe-008",
+    "url": "https://westintokyoshop.com/pages/info",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://westintokyoshop.com/pages/info",
+    "title": "ウェスティンホテル東京館内施設営業時間のご案内 – ウェスティンホテル東京オンラインショップ | The Westin Tokyo Online Shop",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/westin.tokyo",
+      "https://twitter.com/WestinTokyo",
+      "https://www.instagram.com/westintokyo/"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-009",
+    "url": "https://le-bretagne.com/creperie/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://le-bretagne.com/creperie/",
+    "title": "クレープリー Archive - ル ブルターニュ (LE BRETAGNE)",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/LeBretagne35",
+      "https://www.instagram.com/breizhcafe_jp/",
+      "https://twitter.com/LeBretagne35"
+    ],
+    "addressSnippets": [
+      "東京都新宿区神楽坂4-2 03-3235-3001 MAP 神楽坂店はお電話でご予約ください。 MENU ご予約 デリバリー テイクアウト ",
+      "東京都区渋谷区千駄ヶ谷24-2 新宿タカシマヤ13F 03-5361-1335 03-3357-3501 MAP MENU ご予約 デリバリー テイクアウト ",
+      "東京都渋谷区神宮前3-5-4 03-3478-7855 MAP MENU ご予約 デリバリー テイクアウト "
+    ]
+  },
+  {
+    "id": "cafe-010",
+    "url": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
+    "title": "Café Kitsuné - Aoyama | Maison Kitsuné",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/maisonkitsune",
+      "https://www.facebook.com/maisonkitsune",
+      "https://twitter.com/kitsune"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-011",
+    "url": "https://fuzkue.com/shops/hatsudai",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://fuzkue.com/shops/hatsudai",
+    "title": "フヅクエ初台 | 本の読める店 fuzkue",
+    "mapLinks": [
+      "https://goo.gl/maps/TKTxwuVwKecbENAq6"
+    ],
+    "socialLinks": [
+      "https://twitter.com/fuzkue/",
+      "https://www.instagram.com/fuzkue/",
+      "https://www.facebook.com/fuzkue/"
+    ],
+    "addressSnippets": [
+      "東京都渋谷区初台1-38-10 二名ビル2F        営業時間      毎日12-23時          ︎初台駅        南口から徒歩20秒        新宿駅        京王新線で2分        "
+    ]
+  },
+  {
+    "id": "cafe-012",
+    "url": "https://rblcafe.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://rblcafe.jp/",
+    "title": "トップページ - 下北沢ブックカフェ RBL CAFE",
+    "mapLinks": [
+      "https://goo.gl/maps/fERKQo3eNjYfiTmd6"
+    ],
+    "socialLinks": [
+      "https://www.facebook.com/rblcafe/",
+      "https://www.instagram.com/rblcafe/",
+      "https://twitter.com/rblcafe",
+      "https://www.instagram.com/p/DHlJP2izaMh/",
+      "https://www.instagram.com/p/DFEqt9HTGZG/",
+      "https://www.instagram.com/p/DC1B0jvzeUm/"
+    ],
+    "addressSnippets": [
+      "東京都世田谷区代沢5-32-12\t\t\t\t\t\t     ",
+      "東京都世田谷区代沢5-32-12      ",
+      "東京都世田谷区代沢5-32-12",
+      "東京都世田谷区代沢5-32-12 下北沢駅中央口 徒歩約5分\t\t\t\t\t "
+    ]
+  },
+  {
+    "id": "cafe-013",
+    "url": "https://rengetsu.net/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://rengetsu.net/",
+    "title": "大田区池上の古民家カフェ 蓮月",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/ikegamirengetsu/",
+      "https://twitter.com/ikegamirengetsu?ref_src=twsrc%5Etfw",
+      "https://platform.twitter.com/widgets.js"
+    ],
+    "addressSnippets": [
+      "東京都大田区池上2-20-11 "
+    ]
+  },
+  {
+    "id": "cafe-014",
+    "url": "https://recomoon.amebaownd.com/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://recomoon.amebaownd.com/",
+    "title": "POUND",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都あきる野市戸倉208‐2  TEL：042-588-5797  営業時間：  平日 11時30分～16時30分  土・日曜 11時30分～18時  休業日：火・水・木曜（祝日が火・水・木にあたる場合もお休みです）  ※ラ"
+    ]
+  },
+  {
+    "id": "cafe-015",
+    "url": "https://www.instagram.com/tokyo_station_cafe_/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-016",
+    "url": "https://www.attable.co.jp/cafe/meijiyasuda/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.attable.co.jp/cafe/meijiyasuda/",
+    "title": "明治生命館 明治安田CAFE 丸の内",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/meijiyasudacafe.marunouchi/"
+    ],
+    "addressSnippets": [
+      "東京都千代田区丸の内2-1-1 "
+    ]
+  },
+  {
+    "id": "cafe-017",
+    "url": "https://mimt.jp/cafe1894/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://mimt.jp/cafe1894/",
+    "title": "Café 1894 | 新しい私に出会う、三菱一号館美術館",
+    "mapLinks": [
+      "https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%852-6-2&hl=ja&ie=UTF8&sll=35.678499,139.76337&sspn=0.01926,0.037615&hnear=%E6%97%A5%E6%9C%AC,+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%96%E2%88%92%EF%BC%92&t=m&z=17",
+      "https://goo.gl/maps/5jUHKgLjvo72"
+    ],
+    "socialLinks": [
+      "https://twitter.com/share"
+    ],
+    "addressSnippets": [
+      "東京都千代田区丸の内2-6-2　三菱一号館美術館１Ｆ "
+    ]
+  },
+  {
+    "id": "cafe-018",
+    "url": "https://safn.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://safn.jp/",
+    "title": "【公式】safn°|サフン スペシャリティーコーヒーとビーガンミールを楽しむカフェレストラン",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/safn_coffee/"
+    ],
+    "addressSnippets": [
+      "東京都墨田区本所2-16-5  KAIKA東京by THE SHARE HOTELS 1F     hours  open 07：00 〜 19：00（土日祝日10：00 - 19：00）    tel  03-5637-71"
+    ]
+  },
+  {
+    "id": "cafe-019",
+    "url": "https://cafe.warehouseofart.org/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://cafe.warehouseofart.org/",
+    "title": "天王洲のアートスポット WHAT CAFE",
+    "mapLinks": [
+      "https://goo.gl/maps/iUSC5oR3QLMJm7nr5"
+    ],
+    "socialLinks": [
+      "https://www.facebook.com/WHATCAFE.TERRADA",
+      "https://twitter.com/what_cafe",
+      "https://www.instagram.com/whatcafe_terrada/"
+    ],
+    "addressSnippets": [
+      "東京都品川区東品川2-1-11 ",
+      "東京都品川區東品川2-1-11 "
+    ]
+  },
+  {
+    "id": "cafe-020",
+    "url": "https://www.spiral.co.jp/shoplist/mon-park-cafe-by-spiral",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.spiral.co.jp/shoplist/mon-park-cafe-by-spiral",
+    "title": "MoN Park Cafe by Spiral | MoN | Shop & Space | スパイラル SPIRAL",
+    "mapLinks": [
+      "https://maps.app.goo.gl/4EcysMhfyfAx3DHR7",
+      "https://goo.gl/maps/kJuyZrGG6GL2"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/spiral_jp/",
+      "https://x.com/spiral_jp/",
+      "https://www.facebook.com/Spiral.jp"
+    ],
+    "addressSnippets": [
+      "東京都港区三田3-16-1 ",
+      "東京都港区南青山5-6-23　 Tel. 03-3498-1171  "
+    ]
+  },
+  {
+    "id": "cafe-021",
+    "url": "https://www.miyanoyu.tokyo/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.miyanoyu.tokyo/",
+    "title": "MATCHA&ESPRESSO MIYANO-YU",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/miyano__yu/"
+    ],
+    "addressSnippets": [
+      "東京都文京区根津1-22-10 1F   TEL  03-6882-9205                                                                           "
+    ]
+  },
+  {
+    "id": "cafe-022",
+    "url": "https://www.instagram.com/rebon_kaisaiyu/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-023",
+    "url": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
+    "title": "カフェ レ ジュ グルニエ （Café Les Jeux Au Grenier ） - 表参道/カフェ | 食べログ",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都    港区  南青山 5-9-5   村山ビル 2F  ",
+      "東京都の施設一覧をもっと見る "
+    ]
+  },
+  {
+    "id": "cafe-024",
+    "url": "https://x.com/9mama34",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-025",
+    "url": "https://www.enjoytokyo.jp/spot/l_20016110/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.enjoytokyo.jp/spot/l_20016110/",
+    "title": "カフェ トゥジュール デビュテ",
+    "mapLinks": [
+      "https://www.google.com/maps/search/?api=1&query=35.62706521,139.72330840"
+    ],
+    "socialLinks": [
+      "https://x.com/enjoy_tokyo/",
+      "https://www.facebook.com/enjoytokyo/",
+      "https://www.instagram.com/lets_enjoytokyo/",
+      "https://x.com/share?text=カフェ トゥジュール デビュテ｜レッツエンジョイ東京%0a&url=https://www.enjoytokyo.jp/spot/l_20016110/",
+      "https://www.facebook.com/sharer/sharer.php?u=https://www.enjoytokyo.jp/spot/l_20016110/&t=カフェ トゥジュール デビュテ｜レッツエンジョイ東京"
+    ],
+    "addressSnippets": [
+      "東京都品川区東五反田5-27-12 扇寿ビルB1  ",
+      "東京都 ",
+      "東京都内のおすすめアンテナショップ ",
+      "東京都  "
+    ]
+  },
+  {
+    "id": "cafe-026",
+    "url": "https://www.afm-teahouse.com/aoyama",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.afm-teahouse.com/aoyama",
+    "title": "GREEN HOUSE | Aoyama Flower Market TEA HOUSE",
+    "mapLinks": [
+      "//maps.google.com"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/aoyamaflowermarket_teahouse/",
+      "https://www.facebook.com/AFMTEAHOUSE"
+    ],
+    "addressSnippets": [
+      "東京都港区南青山5-4-41-グラッセリア青山1階 "
+    ]
+  },
+  {
+    "id": "cafe-027",
+    "url": "https://www.hanabar.tokyo/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.hanabar.tokyo/",
+    "title": "HANABAR Driedflowers&Liquor 池袋バー",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/hanabar.ikebukuro/"
+    ],
+    "addressSnippets": [
+      "東京都豊島区西池袋    "
+    ]
+  },
+  {
+    "id": "cafe-028",
+    "url": "https://www.bread-espresso.jp/shop/hanabana-monnaka.html",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.bread-espresso.jp/shop/hanabana-monnaka.html",
+    "title": "花ナ々ナ（ハナバナ）門前仲町 ｜ 株式会社 日と々と",
+    "mapLinks": [
+      "https://maps.app.goo.gl/DGaLpUG3ziJbu8bPA"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/mou_htbt/",
+      "https://twitter.com/BREADESPRESSO",
+      "https://www.instagram.com/hanabana.monnaka/"
+    ],
+    "addressSnippets": [
+      "東京都江東区富岡1丁目14-5  [  map  ] "
+    ]
+  },
+  {
+    "id": "cafe-029",
+    "url": "https://rawsugarroast.com/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://rawsugarroast.com/",
+    "title": " Raw Sugar Roast ",
+    "mapLinks": [
+      "https://maps.app.goo.gl/pJa1TfQeuqVF1Dbw9",
+      "https://maps.app.goo.gl/3NfyoQmpscyd5gZz9"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/rawsugar_roast/",
+      "https://www.facebook.com/profile.php?id=100083075954939"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-030",
+    "url": "https://www.as-craft.com/news/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.as-craft.com/news/",
+    "title": "AS.CRAFT FURNITURE オーダーメイド家具を東京を中心に展開",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/ascraftfurniture",
+      "https://www.instagram.com/ascraftfurniture/",
+      "https://www.instagram.com/furniture_antique_coffee/",
+      "https://www.instagram.com/furniture_antique_coffee"
+    ],
+    "addressSnippets": [
+      "東京都青梅市にある老舗の日本酒蔵元、小澤酒造さんよりご依頼いただき、応接室に設置する日本酒用のグラスを納めるガラスキャビネットを製作しました。　お届け先は同じ都内とは思えない自然に恵まれた場所。　空気も水も新鮮で、ここならお酒"
+    ]
+  },
+  {
+    "id": "cafe-031",
+    "url": "https://www.instagram.com/hamorebi.tokyo/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-032",
+    "url": "https://annorum.jp/cafe/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://annorum.jp/cafe/",
+    "title": "cafe | annorum",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/annorum/",
+      "https://www.instagram.com/annorum_cafe/"
+    ],
+    "addressSnippets": [
+      "東京都台東区浅草4-7-11 2F "
+    ]
+  },
+  {
+    "id": "cafe-033",
+    "url": "https://www.toraya-group.co.jp/shops/shop-6",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.toraya-group.co.jp/shops/shop-6",
+    "title": "TORAYA GINZA | 店舗・菓寮 | 株式会社 虎屋",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/toraya.confectionery/"
+    ],
+    "addressSnippets": [
+      "東京都中央区銀座7-8-17　虎屋銀座ビル4階　※TORAYA Ginza Buildingの入口は「すずらん通り」にございます。1Fエントランスは、白い壁の奥に広がる朱色の左官壁が特徴です。詳細は備考をご参照ください。  電"
+    ]
+  },
+  {
+    "id": "cafe-034",
+    "url": "https://www.ippodo-tea.shop/pages/store-aoyama",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.ippodo-tea.shop/pages/store-aoyama",
+    "title": " 青山店｜売り場・喫茶室｜ – 一保堂茶舗",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/ippodotea/",
+      "https://x.com/ippodo_tea_jp",
+      "http://instagram.com/ippodotea",
+      "https://www.instagram.com/ippodoteausa/",
+      "https://www.facebook.com/IPPODOTEA",
+      "https://www.facebook.com/IPPODOTEA.NY"
+    ],
+    "addressSnippets": [
+      "東京都港区南青山4-23-6  2F"
+    ]
+  },
+  {
+    "id": "cafe-035",
+    "url": "https://tokichi.jp/pages/ginza-store-page",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tokichi.jp/pages/ginza-store-page",
+    "title": " 店舗紹介 銀座店 – 中村藤吉本店",
+    "mapLinks": [
+      "https://goo.gl/maps/6jQvG9SmbjTiTP398"
+    ],
+    "socialLinks": [
+      "https://www.facebook.com/nakamuratokichihonten/",
+      "https://www.instagram.com/nakamura_tokichi_official/"
+    ],
+    "addressSnippets": [
+      "東京都中央区銀座6丁目10-1 GINZA SIX 4F  地図を見る "
+    ]
+  },
+  {
+    "id": "cafe-036",
+    "url": "https://1899.jp/hotels/tokyo/chaya-1899-tokyo/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://1899.jp/hotels/tokyo/chaya-1899-tokyo/",
+    "title": "CHAYA 1899 TOKYO | お茶がテーマの“日本茶専門カフェ” | ホテル1899東京【公式HP】",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://x.com/hotel1899tokyo",
+      "https://www.instagram.com/1899_official/",
+      "https://www.facebook.com/official1899/",
+      "https://x.com/hotel1899tokyo/"
+    ],
+    "addressSnippets": [
+      "東京都港区新橋6丁目4番1号 "
+    ]
+  },
+  {
+    "id": "cafe-037",
+    "url": "https://www.ishiya.co.jp/shop/001328.html",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.ishiya.co.jp/shop/001328.html",
+    "title": "ISHIYA NIHONBASHI（イシヤ 日本橋）｜店舗案内｜石屋製菓（ISHIYA）-しあわせをつくるお菓子",
+    "mapLinks": [
+      "https://goo.gl/maps/VbU4V82LYpFz4DcB6"
+    ],
+    "socialLinks": [
+      "https://twitter.com/ishiya_official",
+      "https://www.instagram.com/ishiya_official_/",
+      "https://ja-jp.facebook.com/shiroikoibito.ishiya/"
+    ],
+    "addressSnippets": [
+      "東京都中央区日本橋室町3-2-1 COREDO室町テラス 1F"
+    ]
+  },
+  {
+    "id": "cafe-038",
+    "url": "https://www.henri-charpentier.com/shop/ginza-maison/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.henri-charpentier.com/shop/ginza-maison/",
+    "title": " 銀座メゾン | アンリ・シャルパンティエ(HenriCharpentier) 公式ブランドサイト",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/henri_charpentier1969/",
+      "https://twitter.com/ashiya1969",
+      "https://www.facebook.com/henri.charpentier1969/",
+      "http://twitter.com/share?url=https%3A%2F%2Fwww.henri-charpentier.com%2Fshop%2Fginza-maison%2F&text=%E9%8A%80%E5%BA%A7%E3%83%A1%E3%82%BE%E3%83%B3%0A",
+      "http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.henri-charpentier.com%2Fshop%2Fginza-maison%2F"
+    ],
+    "addressSnippets": [
+      "東京都中央区銀座2-8-20 ヨネイビル1階                   "
+    ]
+  },
+  {
+    "id": "cafe-039",
+    "url": "https://cafe.lisette.jp/magasin.html",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://cafe.lisette.jp/magasin.html",
+    "title": "Cafe lisette | shop",
+    "mapLinks": [
+      "http://maps.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%8E%89%E5%B7%9D3-9-7&hl=ja&ie=UTF8&ll=35.613196,139.625748&spn=0.004025,0.005472&sll=35.613327,139.625598&sspn=0.004025,0.005472&brcurrent=3,0x6018f416c124670d:0xc7ad21253d829844,0&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%8E%89%E5%B7%9D%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%99%E2%88%92%EF%BC%97&t=m&z=18",
+      "http://maps.google.co.jp/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%981-24-6&hl=ja&ie=UTF8&ll=35.610274,139.669506&spn=0.004025,0.005472&sll=35.322636,139.552653&sspn=0.00404,0.005472&brcurrent=3,0x6018f51ffaabe6af:0xcf08054efa6a55fa,0&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%92%EF%BC%94%E2%88%92%EF%BC%96&t=m&z=18"
+    ],
+    "socialLinks": [
+      "https://twitter.com/cafelisette",
+      "https://www.facebook.com/pages/%E3%82%AB%E3%83%95%E3%82%A7%E3%83%AA%E3%82%BC%E3%83%83%E3%82%BF/506641389410033",
+      "https://www.instagram.com/cafelisette_jiyugaoka/"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-040",
+    "url": "https://www.lenotrejp.com/topics/new_azabudaihills",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.lenotrejp.com/topics/new_azabudaihills",
+    "title": "麻布台ヒルズ店オープンのお知らせ | ルノートル",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/lenotrejp/",
+      "https://www.instagram.com/lenotrejp/"
+    ],
+    "addressSnippets": [
+      "東京都港区麻布台1-2-3 麻布台ヒルズ レジデンスA 1階 "
+    ]
+  },
+  {
+    "id": "cafe-041",
+    "url": "https://1room.fun/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://1room.fun/",
+    "title": "1 ROOM COFFEE - 中板橋|カフェ",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/1_room_coffee/",
+      "https://www.instagram.com/1_room_coffee/?hl=ja"
+    ],
+    "addressSnippets": [
+      "東京都板橋区中板橋に店舗面積は約10坪の サイズで1 ROOM COFFEEを開業しました。   お店の実際のサイズ感、そして1 ROOM という 人が暮らすには最小単位であろう間取りのお店。   シンプルかつミニマムではある",
+      "東京都板橋区中板橋３０−１ コーポ亀井 1F   東武東上線中板橋駅徒歩5分  店主　内山道広                                                                 ©"
+    ]
+  },
+  {
+    "id": "cafe-042",
+    "url": "https://www.instagram.com/tokyo_kogai/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-043",
+    "url": "https://www.fromafar-tokyo.com/kissahangetsu",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.fromafar-tokyo.com/kissahangetsu",
+    "title": "KISSA HANGETSU — light source co. ltd",
+    "mapLinks": [
+      "https://maps.app.goo.gl/w5PV3k8zrcWYYPD5A"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/hangetsu_kuramae",
+      "https://www.instagram.com/01_119/",
+      "https://www.instagram.com/douguya_nobori/",
+      "https://www.instagram.com/kashiya_shinonome/",
+      "https://www.instagram.com/shinonome_pan/",
+      "https://www.instagram.com/hangetsu_kuramae/"
+    ],
+    "addressSnippets": [
+      "東京都台東区蔵前4-14-11,103   定休日｜無し 営業時間 ｜ 9:00 - 11:30 モーニングメニュー 　　　　  　11:30 - 19:00（L.O. 18:30）通常メニュー アクセス｜都営大江戸線・浅草線"
+    ]
+  },
+  {
+    "id": "cafe-044",
+    "url": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
+    "title": "コンテンツ 銀座ウエスト",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/ginzawest_official/?hl=ja",
+      "https://twitter.com/ginzawest"
+    ],
+    "addressSnippets": [
+      "東京都中央区銀座7-3-6 ",
+      "東京都港区南青山1-22-10 ",
+      "東京都港区赤坂5-3-1 ",
+      "東京都日野市日野1545 ",
+      "東京都日野市日野１５４５　㈱洋菓子舗ウエスト　日野配送センター　通販担当行】 ",
+      "東京都中央区銀座7丁目3番6号"
+    ]
+  },
+  {
+    "id": "cafe-045",
+    "url": "http://www.tricolore.co.jp/ginza_trico/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "http://www.tricolore.co.jp/ginza_trico/",
+    "title": "銀座トリコロール",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-046",
+    "url": "https://tabelog.com/tokyo/A1315/A131502/13008294/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tabelog.com/tokyo/A1315/A131502/13008294/",
+    "title": "珈琲亭 ルアン - 大森/喫茶店 | 食べログ",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都大田区大...",
+      "東京都    大田区  大森北 1-36-2     ",
+      "東京都の施設一覧をもっと見る "
+    ]
+  },
+  {
+    "id": "cafe-047",
+    "url": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
+    "title": "ネルケン （NELKEN） - 高円寺/喫茶店 | 食べログ",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都    杉並区  高円寺南 3-56-7     ",
+      "東京都の施設一覧をもっと見る "
+    ]
+  },
+  {
+    "id": "cafe-048",
+    "url": "https://metro-net.co.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://metro-net.co.jp/",
+    "title": "新宿メトログループ",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-049",
+    "url": "https://www.instagram.com/kojyo_kyoko/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-050",
+    "url": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
+    "title": "ローヤル 喫煙ルーム有 – 東京交通会館 | 銀座・有楽町 - 展示会場・イベント・貸ホール・画廊貸スペース、アンテナショップ、パスポート -",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都交通局  "
+    ]
+  },
+  {
+    "id": "cafe-051",
+    "url": "http://www.jazzeigakan.com/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "http://www.jazzeigakan.com/",
+    "title": "�W���Y�i���f��� JAZZ Kissa Eigakan",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.instagram.com/jazzkissaeigakan/",
+      "https://x.com/EigakanJazz"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-052",
+    "url": "https://heikinritsu.dreamlog.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://heikinritsu.dreamlog.jp/",
+    "title": "喫茶平均律 日々是彩日",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://x.com/share"
+    ],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-053",
+    "url": "https://cafedelambre.com/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://cafedelambre.com/",
+    "title": " カフェ・ド・ランブル｜銀座の自家焙煎、コーヒーだけの店。1948年創業 – CAFE DE LAMBRE",
+    "mapLinks": [
+      "https://maps.app.goo.gl/ZtM1ZByUCQTWvAw59"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/ginzacafedelambre"
+    ],
+    "addressSnippets": [
+      "東京都中央区銀座 8-10-15"
+    ]
+  },
+  {
+    "id": "cafe-054",
+    "url": "https://kosetocoffee.themedia.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://kosetocoffee.themedia.jp/",
+    "title": "",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-055",
+    "url": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+    "title": "喫茶 穂高 （ホタカ） - 御茶ノ水/喫茶店 | 食べログ",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都千代田区にある日本最大の古書店街で、文学や学術書を求める人々が訪れます。また昔懐かしい町並みに溶け込むような、カレー店や喫茶店も充実しており、食事や休...  記事を読む» ",
+      "東京都千代田区神保町。学生や文化人が集う街で、多彩な飲食店が揃っています。老舗の喫茶店やカレー店、ラーメン店などが並び、レトロな雰囲気と共に多...  記事を読む» ",
+      "東京都    千代田区  神田駿河台 4-5-3   御茶ノ水穂高ビル １Ｆ  ",
+      "東京都の施設一覧をもっと見る "
+    ]
+  },
+  {
+    "id": "cafe-056",
+    "url": "https://tokyogrown.jp/node/571846",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://tokyogrown.jp/node/571846",
+    "title": "きりんかん | とうきょうの恵みTOKYO GROWN",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://www.facebook.com/TOKYOGROWN/",
+      "https://twitter.com/tokyogrown1",
+      "https://www.instagram.com/tokyogrown_official/"
+    ],
+    "addressSnippets": [
+      "東京都GAP  ",
+      "東京都GAP認証者一覧  ",
+      "東京都の食材を使った料理教室  ",
+      "東京都・日の出町  ",
+      "東京都GAP  ─ 東京都GAP認証者一覧  東京都の食材を使った料理教室  働く・学ぶ  ─ 農業  ─ 森林・林業  ─ 水産業  ─ ライブラリー  子供向け学習コンテンツ  ─ MOGUHAPI モグハピ！  ─ 緒方",
+      "東京都農林水産振興財団 "
+    ]
+  },
+  {
+    "id": "cafe-057",
+    "url": "https://www.instagram.com/hatou_coffee_shibuya/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-058",
+    "url": "https://www.kanko-setagaya.jp/activity/view/600",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.kanko-setagaya.jp/activity/view/600",
+    "title": "トロワ・シャンブル | あなたの知らない世田谷",
+    "mapLinks": [
+      "https://www.google.com/maps?q=${SPOT.lat},${SPOT.lng}"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/insetagayam/",
+      "https://x.com/setagayakanko"
+    ],
+    "addressSnippets": [
+      "東京都世田谷区代沢5-36-14 湯浅ビル2F                                                             "
+    ]
+  },
+  {
+    "id": "cafe-059",
+    "url": "https://www.instagram.com/coffee_lawn/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-060",
+    "url": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
+    "title": "【西武線観光情報】フード｜西武ニュース fillute｜西武鉄道",
+    "mapLinks": [
+      "https://maps.app.goo.gl/okd6UUvZSKCmqME66"
+    ],
+    "socialLinks": [
+      "https://www.instagram.com/seibu.fillute/",
+      "https://www.instagram.com/p/CNE9dvUAlQB/"
+    ],
+    "addressSnippets": [
+      "東京都中野区鷺宮1-27-3 "
+    ]
+  },
+  {
+    "id": "cafe-061",
+    "url": "https://winebar-kura.foodre.jp/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://winebar-kura.foodre.jp/",
+    "title": "[公式] 炭火焼珈琲蔵",
+    "mapLinks": [],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都豊島区西池袋１-３９-１         ■駅からのアクセス  JR山手線 ／ 池袋駅 徒歩3分（180m）       よくある質問      Q. お店の定休日は？  毎年1月1日 毎年1月2日 年末年始（要確認） "
+    ]
+  },
+  {
+    "id": "cafe-062",
+    "url": "https://mafumicofffee.vercel.app/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://mafumicofffee.vercel.app/",
+    "title": "眞踏珈琲店 | 珈琲と、本と、そして無駄話を愉しむ喫茶店。",
+    "mapLinks": [
+      "https://www.google.com/maps/place/%E7%9C%9E%E8%B8%8F%E7%8F%88%E7%90%B2%E5%BA%97/@35.694529,139.761905,16z/data=!4m5!3m4!1s0x0:0xaabdbae08c226cfc!8m2!3d35.6945285!4d139.7619054?hl=ja"
+    ],
+    "socialLinks": [
+      "https://twitter.com/mafumicoffee?ref_src=twsrc%5Etfw",
+      "https://platform.twitter.com/widgets.js",
+      "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmafumi.coffee&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",
+      "https://twitter.com/mafumicoffee",
+      "https://www.facebook.com/mafumi.coffee"
+    ],
+    "addressSnippets": [
+      "東京都千代田区神田小川町3-1-7   Google Mapで見る    ※もし道に迷われてしまった場合、お電話をいただければ道順をご案内いたします。         電話番号    03-6873-9351        メ"
+    ]
+  },
+  {
+    "id": "cafe-063",
+    "url": "https://www.instagram.com/kissaamerican/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-064",
+    "url": "https://chikudays.com/omise/tokyo_hkkerun/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://chikudays.com/omise/tokyo_hkkerun/",
+    "title": "東京 虎ノ門のジャンボプリンが人気の純喫茶【ヘッケルン】 | chikudays",
+    "mapLinks": [],
+    "socialLinks": [
+      "https://twitter.com/intent/tweet?url=https%3A%2F%2Fchikudays.com%2Fomise%2Ftokyo_hkkerun%2F&text=%E6%9D%B1%E4%BA%AC+%E8%99%8E%E3%83%8E%E9%96%80%E3%81%AE%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%9C%E3%83%97%E3%83%AA%E3%83%B3%E3%81%8C%E4%BA%BA%E6%B0%97%E3%81%AE%E7%B4%94%E5%96%AB%E8%8C%B6%E3%80%90%E3%83%98%E3%83%83%E3%82%B1%E3%83%AB%E3%83%B3%E3%80%91%EF%BD%9Cchikudays",
+      "https://www.facebook.com/share.php?u=https%3A%2F%2Fchikudays.com%2Fomise%2Ftokyo_hkkerun%2F",
+      "http://www.twitter.com/chikugurume",
+      "https://twitter.com/chikugurume",
+      "https://www.instagram.com/chikudays/"
+    ],
+    "addressSnippets": [
+      "東京都港区西新橋1-20-11 "
+    ]
+  },
+  {
+    "id": "cafe-065",
+    "url": "https://asakusanioideyo.com/56/1018/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://asakusanioideyo.com/56/1018/",
+    "title": "ロッジ赤石 | 【公式】浅草においでよ！",
+    "mapLinks": [
+      "https://maps.google.co.jp/maps?output=embed&z=17&q=35.717031,139.795084"
+    ],
+    "socialLinks": [],
+    "addressSnippets": []
+  },
+  {
+    "id": "cafe-066",
+    "url": "https://www.instagram.com/kissa_you/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-067",
+    "url": "https://www.facebook.com/kissa.rouault/",
+    "checkedAt": "2026-10-11",
+    "status": "social-login-required"
+  },
+  {
+    "id": "cafe-068",
+    "url": "https://troisbagues.com/",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://troisbagues.com/",
+    "title": "カフェ トロワバグ",
+    "mapLinks": [
+      "https://www.google.co.jp/maps/place/%E3%83%88%E3%83%AD%E3%83%AF%E3%83%90%E3%82%B0/@35.6963632,139.7560503,17z/data=!3m1!4b1!4m2!3m1!1s0x60188c114e0e9cf9:0xc952e130a3bb8a32"
+    ],
+    "socialLinks": [
+      "https://www.facebook.com/trois.bagues1976/",
+      "https://www.instagram.com/troisbagues/",
+      "https://www.facebook.com/trois.bagues1976"
+    ],
+    "addressSnippets": [
+      "東京都千代田区神田神保町1-12-1  富田ビルB1  ",
+      "東京都千代田区神田神保町１丁目１２−１ "
+    ]
+  },
+  {
+    "id": "cafe-069",
+    "url": "https://www.kinshi-scope.com/sp/shop/1094.html",
+    "checkedAt": "2026-10-11",
+    "status": 200,
+    "finalUrl": "https://www.kinshi-scope.com/sp/shop/1094.html",
+    "title": "「喫茶 ニット」 - 錦糸スコープ（キンシスコープ）｜錦糸町店舗情報",
+    "mapLinks": [
+      "http://maps.google.com/maps?q=35.695462%2C139.816404%28%22%E5%96%AB%E8%8C%B6+%E3%83%8B%E3%83%83%E3%83%88%22%29"
+    ],
+    "socialLinks": [],
+    "addressSnippets": [
+      "東京都墨田区江東橋4丁目26-12  "
+    ]
+  }
+]

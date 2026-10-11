@@ -1,0 +1,7 @@
+*.xlsx
+node_modules/
+.venv/
+__pycache__/
+test-results/
+.DS_Store
+*.log

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="東京咖啡巡禮：69 家咖啡館、喫茶店與甜點店，從車站找到街角的一杯咖啡。收藏想去的店，記錄自己的巡禮。">
+  <meta property="og:title" content="東京咖啡巡禮 — 東京，一杯一杯地走。">
+  <meta property="og:description" content="一份可以帶著散步的咖啡手帖。69 家店鋪、20 個行政區，以及屬於你的咖啡巡禮紀錄。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://herointene.github.io/tokyo-cafe-pilgrimage/">
+  <meta property="og:image" content="https://herointene.github.io/tokyo-cafe-pilgrimage/assets/coffee-cover.jpg">
+  <title>東京咖啡巡禮 — 東京，一杯一杯地走。</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="shops.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">跳到店鋪目錄</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 40 40"><path d="M9 17h20v10a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8Z"/><path d="M29 19h3a5 5 0 0 1 0 10h-3M5 37h28M14 12c-4-4 4-4 0-8M22 12c-4-4 4-4 0-8"/></symbol>
+    <symbol id="i-kissaten" viewBox="0 0 40 40"><path d="M9 14h20l-3 16H12Z M29 16h4a4 4 0 0 1-2 8h-3M6 34h27M12 9h13"/><path d="M12 18h13M10 30h18"/></symbol>
+    <symbol id="i-sweets" viewBox="0 0 40 40"><path d="M8 20h25v14H8ZM8 20l10-8 15 8M8 25h25M5 37h31"/><path d="M21 15V9"/><circle cx="21" cy="6" r="3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4ZM14 4h6v6h-6ZM4 14h6v6H4ZM14 14h6v6h-6Z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M3 6h1M3 12h1M3 18h1"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="東京咖啡巡禮首頁">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg></span>
+        <span><strong>東京咖啡巡禮</strong><small>TOKYO COFFEE JOURNAL</small></span>
+      </a>
+      <nav class="main-nav" aria-label="主要導覽">
+        <a href="#directory">店鋪目錄</a>
+        <a href="#walks">街區散步</a>
+        <a href="#directory" data-diary-link class="diary-nav"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"/></svg><span>我的巡禮</span><span id="nav-saved" class="nav-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line"></span> A JOURNAL OF LITTLE DETOURS</p>
+        <h1 id="hero-title">東京，<br>一杯一杯<em>地走。</em></h1>
+        <p class="hero-japanese" lang="ja">東京を、一杯ずつ。</p>
+        <p class="hero-description">從焙煎的香氣，到老喫茶店的午後。<br>帶著這本咖啡手帖，把喜歡的東京慢慢收集起來。</p>
+        <a class="button button-dark" href="#directory">翻開咖啡手帖 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div class="hero-facts" aria-label="目錄收錄範圍">
+          <span><b>69</b> 家店鋪</span><span><b>20</b> 個行政區</span><span>無數個<span class="serif">好午後</span></span>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="photo-frame"><img src="assets/coffee-cover.jpg" width="1400" height="933" alt="木桌旁，三個人舉起咖啡杯，分享悠閒的咖啡時光" fetchpriority="high"><span class="photo-tape" aria-hidden="true"></span></div>
+        <div class="coffee-stamp" aria-hidden="true"><span>COFFEE &amp; WANDER</span><svg class="icon"><use href="#i-cup"/></svg><strong>TOKYO</strong><small>一杯ずつ、街を歩く</small></div>
+        <figcaption><span>FIELD NOTES / VOL. 01</span><span>給每一次小小的出走。</span></figcaption>
+        <span class="vertical-note" lang="ja" aria-hidden="true">喫茶、珈琲、ときどき寄り道。</span>
+      </figure>
+    </section>
+
+    <div class="journal-divider page-width"><span>COFFEE · KISSATEN · SOMETHING SWEET</span><span>不趕路，只趕上一杯好咖啡。</span></div>
+
+    <section class="directory page-width" id="directory" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / THE CAFÉ INDEX</p><h2 id="directory-title">下一杯，去哪裡？</h2></div>
+        <p>循著車站、街區，或今天的心情。<br>找到一間想推開門的店。</p>
+      </div>
+
+      <div class="directory-controls">
+        <div class="search-row">
+          <label class="search-box" for="search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input id="search" type="search" placeholder="搜尋店名、車站或街區…" autocomplete="off" aria-label="搜尋店名、車站或街區"><span class="search-hint">找一杯喜歡的</span></label>
+          <label class="select-label" for="ward"><span class="sr-only">行政區</span><select id="ward"><option value="">所有行政區</option></select></label>
+        </div>
+        <div class="filter-row">
+          <div class="category-filters" role="group" aria-label="店鋪類型">
+            <button type="button" data-kind="all" aria-pressed="true">全部 <span>69</span></button>
+            <button type="button" data-kind="cafe" aria-pressed="false">咖啡館 <span>36</span></button>
+            <button type="button" data-kind="kissaten" aria-pressed="false">喫茶店 <span>28</span></button>
+            <button type="button" data-kind="sweets" aria-pressed="false">甜點時間 <span>5</span></button>
+          </div>
+          <label class="select-label status-select" for="status"><span class="sr-only">巡禮狀態</span><select id="status"><option value="all">所有巡禮狀態</option><option value="saved">想去的店</option><option value="visited">已巡禮</option><option value="unvisited">還沒去過</option></select></label>
+        </div>
+      </div>
+
+      <div id="active-filters" class="active-filters" hidden><span id="filter-summary"></span><button type="button" id="reset-filters">清除篩選 <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+      <div class="results-toolbar">
+        <p id="results-count" role="status" aria-live="polite">正在翻開 69 家店鋪…</p>
+        <div class="results-options"><label for="sort" class="sr-only">排序方式</label><select id="sort"><option value="page">手帖頁碼順序</option><option value="ward">依行政區</option><option value="name">依店名</option></select><div class="view-controls" role="group" aria-label="顯示方式"><button type="button" data-view="grid" aria-pressed="true" aria-label="卡片顯示"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></button><button type="button" data-view="list" aria-pressed="false" aria-label="清單顯示"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></button></div></div>
+      </div>
+      <div id="shop-grid" class="shop-grid" aria-label="店鋪目錄"></div>
+      <div id="empty-state" class="empty-state" hidden><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg><h3>這一頁，暫時留白。</h3><p id="empty-copy">換個車站、街區或關鍵字，再找找下一杯。</p><button type="button" class="button button-outline" id="empty-reset">重新翻閱全部店鋪</button></div>
+      <div class="load-more-wrap" id="load-more-wrap" hidden><p id="page-count"></p><button class="button button-outline" type="button" id="load-more">再翻一頁 <span>＋12 家</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <noscript><p class="noscript-note">開啟 JavaScript 即可搜尋與記錄巡禮。也可以直接查看 <a href="data/shops.json">69 家店鋪的完整資料與連結</a>。</p></noscript>
+    </section>
+
+    <section class="walks-section" id="walks" aria-labelledby="walks-title">
+      <div class="page-width">
+        <div class="section-heading"><div><p class="eyebrow">02 / A WALK &amp; A CUP</p><h2 id="walks-title">把一杯咖啡，走成一段散步。</h2></div><p>不用把行程排滿。<br>選一片街區，挑幾間喜歡的店就好。</p></div>
+        <div class="walk-grid">
+          <article class="walk-card walk-ginza"><div class="walk-top"><span class="walk-number">WALK 01</span><span class="walk-size">6 家店鋪</span></div><div class="walk-drawing" aria-hidden="true"><svg viewBox="0 0 300 90"><path class="walk-path" d="M15 59H97V26h97v33h90"/><circle cx="37" cy="59" r="6"/><circle cx="126" cy="26" r="6"/><circle cx="236" cy="59" r="6"/><path d="M217 19h24v12h-24ZM223 13v6m12-6v6M66 15v18m-9-9h18"/><text x="17" y="85">GINZA</text><text x="207" y="85">HIGASHI-GINZA</text></svg></div><h3>銀座，喫茶的老時光。</h3><p>西裝街角、經典喫茶與日本茶。<br>在銀座的日常裡，留一個悠長的午後。</p><button type="button" data-route="ginza">翻閱這片街區 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></article>
+          <article class="walk-card walk-east"><div class="walk-top"><span class="walk-number">WALK 02</span><span class="walk-size">6 家店鋪</span></div><div class="walk-drawing" aria-hidden="true"><svg viewBox="0 0 300 90"><path class="river" d="M171-5c-50 30 52 47 0 100m15-100c-50 30 52 47 0 100"/><path class="walk-path" d="M14 63h80V27h160v33h31"/><circle cx="39" cy="63" r="6"/><circle cx="127" cy="27" r="6"/><circle cx="254" cy="60" r="6"/><path d="M213 10h24m-20-5v16m16-16v16M215 15h20"/><text x="12" y="85">KURAMAE</text><text x="226" y="85">ASAKUSA</text></svg></div><h3>藏前與淺草，路地裡。</h3><p>從隅田川兩岸，到下町的小巷。<br>新咖啡館與老喫茶，都是散步的理由。</p><button type="button" data-route="east">翻閱這片街區 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></article>
+          <article class="walk-card walk-aoyama"><div class="walk-top"><span class="walk-number">WALK 03</span><span class="walk-size">5 家店鋪</span></div><div class="walk-drawing" aria-hidden="true"><svg viewBox="0 0 300 90"><path class="walk-path" d="M15 62h60l45-37h65l44 37h57"/><circle cx="39" cy="62" r="6"/><circle cx="142" cy="25" r="6"/><circle cx="260" cy="62" r="6"/><path d="M203 24v28m0-19c-17 0-17-18 0-12m0 19c16 0 20-16 0-13M59 8v16m-8-8h16"/><text x="15" y="85">OMOTESANDO</text><text x="242" y="85">AOYAMA</text></svg></div><h3>青山，綠意與香氣。</h3><p>咖啡、花草與一盞日本茶。<br>轉進表參道的小路，讓城市安靜一點。</p><button type="button" data-route="aoyama">翻閱這片街區 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></article>
+        </div>
+        <p class="walk-note">街區提案為手帖店鋪的主題整理；示意線條不代表實際地圖。選店後可開啟 Google Maps 安排自己的路線。</p>
+      </div>
+    </section>
+
+    <section class="notebook page-width" aria-labelledby="notebook-title">
+      <div class="notebook-copy"><p class="eyebrow">03 / YOUR OWN COFFEE STORY</p><h2 id="notebook-title">你的東京，<br>正在慢慢成形。</h2><p>按下書籤，收藏下一次想去的地方。<br>喝完一杯，再蓋上一枚「已巡禮」的章。</p><button type="button" class="text-button" data-diary-link>翻開我的巡禮 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <div class="notebook-progress"><div class="progress-heading"><span>MY COFFEE PASSPORT</span><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg></div><div class="diary-stats"><div><b id="saved-total">0</b><span>家想去的店</span></div><div><b id="visited-total">0</b><span>家已巡禮</span></div></div><div class="progress-track" role="progressbar" aria-label="咖啡巡禮進度" aria-valuemin="0" aria-valuemax="69" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div><p><span id="progress-caption">每一段旅程，都從第一杯開始。</span><span id="progress-fraction">0 / 69</span></p><small>紀錄保存在目前的瀏覽器，不需要登入。</small></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-width"><div class="footer-top"><a class="footer-brand" href="./">東京咖啡巡禮<span>TOKYO COFFEE JOURNAL</span></a><p>願每一杯咖啡，<br>都成為喜歡這座城市的另一個理由。</p><a href="#directory" class="back-index">回到手帖 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="footer-bottom"><span>店鋪資料校對：2026.10.11 · 出發前請查看店家最新公告。</span><div><button type="button" id="about-button">關於這本手帖</button><a href="https://github.com/herointene/tokyo-cafe-pilgrimage" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></div></footer>
+  <dialog id="shop-dialog" class="shop-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="關閉店鋪資訊"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="dialog-content"></div></dialog>
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" type="button" aria-label="關閉手帖說明"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><p class="eyebrow">ABOUT THIS JOURNAL</p><h2 id="about-title">一本可以帶著散步的手帖。</h2><p>這份目錄來自你的「東京咖啡館與喫茶店」Excel，完整收錄 69 家店鋪，保留原有頁碼、行政區、車站與交通備註。</p><p>官方網站、官方社群與商業設施的介紹均分別標示。11 家店鋪尚未確認自營官網或官方社群，提供店鋪資訊來源供參考；這些來源不標示為官網。每家店的詳情都附上資料來源。</p><p>Google Maps 優先使用店家或資料來源公布的地圖連結，其餘以店名與完整地址開啟精確搜尋。營業狀態、開店時間與菜單可能改變，請以店家最新公告為準。</p><p>收藏和巡禮紀錄只保存在目前的瀏覽器；清除瀏覽器資料會移除紀錄，裝置之間不會同步。</p><p class="photo-credit">封面為情境照片，並非任何收錄店鋪的實景。照片來源：<a href="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" target="_blank" rel="noopener noreferrer">Unsplash</a> · <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">照片授權</a>。</p><a class="text-button" href="data/shops.json" target="_blank" rel="noopener noreferrer">查看完整店鋪資料 <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
