@@ -17,13 +17,14 @@
   <title>東京咖啡巡禮 — 東京，一杯一杯地走。</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261012-4">
-  <script src="shops.js?v=20261012-4" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261012-5">
+  <script src="shops.js?v=20261012-5" defer></script>
   <script src="assets/vendor/leaflet/leaflet.js" defer></script>
-  <script src="app.js?v=20261012-4" defer></script>
-  <script src="explorer.js?v=20261012-4" defer></script>
+  <script src="app.js?v=20261012-5" defer></script>
+  <script src="explorer.js?v=20261012-5" defer></script>
+  <script src="community.js?v=20261012-5" defer></script>
 </head>
-<body data-release="20261012-4">
+<body data-release="20261012-5">
   <a class="skip-link" href="#directory">跳到店鋪圖鑑</a>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
@@ -45,6 +46,7 @@
       </a>
       <nav class="main-nav" aria-label="主要導覽">
         <a href="#directory">店鋪</a>
+        <a href="#public-journal" id="public-journal-nav" hidden>旅途手帖</a>
         <a href="#coffee-map">地圖</a>
         <a href="#transit">交通</a>
         <a href="#notebook" data-diary-link class="diary-nav">我的手帳 <span id="nav-saved" class="nav-count">0</span></a>
@@ -95,6 +97,11 @@
       <noscript><p>開啟 JavaScript 即可搜尋店鋪與使用手帳。<a href="data/shops.json">查看完整店鋪資料</a>。</p></noscript>
     </section>
 
+    <section class="public-journal page-width" id="public-journal" aria-labelledby="public-journal-title" hidden>
+      <div class="section-heading"><div><p class="eyebrow">FIELD NOTES</p><h2 id="public-journal-title">一杯咖啡，一頁旅途。</h2></div><p id="public-journal-byline"></p></div>
+      <div id="public-journal-grid" class="public-journal-grid"></div><div class="load-more-wrap"><button type="button" class="button button-outline" id="public-journal-more" hidden>再翻幾頁 <span aria-hidden="true">＋</span></button></div>
+    </section>
+
     <section class="map-section" id="coffee-map" aria-labelledby="map-title"><div class="page-width">
       <div class="section-heading"><div><p class="eyebrow">WANDER</p><h2 id="map-title">把東京，走成自己的地圖。</h2></div><p>點一枚圖釘，看看附近的風景。</p></div>
       <div class="map-toolbar"><label for="map-area"><span class="sr-only">地圖街區</span><select id="map-area"><option value="">所有街區</option></select></label><div><button type="button" id="map-city">東京都心</button><button type="button" id="map-fit">全部圖釘</button></div><span id="map-count" role="status">69 家店鋪</span></div>
@@ -112,14 +119,15 @@
       <div class="section-heading"><div><p class="eyebrow">MY JOURNAL</p><h2 id="notebook-title">把這一杯，留在手帳裡。</h2></div><div class="journal-tally"><span>想去 <b id="saved-total">0</b></span><span>已巡禮 <b id="visited-total">0</b> / 69</span></div></div>
       <div class="progress-track" role="progressbar" aria-label="咖啡巡禮進度" aria-valuemin="0" aria-valuemax="69" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
       <div class="passport-pages"><div class="passport-toolbar"><div class="passport-tabs" role="tablist" aria-label="巡禮手帳分頁"><button type="button" role="tab" data-passport="saved" aria-selected="true" aria-controls="passport-content">想去 <span id="tab-saved-count">0</span></button><button type="button" role="tab" data-passport="visited" aria-selected="false" aria-controls="passport-content">巡禮章 <span id="tab-visited-count">0</span></button><button type="button" role="tab" data-passport="notes" aria-selected="false" aria-controls="passport-content">筆記 <span id="tab-notes-count">0</span></button></div><button type="button" id="export-journal">下載手帳 <span aria-hidden="true">↓</span></button></div><div id="passport-content" role="tabpanel" aria-label="想去清單"></div><p class="passport-footnote">手帳保存在目前的瀏覽器，不會跨裝置同步。下載備份，可以把回憶帶走。</p></div>
+      <details id="journal-publisher" class="journal-publisher" hidden><summary>準備公開手帳 <span aria-hidden="true">＋</span></summary><div class="publisher-intro"><h3>挑幾頁，與大家分享。</h3><p>勾選想公開的紀錄，預覽後下載選稿。由倉庫管理員發佈至 GitHub，才會出現在旅途手帖。</p><label for="publisher-author">手帳署名<input id="publisher-author" maxlength="60" value="herointene" autocomplete="name"></label></div><div id="publisher-candidates"></div><p id="publisher-status" role="status" aria-live="polite"></p><div id="publisher-preview" class="public-journal-grid"></div><div class="publisher-actions"><button type="button" id="export-public-journal" class="button button-dark" disabled>下載公開選稿 <span aria-hidden="true">↓</span></button><a class="quiet-link" href="https://github.com/herointene/tokyo-cafe-pilgrimage/blob/main/docs/publishing.md" target="_blank" rel="noopener noreferrer">發佈方式 ↗</a></div></details>
     </section>
   </main>
 
   <footer class="site-footer"><div class="page-width"><div class="footer-top"><a class="footer-brand" href="./">東京咖啡巡禮<span>TOKYO COFFEE JOURNAL</span></a><p lang="ja">また、一杯の珈琲を。</p><a href="#directory" class="back-index">回到店鋪 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="footer-bottom"><span>出發前，請查看店家最新營業公告。</span><div><button type="button" id="about-button">關於手帖</button><a href="https://github.com/herointene/tokyo-cafe-pilgrimage" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div></footer>
 
-  <dialog id="shop-dialog" class="shop-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="關閉店鋪資訊"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="dialog-content"></div></dialog>
+  <dialog id="shop-dialog" class="shop-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="關閉店鋪資訊"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="dialog-content"></div><section class="shop-public-notes" aria-labelledby="shop-public-title"><p class="eyebrow">FIELD NOTES</p><h3 id="shop-public-title">這一站的旅途手帖。</h3><div id="shop-public-notes"></div></section><details id="comment-panel" class="comment-panel"><summary>店鋪留言 <span aria-hidden="true">＋</span></summary><p class="comment-intro">聊聊這一杯，或留下一點散步的心得。留言會公開顯示；閱讀免登入，留言需使用 GitHub 帳號。</p><div id="shop-comments"></div><p id="comment-status" role="status" aria-live="polite"></p><a id="github-discussion-link" class="quiet-link" href="https://github.com/herointene/tokyo-cafe-pilgrimage/discussions/categories/announcements" target="_blank" rel="noopener noreferrer">在 GitHub 閱讀留言 ↗</a></details></dialog>
   <dialog id="reference-dialog" class="reference-dialog" aria-labelledby="reference-title"><button class="dialog-close" type="button" aria-label="關閉路線圖"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><p class="eyebrow">RAILWAY MAP</p><h2 id="reference-title">電車路線圖</h2><p id="reference-caption" class="reference-caption"></p><div class="reference-tools"><button type="button" id="reference-minus" aria-label="縮小路線圖">−</button><span id="reference-zoom">100%</span><button type="button" id="reference-plus" aria-label="放大路線圖">＋</button><a id="reference-source" href="#" target="_blank" rel="noopener noreferrer">官方完整 PDF ↗</a></div><div id="reference-viewer" class="reference-viewer"><img id="reference-image" alt="電車路線圖"></div></dialog>
-  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" type="button" aria-label="關閉手帖說明"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><p class="eyebrow">ABOUT</p><h2 id="about-title">一本可以帶著散步的手帖。</h2><p>收錄東京 69 家咖啡館、喫茶店與甜點店。循著街區與車站，找到下一杯咖啡。</p><p>店鋪照片附有署名與出處；地址及營業資訊請以店家最新公告為準。官網、官方社群和公開店鋪介紹分別標示於各店頁面。</p><p>收藏、巡禮章與筆記只保存在目前的瀏覽器。清除瀏覽器資料會移除手帳，建議下載備份。</p><p class="photo-credit">地圖底圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>。照片與路線圖的權利屬各原作者，出處見各圖。</p></dialog>
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" type="button" aria-label="關閉手帖說明"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><p class="eyebrow">ABOUT</p><h2 id="about-title">一本可以帶著散步的手帖。</h2><p>收錄東京 69 家咖啡館、喫茶店與甜點店。循著街區與車站，找到下一杯咖啡。</p><p>店鋪照片附有署名與出處；地址及營業資訊請以店家最新公告為準。官網、官方社群和公開店鋪介紹分別標示於各店頁面。</p><p>你的私人收藏、巡禮章與筆記保存在目前的瀏覽器。清除瀏覽器資料會移除手帳，建議下載備份。作者挑選並發佈的紀錄則會出現在公開旅途手帖。</p><p>店鋪留言透過 giscus 保存在 GitHub Discussions，所有人都可以閱讀。使用 GitHub 帳號登入後，可以留言、編輯或刪除自己的留言。</p><p class="photo-credit">地圖底圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>。照片與路線圖的權利屬各原作者，出處見各圖。</p></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

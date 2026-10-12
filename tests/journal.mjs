@@ -44,7 +44,7 @@ try {
   await page.evaluate(()=>{sessionStorage.setItem('tokyo-coffee-cover-v1','invalid json');localStorage.removeItem('tokyo-coffee-journal-v1');});await reset();await cover();
   await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/desktop-cover.png`});
   assert.equal(await page.locator('#area-index button').count(),16);
-  assert.equal(await page.locator('.main-nav a').count(),4);
+  assert.equal(await page.locator('.main-nav a:visible').count(),4);
   assert.equal(await page.locator('#walks, #area-featured').count(),0);
   assert.doesNotMatch(await page.locator('main').innerText(),/CHAPTER|BONUS PAGES|用户更正|已更正|原始目錄/);
   const publishedNotes=await page.evaluate(()=>window.CAFE_DATA.shops.map(s=>[s.sourceNote,s.note].filter(Boolean).join(' ')).join(' '));

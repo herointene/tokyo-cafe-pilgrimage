@@ -209,6 +209,25 @@ select { color: var(--ink); border-radius: 0; cursor: pointer; }
 .list-view .card-links { display: flex; margin-top: 7px; }
 .list-view .card-bottom { border: 0; padding-bottom: 0; margin-top: 10px; justify-content: flex-start; gap: 25px; }
 
+.public-journal { padding-block: 46px 56px; border-top: 1px solid var(--line); }
+.public-journal-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 30px; }
+.public-entry { min-width: 0; padding: 12px; border: 1px solid var(--line); background: var(--white); }
+.public-entry-photo { position: relative; margin: 0; }
+.public-entry-photo>button { display: block; width: 100%; padding: 0; }
+.public-entry-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3/2; object-fit: cover; }
+.public-entry-photo figcaption { position: absolute; left: 7px; bottom: 7px; max-width: calc(100% - 145px); padding: 3px 7px; background: #fcfaf5e6; color: var(--muted); font-size: 8px; overflow-wrap: anywhere; }
+.public-entry-photo .public-ink-stamp { right: 12px; bottom: 10px; width: 110px; height: 110px; }
+.public-entry-body { padding: 20px 12px 6px; }
+.public-entry-date { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 17px; color: var(--red); font: 10px/1.8 var(--mono); margin: 0 0 12px; }
+.public-entry-date span { font: 10px var(--sans); color: var(--muted); }
+.public-entry h3 { margin: 0 0 14px; font: 500 24px/1.6 var(--serif); overflow-wrap: anywhere; }
+.public-entry h3 button { padding: 0; text-align: left; font: inherit; }
+.public-entry-drink { display: flex; align-items: center; gap: 7px; font-size: 11px; color: var(--red); margin: 12px 0; overflow-wrap: anywhere; }
+.public-entry-drink .icon { width: 17px; height: 17px; }
+.public-entry-note { padding: 0 0 4px; margin: 13px 0 19px; font: 13px/2 var(--serif); white-space: pre-wrap; overflow-wrap: anywhere; background-image: repeating-linear-gradient(transparent,transparent 25px,#b3c2ba30 25px,#b3c2ba30 26px); }
+.public-entry-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; overflow-wrap: anywhere; }
+.public-entry-footer a:first-child::before { content: '記 / '; color: var(--red); }
+
 .map-section { padding: 47px 0 28px; background: #e9e8df; border-block: 1px solid var(--line); }
 .map-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; justify-content: space-between; background: var(--white); border: 1px solid var(--line); border-bottom: 0; padding: 13px 17px; }
 .map-toolbar select { max-width: 100%; min-width: 210px; padding: 8px 10px; background: transparent; border: 1px solid var(--line); font-size: 11px; }
@@ -310,6 +329,27 @@ select { color: var(--ink); border-radius: 0; cursor: pointer; }
 .passport-empty p { color: var(--muted); font-size: 11px; line-height: 1.9; margin: 0 0 18px; max-width: 470px; }
 .passport-footnote { margin: 0; color: var(--muted); font-size: 9px; }
 
+.journal-publisher { margin-top: 28px; border-top: 1px solid var(--line); }
+.journal-publisher>summary, .comment-panel>summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 18px 0; cursor: pointer; font: 500 18px/1.6 var(--serif); }
+.journal-publisher>summary::-webkit-details-marker, .comment-panel>summary::-webkit-details-marker { display: none; }
+.journal-publisher>summary>span, .comment-panel>summary>span { font: 18px var(--sans); color: var(--red); }
+.journal-publisher[open]>summary>span, .comment-panel[open]>summary>span { transform: rotate(45deg); }
+.publisher-intro { padding: 21px; background: #ebe5d8; margin-bottom: 23px; }
+.publisher-intro h3 { font: 500 24px/1.6 var(--serif); margin: 0 0 12px; }
+.publisher-intro p { color: var(--muted); font-size: 11px; max-width: 640px; margin: 0 0 18px; }
+.publisher-intro label { display: block; font-size: 10px; color: var(--muted); }
+.publisher-intro input { display: block; width: 300px; max-width: 100%; border: 1px solid var(--line); border-radius: 0; background: var(--white); padding: 9px 12px; margin-top: 7px; color: var(--ink); font: 12px var(--serif); }
+#publisher-candidates { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.publisher-candidate { display: flex; align-items: flex-start; gap: 12px; border: 1px solid var(--line); background: var(--white); padding: 16px; cursor: pointer; min-width: 0; }
+.publisher-candidate:has(input:checked) { border-color: var(--red); background: #ede5d5; }
+.publisher-candidate input { flex-shrink: 0; accent-color: var(--stamp); width: 17px; height: 17px; margin: 5px 0 0; }
+.publisher-candidate>span { min-width: 0; }
+.publisher-candidate strong { display: block; font: 500 16px/1.7 var(--serif); overflow-wrap: anywhere; }
+.publisher-candidate small { display: block; color: var(--red); font-size: 9px; margin: 6px 0; overflow-wrap: anywhere; }
+.publisher-candidate>span>span { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; color: var(--muted); font: 11px/1.9 var(--serif); white-space: pre-wrap; overflow-wrap: anywhere; }
+#publisher-status { color: var(--muted); font-size: 10px; margin: 23px 0 15px; }
+.publisher-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px 25px; margin-top: 25px; }
+
 .site-footer { padding: 33px 0 19px; background: var(--ink); color: var(--paper); }
 .footer-top { display: flex; justify-content: space-between; align-items: center; gap: 25px; padding-bottom: 27px; }
 .footer-brand { font: 20px var(--serif); letter-spacing: .08em; }
@@ -348,6 +388,7 @@ dialog .eyebrow { font-size: 10px; margin-right: 25px; }
 .detail-actions .visit-button { font-size: 10px; padding: 9px 11px; }
 .journal-form { margin-top: 27px; padding: 23px; border: 1px solid var(--line); background-color: #fcfaf57a; background-image: repeating-linear-gradient(transparent,transparent 30px,#b3c2ba12 30px,#b3c2ba12 31px); }
 .journal-form-title h3 { font: 500 22px var(--serif); margin: 0 0 20px; }
+.journal-private-hint { margin: -9px 0 21px; font-size: 10px; color: var(--muted); }
 .journal-form-row { display: grid; grid-template-columns: 155px minmax(0,1fr); gap: 18px; }
 .journal-form label { display: block; font-size: 10px; color: var(--muted); margin-bottom: 15px; }
 .journal-form input:not([type=checkbox]), .journal-form textarea { display: block; width: 100%; max-width: 100%; background: #fcfaf5d9; color: var(--ink); border: 1px solid var(--line); border-radius: 0; padding: 10px 12px; margin-top: 7px; font: 12px/1.8 var(--serif); min-height: 43px; }
@@ -364,6 +405,20 @@ dialog .eyebrow { font-size: 10px; margin-right: 25px; }
 .detail-line-tags button span { width: 22px; height: 22px; border: 2px solid var(--line-color); border-radius: 50%; display: grid; place-items: center; font: 8px var(--mono); }
 .source-line { margin: 15px 0 0; font-size: 10px; line-height: 2; color: var(--muted); }
 .source-line .icon { width: 11px; height: 11px; }
+.shop-public-notes { border-top: 1px solid var(--line); padding-top: 24px; margin-top: 28px; }
+.shop-public-notes h3 { font: 500 22px/1.6 var(--serif); margin: 0 0 17px; }
+.shop-public-notes .eyebrow { margin-bottom: 8px; }
+.public-notes-empty { color: var(--muted); font: 11px/1.9 var(--serif); margin: 0 0 22px; }
+.shop-public-entry { padding: 18px; background: var(--white); border: 1px solid var(--line); margin-bottom: 15px; }
+.shop-public-entry>div { display: flex; flex-wrap: wrap; gap: 9px 15px; align-items: center; color: var(--muted); font-size: 9px; overflow-wrap: anywhere; }
+.shop-public-entry>div>span:first-child { color: var(--red); font-family: var(--mono); }
+.shop-public-entry .public-entry-note { margin-bottom: 0; font-size: 12px; line-height: 26px; }
+.public-visit-label { border: 1px solid var(--stamp); color: var(--stamp); padding: 1px 6px; transform: rotate(-6deg); font: 10px var(--serif); }
+.comment-panel { border-top: 1px solid var(--line); margin-top: 25px; }
+.comment-intro { margin: 0 0 20px; color: var(--muted); font-size: 11px; line-height: 1.9; }
+.giscus-frame { width: 100%; height: 250px; min-height: 180px; display: block; border: 0; color-scheme: light; }
+#comment-status { color: var(--muted); font-size: 10px; }
+.comment-panel>.quiet-link { display: inline-block; margin-top: 3px; }
 .about-dialog>p:not(.eyebrow) { margin: 18px 0; font-size: 12px; line-height: 2; color: var(--muted); }
 .about-dialog a { text-decoration: underline; text-underline-offset: 3px; }
 .about-dialog .photo-credit { font-size: 10px !important; padding-top: 14px; border-top: 1px solid var(--line); }
@@ -405,6 +460,7 @@ dialog .eyebrow { font-size: 10px; margin-right: 25px; }
   .brand-mark .icon { width: 24px; height: 24px; }
   .main-nav { width: 100%; justify-content: space-between; font-size: 11px; gap: 18px; }
   .main-nav a { padding: 3px 0; }
+  .main-nav { gap: 8px; }
   .nav-count { min-width: 18px; height: 18px; font-size: 9px; line-height: 18px; }
   .hero { grid-template-columns: 1fr; gap: 33px; padding: 37px 0 59px; }
   .hero .eyebrow { font-size: 9px; }
@@ -505,6 +561,18 @@ dialog .eyebrow { font-size: 10px; margin-right: 25px; }
   .list-view .ink-stamp .icon { width: 16px; height: 16px; }
   .list-view .stamp-orbit { font-size: 4px; margin-bottom: 2px; }
   .list-view .ink-stamp small { font-size: 5px; }
+  .public-journal { padding-block: 32px 40px; }
+  .public-journal-grid { grid-template-columns: 1fr; gap: 23px; }
+  .public-entry { padding: 8px; }
+  .public-entry-body { padding: 17px 7px 7px; }
+  .public-entry h3 { font-size: 22px; }
+  .public-entry-note { font-size: 12px; line-height: 26px; }
+  .public-entry-photo .public-ink-stamp { width: 90px; height: 90px; right: 8px; bottom: 8px; }
+  .public-entry-photo figcaption { max-width: calc(100% - 110px); font-size: 7px; }
+  .publisher-intro { padding: 17px; }
+  .publisher-intro h3 { font-size: 22px; }
+  #publisher-candidates { grid-template-columns: 1fr; }
+  .publisher-candidate { padding: 14px; }
   .map-section { padding: 34px 0 22px; }
   .map-toolbar { gap: 12px; padding: 12px; }
   .map-toolbar select { min-width: 0; width: 190px; font-size: 10px; }
@@ -584,6 +652,8 @@ dialog .eyebrow { font-size: 10px; margin-right: 25px; }
   .detail-actions .visit-button { font-size: 9px; }
   .journal-form { padding: 19px 15px; }
   .journal-form-title h3 { font-size: 21px; }
+  .shop-public-notes h3 { font-size: 21px; }
+  .shop-public-entry { padding: 14px; }
   .journal-form-row { grid-template-columns: 1fr; gap: 0; }
   .journal-save-status { display: block; margin: 10px 0 0; font-size: 9px; }
   .detail-line-tags { gap: 5px; }

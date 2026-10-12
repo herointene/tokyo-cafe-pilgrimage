@@ -4,6 +4,9 @@
   if (!data?.shops) return;
   const shops = data.shops;
   const byId = new Map(shops.map(s => [s.id, s]));
+  const initialParams = new URLSearchParams(location.search);
+  const editorMode = initialParams.get('editor') === '1';
+  const linkedShop = byId.has(initialParams.get('shop')) ? initialParams.get('shop') : null;
   const areas = new Map(data.areas.map(a => [a.id, a]));
   const lines = new Map(data.lines.map(l => [l.id, l]));
   const $ = selector => document.querySelector(selector);
@@ -69,6 +72,10 @@
   function writeFilters() {
     const p = new URLSearchParams();
     for (const [key,value] of Object.entries(state)) if (value && value !== ({kind:'all',status:'all',sort:'random',view:'grid'})[key]) p.set(key,value);
+    const current = new URLSearchParams(location.search);
+    if (editorMode) p.set('editor','1');
+    if (byId.has(current.get('shop'))) p.set('shop',current.get('shop'));
+    if (current.has('giscus')) p.set('giscus',current.get('giscus'));
     history.replaceState(null,'',`${location.pathname}${p.size?'?'+p:''}${location.hash}`);
   }
   function normalize(value) {
@@ -183,11 +190,26 @@
       <dl class="detail-fields">${fields.map(([term,value])=>`<div><dt>${term}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>
       ${shop.note?`<p class="detail-note">${escape(shop.note)}</p>`:''}<div class="detail-links">${external(shop.mapUrl,'Google Maps','button button-dark')}${external(shop.infoUrl,linkLabels[shop.linkType],'button button-outline')}</div>
       <div class="detail-actions">${bookmarkButton(shop,true)}${visitButton(shop)}</div>
-      <form class="journal-form" data-shop-id="${shop.id}"><div class="journal-form-title"><h3>這一杯的記憶。</h3></div><div class="journal-form-row"><label>巡禮日期<input type="date" name="date" max="${today()}" value="${escape(entry.date||today())}"></label><label>這一杯喝了什麼？<input name="drink" maxlength="100" placeholder="例如：手沖、拿鐵、喫茶店布丁…" value="${escape(entry.drink||'')}"></label></div><label>想記住的小事<textarea name="note" rows="4" maxlength="800" placeholder="窗邊的光、喜歡的杯子，或那天的心情…">${escape(entry.note||'')}</textarea></label><label class="journal-visited-check"><input type="checkbox" name="visited" ${journal.visited.has(shop.id)?'checked':''}> 我已巡禮這家店</label><button type="submit" class="button button-dark">存進手帳 ${icon('arrow')}</button><span class="journal-save-status" role="status"></span></form>
+      <form class="journal-form" data-shop-id="${shop.id}"><div class="journal-form-title"><h3>這一杯的記憶。</h3><p class="journal-private-hint">寫給自己的私人筆記，只有這個瀏覽器能看見。</p></div><div class="journal-form-row"><label>巡禮日期<input type="date" name="date" max="${today()}" value="${escape(entry.date||today())}"></label><label>這一杯喝了什麼？<input name="drink" maxlength="100" placeholder="例如：手沖、拿鐵、喫茶店布丁…" value="${escape(entry.drink||'')}"></label></div><label>想記住的小事<textarea name="note" rows="4" maxlength="800" placeholder="窗邊的光、喜歡的杯子，或那天的心情…">${escape(entry.note||'')}</textarea></label><label class="journal-visited-check"><input type="checkbox" name="visited" ${journal.visited.has(shop.id)?'checked':''}> 我已巡禮這家店</label><button type="submit" class="button button-dark">存進手帳 ${icon('arrow')}</button><span class="journal-save-status" role="status"></span></form>
       <details class="detail-reference"><summary>交通與資料來源</summary><div class="detail-line-tags">${shop.lines.map(id=>{const l=lines.get(id);return `<button type="button" data-line-filter="${id}" style="--line-color:${l.color}"><span>${id}</span>${escape(l.name)}</button>`;}).join('')}</div><p class="source-line">${external(shop.sourceUrl,'店鋪資料')}<br>照片：${external(shop.imageSource,shop.imageCredit)}${shop.imageNote?`<br>${escape(shop.imageNote)}`:''}</p></details>`;
   }
   function openDetail(shop,trigger) {
+    if (!shop) return;
     dialogShop=shop.id;returnFocus=trigger;$('#dialog-content').innerHTML=detailContent(shop);$('#shop-dialog').showModal();$('#shop-dialog').scrollTop=0;
+    const url = new URL(location.href);url.searchParams.set('shop',shop.id);history.replaceState(null,'',url);
+    document.dispatchEvent(new CustomEvent('coffee:detail',{detail:{shopId:shop.id}}));
+  }
+  function finishDetailClose() {
+    if (!dialogShop) return;
+    const fallback=$(`#shop-grid [data-id="${dialogShop}"][data-action="details"]`);
+    (returnFocus?.isConnected?returnFocus:fallback||$('#search')).focus({preventScroll:true});
+    dialogShop=null;
+    const url=new URL(location.href);url.searchParams.delete('shop');history.replaceState(null,'',url);
+    document.dispatchEvent(new CustomEvent('coffee:detail-close'));
+  }
+  function closeDialog(dialog) {
+    dialog.close();
+    if (dialog.id==='shop-dialog') finishDetailClose();
   }
   function playStamp(id) {
     if(reduced()) return;
@@ -242,18 +264,20 @@
   $('#load-more').addEventListener('click',()=>{const previous=limit;limit+=pageSize;render();const first=$('#shop-grid').children[previous];if(first){first.querySelector('.bookmark-button').focus({preventScroll:true});first.scrollIntoView({behavior:reduced()?'instant':'smooth',block:'nearest'});}});
   document.querySelectorAll('[data-diary-link]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();$('#notebook').scrollIntoView({behavior:reduced()?'instant':'smooth'});}));
   document.body.addEventListener('click',act);
-  document.body.addEventListener('click',e=>{const b=e.target.closest('[data-line-filter]');if(b){$('#shop-dialog').close();setFilter({...blankFilters,line:b.dataset.lineFilter},true);}});
+  document.body.addEventListener('click',e=>{const b=e.target.closest('[data-line-filter]');if(b){closeDialog($('#shop-dialog'));setFilter({...blankFilters,line:b.dataset.lineFilter},true);}});
   document.querySelectorAll('[data-passport]').forEach(b=>b.addEventListener('click',()=>{passportTab=b.dataset.passport;renderPassport();b.focus({preventScroll:true});}));
   $('.passport-tabs').addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...document.querySelectorAll('[data-passport]')];let i=tabs.findIndex(b=>b.dataset.passport===passportTab);i=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[i].click();});
   $('#export-journal').addEventListener('click',()=>{const payload={title:'東京咖啡巡禮手帳',version:2,exportedAt:new Date().toISOString(),saved:[...journal.saved],visited:[...journal.visited],entries:journal.entries};const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`tokyo-coffee-journal-${today()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);showToast('手帳備份已準備好，帶走這段咖啡旅程。');});
   for(const dialog of document.querySelectorAll('dialog')) {
-    dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))dialog.close();});
-    dialog.addEventListener('close',()=>{if(dialog.id==='shop-dialog'){const fallback=$(`#shop-grid [data-id="${dialogShop}"][data-action="details"]`);(returnFocus?.isConnected?returnFocus:fallback||$('#search')).focus({preventScroll:true});dialogShop=null;}});
+    dialog.querySelector('.dialog-close').addEventListener('click',()=>closeDialog(dialog));dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))closeDialog(dialog);});
+    dialog.addEventListener('cancel',event=>{event.preventDefault();closeDialog(dialog);});
+    dialog.addEventListener('close',()=>{if(dialog.id==='shop-dialog'&&!dialog.open)finishDetailClose();});
   }
   $('#about-button').addEventListener('click',()=>$('#about-dialog').showModal());
   window.addEventListener('popstate',()=>{state=readFilters();limit=pageSize;syncControls();render();});
   window.addEventListener('storage',e=>{if(e.key===storageKey||e.key===null){journal=readJournal();render();if(dialogShop&&$('#shop-dialog').open)$('#dialog-content').innerHTML=detailContent(byId.get(dialogShop));}});
-  window.CoffeeJournal={data,shops,byId,areas,lines,escape,icon,external,filteredShops,setFilter,blankFilters,getState:()=>({...state}),isVisited:id=>journal.visited.has(id),openDetail:(id,trigger)=>openDetail(byId.get(id),trigger),showToast,reduced};
+  window.CoffeeJournal={data,shops,byId,areas,lines,escape,icon,external,filteredShops,setFilter,blankFilters,getState:()=>({...state}),isVisited:id=>journal.visited.has(id),openDetail:(id,trigger)=>openDetail(byId.get(id),trigger),getOpenShop:()=>dialogShop,getJournal:()=>({visited:[...journal.visited],entries:JSON.parse(JSON.stringify(journal.entries))}),editorMode,showToast,reduced};
   if(location.hash==='#walks')history.replaceState(null,'',location.pathname+location.search+'#directory');
   drawCover();syncControls();writeFilters();render();
+  if (linkedShop) openDetail(byId.get(linkedShop));
 })();

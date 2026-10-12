@@ -11,8 +11,12 @@
 - **地圖**：探索附近店鋪，開啟 Google Maps 安排散步。
 - **交通**：沿電車路線查找咖啡車站，參考完整地下鐵與 JR 路線圖。
 - **手帳**：收藏想去的店，蓋上巡禮章，記下日期、飲品與感想。
+- **旅途手帖**：閱讀作者挑選發佈的咖啡紀錄，在店鋪頁面翻閱同一站的手帖。
+- **店鋪留言**：透過 giscus 與其他讀者交流，每家店都有獨立的 GitHub Discussion。
 
 私人手帳保存在目前瀏覽器，不會跨裝置同步。可以下載備份；清除瀏覽器資料會移除紀錄。
+
+公開手帖保存在 GitHub 倉庫，留言保存在 GitHub Discussions。閱讀留言免登入，發表留言需使用 GitHub 帳號。作者可在 [選稿頁面](https://blog.wulited.com/tokyo-cafe-pilgrimage/?editor=1#notebook) 挑選紀錄，依 [發佈方式](docs/publishing.md) 匯入並發佈。
 
 ## 店鋪與素材
 
