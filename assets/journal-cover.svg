@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f0e7"/>
+  <rect x="28" y="28" width="1144" height="574" fill="none" stroke="#dcd6ca"/>
+  <path d="M82 112H1118M82 523H1118" stroke="#dcd6ca"/>
+  <g font-family="Noto Serif CJK TC, Noto Serif TC, serif" fill="#302e28">
+    <text x="82" y="86" font-size="27" letter-spacing="3">東京咖啡巡禮</text>
+    <text x="82" y="273" font-size="97" font-weight="600">東京，</text>
+    <text x="82" y="413" font-size="97" font-weight="600">一杯一杯<tspan fill="#804939">地走。</tspan></text>
+    <text x="82" y="479" font-size="23" fill="#777367">循著街區與車站，找到下一杯咖啡。</text>
+  </g>
+  <g font-family="Courier New, monospace" font-size="16" fill="#777367" letter-spacing="2">
+    <text x="1118" y="83" text-anchor="end">TOKYO COFFEE JOURNAL</text>
+    <text x="82" y="564">69 PLACES / 16 NEIGHBORHOODS</text>
+    <text x="1118" y="564" text-anchor="end">TOKYO, ONE CUP AT A TIME.</text>
+  </g>
+  <g transform="translate(1034 238) rotate(-12)" fill="none" stroke="#804939">
+    <circle r="74" stroke-width="2"/>
+    <circle r="64" stroke-width="1" stroke-dasharray="2 4"/>
+    <path d="M-27-8H24V13C24 32 11 39-2 39S-27 32-27 13ZM24-2H34C55-2 55 24 34 24H24M-35 49H34M-16-23C-26-35-3-36-14-47M4-23C-6-35 17-36 6-47" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

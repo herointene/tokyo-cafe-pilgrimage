@@ -9,18 +9,21 @@
   <meta property="og:description" content="一本可以帶著散步的咖啡手帖。店鋪風景、街區地圖，以及自己的咖啡回憶。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://blog.wulited.com/tokyo-cafe-pilgrimage/">
-  <meta property="og:image" content="https://blog.wulited.com/tokyo-cafe-pilgrimage/assets/shops/cafe-006.webp">
+  <meta property="og:image" content="https://blog.wulited.com/tokyo-cafe-pilgrimage/assets/journal-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="東京咖啡巡禮：東京，一杯一杯地走。">
   <link rel="canonical" href="https://blog.wulited.com/tokyo-cafe-pilgrimage/">
   <title>東京咖啡巡禮 — 東京，一杯一杯地走。</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20261012-3">
-  <script src="shops.js?v=20261012-3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261012-4">
+  <script src="shops.js?v=20261012-4" defer></script>
   <script src="assets/vendor/leaflet/leaflet.js" defer></script>
-  <script src="app.js?v=20261012-3" defer></script>
-  <script src="explorer.js?v=20261012-3" defer></script>
+  <script src="app.js?v=20261012-4" defer></script>
+  <script src="explorer.js?v=20261012-4" defer></script>
 </head>
-<body data-release="20261012-3">
+<body data-release="20261012-4">
   <a class="skip-link" href="#directory">跳到店鋪圖鑑</a>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
@@ -55,24 +58,19 @@
         <p class="eyebrow">珈琲と、街と。 / TOKYO</p>
         <h1 id="hero-title">東京，<br>一杯一杯<em>地走。</em></h1>
         <p class="hero-description">轉進小巷，推開一扇門。<br>讓一杯咖啡，成為喜歡東京的另一個理由。</p>
-        <div class="hero-actions"><a class="button button-dark" href="#directory">找一間咖啡館 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="quiet-link" href="#coffee-map">在地圖上看 ↗</a></div>
+        <div class="hero-actions"><a class="button button-dark" href="#directory">翻閱咖啡風景 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="quiet-link" href="#coffee-map">沿著地圖散步 ↗</a></div>
         <p class="hero-facts"><span>69 家小店</span><span>16 片街區</span><span lang="ja">東京を、一杯ずつ。</span></p>
       </div>
       <div class="hero-art">
-        <figure class="hero-main-photo">
-          <button type="button" data-action="details" data-id="cafe-006" aria-label="查看 CONNEL COFFEE"><img src="assets/shops/cafe-006.webp" width="960" height="640" alt="CONNEL COFFEE 草月會館的長吧檯與落地玻璃窗" fetchpriority="high"></button>
-          <figcaption><a href="https://connelcoffee.jp/" target="_blank" rel="noopener noreferrer">CONNEL COFFEE · 青山一丁目 ↗</a></figcaption>
-        </figure>
-        <figure class="hero-small-photo">
-          <button type="button" data-action="details" data-id="cafe-013" aria-label="查看古民家カフェ 蓮月"><img src="assets/shops/cafe-013.webp" width="400" height="300" alt="古民家カフェ 蓮月的木造門面與藍色門簾"></button>
-          <figcaption><span lang="ja">古民家カフェ 蓮月</span><a href="https://rengetsu.net/" target="_blank" rel="noopener noreferrer" aria-label="照片來源：蓮月官網">↗</a></figcaption>
-        </figure>
-        <span class="vertical-note" lang="ja" aria-hidden="true">ときどき、寄り道。</span>
+        <div class="cover-toolbar"><p>隨手翻開的三頁東京</p><button type="button" id="shuffle-cover" aria-controls="cover-gallery" aria-label="再隨機翻開三家店">再翻幾頁 <span aria-hidden="true">↻</span></button></div>
+        <div id="cover-gallery" class="cover-gallery" role="group" aria-label="隨機翻閱的店鋪照片" aria-busy="true"></div>
+        <p id="cover-status" class="sr-only" role="status" aria-live="polite"></p>
+        <noscript><p class="cover-placeholder">69 段咖啡風景，等你翻開。<br>開啟 JavaScript 即可翻閱店鋪照片。</p></noscript>
       </div>
     </section>
 
     <section class="directory page-width" id="directory" aria-labelledby="directory-title">
-      <div class="section-heading"><div><p class="eyebrow">CAFÉ INDEX</p><h2 id="directory-title">在街區裡，找到下一杯。</h2></div><p>咖啡館、喫茶店，還有一點甜。</p></div>
+      <div class="section-heading"><div><p class="eyebrow">COFFEE PLACES</p><h2 id="directory-title">翻開東京的咖啡風景。</h2></div><p>先看看風景，再決定往哪一站。</p></div>
       <div id="selected-area" class="selected-area" hidden></div>
       <div class="directory-controls">
         <div class="search-row">
@@ -87,20 +85,20 @@
           <button type="button" data-kind="cafe" aria-pressed="false">咖啡館 <span>36</span></button>
           <button type="button" data-kind="kissaten" aria-pressed="false">喫茶店 <span>28</span></button>
           <button type="button" data-kind="sweets" aria-pressed="false">甜點 <span>5</span></button>
-        </div><label for="status" class="status-select"><span class="sr-only">巡禮狀態</span><select id="status"><option value="all">全部店鋪</option><option value="saved">想去的店</option><option value="visited">已巡禮</option><option value="unvisited">還沒去過</option></select></label></div>
+        </div><details class="browse-options" id="browse-options"><summary>翻閱選項 <span aria-hidden="true">⌄</span></summary><div class="browse-options-menu"><label for="sort">翻閱順序<select id="sort"><option value="random">隨手翻閱</option><option value="page">目錄順序</option><option value="ward">依行政區</option><option value="name">依店名</option></select></label><label for="status">巡禮狀態<select id="status"><option value="all">全部店鋪</option><option value="saved">想去的店</option><option value="visited">已巡禮</option><option value="unvisited">還沒去過</option></select></label></div></details></div>
       </div>
       <div id="active-filters" class="active-filters" hidden><span id="filter-summary"></span><button type="button" id="reset-filters">清除篩選 <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
-      <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite">69 家店鋪</p><div class="results-options"><label for="sort" class="sr-only">排序方式</label><select id="sort"><option value="page">目錄順序</option><option value="ward">依行政區</option><option value="name">依店名</option></select><div class="view-controls" role="group" aria-label="顯示方式"><button type="button" data-view="grid" aria-pressed="true" aria-label="卡片顯示"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></button><button type="button" data-view="list" aria-pressed="false" aria-label="清單顯示"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></button></div></div></div>
+      <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite">69 家店鋪</p><div class="view-controls" role="group" aria-label="顯示方式"><button type="button" data-view="grid" aria-pressed="true" aria-label="照片顯示"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></button><button type="button" data-view="list" aria-pressed="false" aria-label="清單顯示"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></button></div></div>
       <div id="shop-grid" class="shop-grid" aria-label="店鋪圖鑑"></div>
       <div id="empty-state" class="empty-state" hidden><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg><h3>這一頁，暫時留白。</h3><p id="empty-copy">換一個街區，再找找下一杯。</p><button type="button" class="button button-outline" id="empty-reset">翻閱全部店鋪</button></div>
-      <div class="load-more-wrap" id="load-more-wrap" hidden><p id="page-count"></p><button class="button button-outline" type="button" id="load-more">繼續翻閱 <span>＋9 家</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <div class="load-more-wrap" id="load-more-wrap" hidden><p id="page-count"></p><button class="button button-outline" type="button" id="load-more">繼續翻閱 <span>＋6 家</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
       <noscript><p>開啟 JavaScript 即可搜尋店鋪與使用手帳。<a href="data/shops.json">查看完整店鋪資料</a>。</p></noscript>
     </section>
 
     <section class="map-section" id="coffee-map" aria-labelledby="map-title"><div class="page-width">
       <div class="section-heading"><div><p class="eyebrow">WANDER</p><h2 id="map-title">把東京，走成自己的地圖。</h2></div><p>點一枚圖釘，看看附近的風景。</p></div>
       <div class="map-toolbar"><label for="map-area"><span class="sr-only">地圖街區</span><select id="map-area"><option value="">所有街區</option></select></label><div><button type="button" id="map-city">東京都心</button><button type="button" id="map-fit">全部圖釘</button></div><span id="map-count" role="status">69 家店鋪</span></div>
-      <div class="map-workspace"><aside class="map-shop-list" aria-label="地圖上的店鋪"><div class="map-list-title">附近的小店 <span id="map-list-total">69</span></div><div id="map-shop-list"></div></aside><div class="map-canvas-wrap"><div id="shop-map" aria-label="東京咖啡店鋪互動地圖"></div><div class="map-legend"><span><i class="legend-dot"></i>店鋪</span><span><i class="legend-dot visited-dot"></i>已巡禮</span></div><p id="map-unavailable" hidden>底圖暫時無法載入，可由店鋪連結開啟 Google Maps。</p></div></div>
+      <div class="map-workspace"><aside class="map-shop-list" aria-label="地圖上的店鋪"><div class="map-list-title">地圖上的小店 <span id="map-list-total">69</span></div><div id="map-shop-list"></div></aside><div class="map-canvas-wrap"><div id="shop-map" aria-label="東京咖啡店鋪互動地圖"></div><div class="map-legend"><span><i class="legend-dot"></i>店鋪</span><span><i class="legend-dot visited-dot"></i>已巡禮</span></div><p id="map-unavailable" hidden>底圖暫時無法載入，可由店鋪連結開啟 Google Maps。</p></div></div>
       <p class="map-source-note">位置供散步參考，店面入口請查看店家 Google Maps。</p>
     </div></section>
 

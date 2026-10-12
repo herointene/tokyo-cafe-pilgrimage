@@ -8,6 +8,8 @@
   const lines = new Map(data.lines.map(l => [l.id, l]));
   const $ = selector => document.querySelector(selector);
   const storageKey = 'tokyo-coffee-journal-v1';
+  const coverStorageKey = 'tokyo-coffee-cover-v1';
+  const pageSize = 6, coverSize = 3;
   const kinds = { cafe: '咖啡館', kissaten: '喫茶店', sweets: '甜點時間' };
   const linkLabels = { website: '官方網站', instagram: '官方 Instagram', social: '官方社群', facility: '設施官方介紹', blog: '官方部落格', unconfirmed: '店鋪資訊' };
   const photoLabels = { interior: '店內風景', exterior: '門面風景', menu: '這家店的一杯', collage: '店鋪風景', food: '餐點與甜品' };
@@ -17,7 +19,18 @@
   const external = (url, text, cls = '') => `<a class="${cls}" href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(text)} ${icon('external')}</a>`;
   const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
   const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let limit = 9, dialogShop = null, returnFocus = null, toastTimer, storageAvailable = true, passportTab = 'saved';
+  const browseOrder = new Map(shuffled(shops).map((shop, index) => [shop.id, index]));
+  let coverShops = [];
+  let limit = pageSize, dialogShop = null, returnFocus = null, toastTimer, storageAvailable = true, passportTab = 'saved';
+
+  function shuffled(items) {
+    const result = [...items];
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
 
   function cleanEntries(raw) {
     const entries = {};
@@ -50,12 +63,12 @@
     const p = new URLSearchParams(location.search);
     const known = (key, choices, fallback) => choices.includes(p.get(key)) ? p.get(key) : fallback;
     const stations = [...new Set(shops.flatMap(s => s.stationLines.map(st => st.station)))];
-    return { q:(p.get('q')||'').slice(0,150), kind:known('kind',['all',...Object.keys(kinds)],'all'), ward:known('ward',wards,''), area:known('area',[...areas.keys()],'')||(new Map([['ginza','ginza'],['east','asakusa'],['aoyama','aoyama']]).get(p.get('route'))||''), line:known('line',[...lines.keys()],''), station:known('station',stations,''), status:known('status',['all','saved','visited','unvisited'],'all'), sort:known('sort',['page','ward','name'],'page'), view:known('view',['grid','list'],'grid') };
+    return { q:(p.get('q')||'').slice(0,150), kind:known('kind',['all',...Object.keys(kinds)],'all'), ward:known('ward',wards,''), area:known('area',[...areas.keys()],'')||(new Map([['ginza','ginza'],['east','asakusa'],['aoyama','aoyama']]).get(p.get('route'))||''), line:known('line',[...lines.keys()],''), station:known('station',stations,''), status:known('status',['all','saved','visited','unvisited'],'all'), sort:known('sort',['random','page','ward','name'],'random'), view:known('view',['grid','list'],'grid') };
   }
   let state = readFilters();
   function writeFilters() {
     const p = new URLSearchParams();
-    for (const [key,value] of Object.entries(state)) if (value && value !== ({kind:'all',status:'all',sort:'page',view:'grid'})[key]) p.set(key,value);
+    for (const [key,value] of Object.entries(state)) if (value && value !== ({kind:'all',status:'all',sort:'random',view:'grid'})[key]) p.set(key,value);
     history.replaceState(null,'',`${location.pathname}${p.size?'?'+p:''}${location.hash}`);
   }
   function normalize(value) {
@@ -65,6 +78,7 @@
   function filteredShops() {
     const tokens = normalize(state.q).trim().split(/\s+/).filter(Boolean);
     const result = shops.filter(s => (state.kind==='all'||state.kind===s.kind) && (!state.ward||state.ward===s.ward) && (!state.area||state.area===s.areaId) && (!state.line||s.lines.includes(state.line)) && (!state.station||s.stationLines.some(st=>st.station===state.station)) && (state.status!=='saved'||journal.saved.has(s.id)) && (state.status!=='visited'||journal.visited.has(s.id)) && (state.status!=='unvisited'||!journal.visited.has(s.id)) && tokens.every(t=>searchText.get(s.id).includes(t)));
+    if (state.sort==='random') result.sort((a,b)=>browseOrder.get(a.id)-browseOrder.get(b.id));
     if (state.sort==='ward') result.sort((a,b)=>a.ward.localeCompare(b.ward,'ja')||a.page-b.page);
     if (state.sort==='name') result.sort((a,b)=>a.name.localeCompare(b.name,'ja'));
     return result;
@@ -79,7 +93,33 @@
   }
   function stamp(shop, ghost = false) {
     const date = journal.entries[shop.id]?.date;
-    return `<span class="ink-stamp${ghost?' stamp-ghost':''}" data-stamp-id="${shop.id}" aria-label="${escape(shop.name)} 已巡禮${date?' '+date:''}"><span class="stamp-orbit">TOKYO COFFEE PILGRIMAGE</span>${icon('cup')}<strong>巡禮済</strong><small>${date?escape(date.replaceAll('-','.')):'一杯ずつ、街を歩く'}</small></span>`;
+    return `<span class="ink-stamp${ghost?' stamp-ghost':''}" data-stamp-id="${shop.id}" ${ghost?'aria-hidden="true"':`aria-label="${escape(shop.name)} 已巡禮${date?' '+date:''}"`}><span class="stamp-orbit">TOKYO COFFEE PILGRIMAGE</span>${icon('cup')}<strong>巡禮済</strong><small>${date?escape(date.replaceAll('-','.')):'一杯ずつ、街を歩く'}</small></span>`;
+  }
+  function drawCover() {
+    let previous = coverShops.map(shop => shop.id);
+    if (!previous.length) {
+      try {
+        const stored = JSON.parse(sessionStorage.getItem(coverStorageKey) || '[]');
+        if (Array.isArray(stored)) previous = stored.filter(id => byId.has(id));
+      } catch {}
+    }
+    const pool = shops.filter(shop => !previous.includes(shop.id));
+    coverShops = shuffled(pool.length >= coverSize ? pool : shops).slice(0, coverSize);
+    try { sessionStorage.setItem(coverStorageKey, JSON.stringify(coverShops.map(shop => shop.id))); } catch {}
+    $('#cover-gallery').innerHTML = coverShops.map((shop, index) => `<figure class="cover-photo${index===0?' cover-photo-main':''}" data-cover-id="${shop.id}">
+      <div class="cover-image"><button type="button" class="cover-photo-open" data-action="details" data-id="${shop.id}" aria-label="翻開 ${escape(shop.name)}"><img src="${escape(shop.image)}" alt="${escape(shop.imageAlt)}" width="960" height="640" loading="eager" decoding="async" ${index===0?'fetchpriority="high"':''}></button>${bookmarkButton(shop)}${journal.visited.has(shop.id)?stamp(shop):''}<a class="cover-credit" href="${escape(shop.imageSource)}" target="_blank" rel="noopener noreferrer" aria-label="照片來源：${escape(shop.imageCredit)}" title="${escape(shop.imageCredit)}">${escape(shop.imageCredit)} ↗</a></div>
+      <figcaption><span class="cover-area">${escape(areas.get(shop.areaId).name)} · ${kinds[shop.kind]}</span><button type="button" class="cover-name" data-action="details" data-id="${shop.id}" lang="ja"><span>${escape(shop.name)}</span><span aria-hidden="true">↗</span></button><span class="cover-station">${escape(shop.station)} 站</span></figcaption></figure>`).join('');
+    $('#cover-gallery').setAttribute('aria-busy', 'false');
+    $('#cover-status').textContent = `這次翻開：${coverShops.map(shop => shop.name).join('、')}。`;
+  }
+  function syncCoverJournal() {
+    for (const shop of coverShops) {
+      const cover = $(`[data-cover-id="${shop.id}"]`);
+      if (!cover) continue;
+      cover.querySelector('.bookmark-button').outerHTML = bookmarkButton(shop);
+      cover.querySelector('.ink-stamp')?.remove();
+      if (journal.visited.has(shop.id)) cover.querySelector('.cover-image').insertAdjacentHTML('beforeend', stamp(shop));
+    }
   }
   function photo(shop, cls = '', stampVisible = true) {
     const detail = cls.includes('detail-photo');
@@ -87,10 +127,10 @@
   }
   function card(shop) {
     return `<article class="shop-card${journal.visited.has(shop.id)?' has-visited':''}" data-id="${shop.id}" data-kind="${shop.kind}" aria-labelledby="name-${shop.id}">
-      ${photo(shop)}<div class="card-body"><div class="card-top"><span class="category-label"><span class="category-dot" aria-hidden="true"></span>${kinds[shop.kind]}</span>${bookmarkButton(shop)}</div>
-      <div class="card-name-row"><h3 id="name-${shop.id}" lang="ja">${escape(shop.name)}</h3></div>
-      <p class="card-location">${escape(areas.get(shop.areaId).name)}</p><p class="card-station">${icon('pin')} ${escape(shop.station)} 站</p><p class="card-description">${escape(shop.description)}</p>
-      <div class="card-links">${external(shop.infoUrl,linkLabels[shop.linkType])}${external(shop.mapUrl,'Google Maps')}</div><div class="card-bottom">${visitButton(shop)}<button type="button" class="details-button" data-action="details" data-id="${shop.id}" aria-label="查看 ${escape(shop.name)} 的店鋪資訊">寫一頁筆記 ${icon('arrow')}</button></div></div></article>`;
+      <div class="card-cover">${photo(shop)}${bookmarkButton(shop)}</div><div class="card-body"><div class="card-top"><span class="category-label"><span class="category-dot" aria-hidden="true"></span>${kinds[shop.kind]}</span><span class="card-location">${escape(areas.get(shop.areaId).name)}</span></div>
+      <div class="card-name-row"><h3 id="name-${shop.id}" lang="ja"><button type="button" class="card-title" data-action="details" data-id="${shop.id}">${escape(shop.name)}</button></h3></div>
+      <p class="card-station">${icon('pin')} ${escape(shop.station)} 站</p><p class="card-description">${escape(shop.description)}</p>
+      <div class="card-links">${external(shop.infoUrl,linkLabels[shop.linkType])}${external(shop.mapUrl,'Google Maps')}</div><div class="card-bottom">${visitButton(shop)}<button type="button" class="details-button" data-action="details" data-id="${shop.id}" aria-label="查看 ${escape(shop.name)} 的店鋪資訊">翻開這家店 ${icon('arrow')}</button></div></div></article>`;
   }
   function renderAreas() {
     $('#area-index').innerHTML=data.areas.map(a=>`<button type="button" data-area="${a.id}" aria-pressed="${state.area===a.id}"><span>${escape(a.name)}</span><b>${a.count}</b></button>`).join('');
@@ -124,14 +164,14 @@
     $('#results-count').innerHTML=`<b>${matched.length}</b> 家店鋪${matched.length<shops.length?` · 共 ${shops.length} 家`:""}`;
     $('#empty-state').hidden=matched.length>0;
     $('#empty-copy').textContent=state.status==='saved'&&!journal.saved.size?'按下照片旁的書籤，把下一杯想去的地方收進手帖。':state.status==='visited'&&!journal.visited.size?'蓋下第一枚巡禮章，記下已經喝過的那一杯。':'換個車站、街區或關鍵字，再找找下一杯。';
-    $('#load-more-wrap').hidden=matched.length<=shown.length;$('#page-count').textContent=`已翻閱 ${shown.length} / ${matched.length} 家`;$('#load-more span').textContent=`＋${Math.min(9,matched.length-shown.length)} 家`;
+    $('#load-more-wrap').hidden=matched.length<=shown.length;$('#page-count').textContent=`已翻閱 ${shown.length} / ${matched.length} 家`;$('#load-more span').textContent=`＋${Math.min(pageSize,matched.length-shown.length)} 家`;
     const labels=[];if(state.q.trim()) labels.push(`「${state.q.trim()}」`);if(state.kind!=='all') labels.push(kinds[state.kind]);if(state.ward) labels.push(state.ward);if(state.area) labels.push(areas.get(state.area).name);if(state.line) labels.push(lines.get(state.line).name);if(state.station) labels.push(state.station+' 站');if(state.status!=='all') labels.push({saved:'想去的店',visited:'已巡禮',unvisited:'還沒去過'}[state.status]);
     $('#active-filters').hidden=!labels.length;$('#filter-summary').textContent=labels.join(' · ');
-    renderSelectedArea();updateProgress();renderPassport();
+    renderSelectedArea();updateProgress();renderPassport();syncCoverJournal();
     document.dispatchEvent(new CustomEvent('coffee:render',{detail:{shops:matched,state:{...state}}}));
   }
   function setFilter(changes,scroll=false) {
-    Object.assign(state,changes);limit=9;syncControls();writeFilters();render();
+    Object.assign(state,changes);limit=pageSize;syncControls();writeFilters();render();
     if(scroll) $('#directory').scrollIntoView({behavior:reduced()?'instant':'smooth'});
   }
   const blankFilters={q:'',kind:'all',ward:'',area:'',line:'',station:'',status:'all'};
@@ -157,6 +197,7 @@
   function act(event) {
     const button=event.target.closest('button[data-action]');if(!button) return;
     const {action,id}=button.dataset,shop=byId.get(id);if(!shop) return;
+    const fromCover = !!button.closest('#cover-gallery');
     if(action==='details'){openDetail(shop,button);return;}
     if(!['saved','visited'].includes(action)) return;
     const adding=!journal[action].has(id);adding?journal[action].add(id):journal[action].delete(id);
@@ -170,7 +211,7 @@
       const form=content.querySelector('.journal-form');form.elements.visited.checked=journal.visited.has(id);
       $(`#dialog-content .detail-actions [data-action="${action}"]`).focus({preventScroll:true});
     }
-    else $(`#shop-grid [data-id="${id}"][data-action="${action}"]`)?.focus({preventScroll:true});
+    else $(`${fromCover?'#cover-gallery':'#shop-grid'} [data-id="${id}"][data-action="${action}"]`)?.focus({preventScroll:true});
     if(action==='visited'&&adding) playStamp(id);
     showToast(storageAvailable?(action==='saved'?(adding?'已收進手帖，留給下一次散步。':'已取消收藏。'):(adding?'咚！巡禮章已蓋下，記住這一杯。':'已取消這枚巡禮章。')):'瀏覽器無法儲存紀錄；本次開啟期間仍可使用。');
   }
@@ -192,10 +233,13 @@
   document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setFilter({view:b.dataset.view})));
   document.querySelectorAll('[data-area]').forEach(b=>b.addEventListener('click',()=>{setFilter({...blankFilters,area:b.dataset.area});$('#neighborhoods').open=false;$('#neighborhoods summary').focus({preventScroll:true});}));
   $('#all-areas').addEventListener('click',()=>{setFilter(blankFilters);$('#neighborhoods').open=false;$('#neighborhoods summary').focus({preventScroll:true});});
-  $('#neighborhoods').addEventListener('keydown',e=>{if(e.key==='Escape'){$('#neighborhoods').open=false;$('#neighborhoods summary').focus();}});
-  document.addEventListener('click',e=>{if(!$('#neighborhoods').contains(e.target))$('#neighborhoods').open=false;});
+  for (const picker of document.querySelectorAll('#neighborhoods, #browse-options')) {
+    picker.addEventListener('keydown',e=>{if(e.key==='Escape'){picker.open=false;picker.querySelector('summary').focus();}});
+    document.addEventListener('click',e=>{if(!picker.contains(e.target))picker.open=false;});
+  }
+  $('#shuffle-cover').addEventListener('click',drawCover);
   $('#reset-filters').addEventListener('click',resetFilters);$('#empty-reset').addEventListener('click',resetFilters);
-  $('#load-more').addEventListener('click',()=>{const previous=limit;limit+=9;render();const first=$('#shop-grid').children[previous];if(first){first.querySelector('.bookmark-button').focus({preventScroll:true});first.scrollIntoView({behavior:reduced()?'instant':'smooth',block:'nearest'});}});
+  $('#load-more').addEventListener('click',()=>{const previous=limit;limit+=pageSize;render();const first=$('#shop-grid').children[previous];if(first){first.querySelector('.bookmark-button').focus({preventScroll:true});first.scrollIntoView({behavior:reduced()?'instant':'smooth',block:'nearest'});}});
   document.querySelectorAll('[data-diary-link]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();$('#notebook').scrollIntoView({behavior:reduced()?'instant':'smooth'});}));
   document.body.addEventListener('click',act);
   document.body.addEventListener('click',e=>{const b=e.target.closest('[data-line-filter]');if(b){$('#shop-dialog').close();setFilter({...blankFilters,line:b.dataset.lineFilter},true);}});
@@ -207,9 +251,9 @@
     dialog.addEventListener('close',()=>{if(dialog.id==='shop-dialog'){const fallback=$(`#shop-grid [data-id="${dialogShop}"][data-action="details"]`);(returnFocus?.isConnected?returnFocus:fallback||$('#search')).focus({preventScroll:true});dialogShop=null;}});
   }
   $('#about-button').addEventListener('click',()=>$('#about-dialog').showModal());
-  window.addEventListener('popstate',()=>{state=readFilters();limit=9;syncControls();render();});
+  window.addEventListener('popstate',()=>{state=readFilters();limit=pageSize;syncControls();render();});
   window.addEventListener('storage',e=>{if(e.key===storageKey||e.key===null){journal=readJournal();render();if(dialogShop&&$('#shop-dialog').open)$('#dialog-content').innerHTML=detailContent(byId.get(dialogShop));}});
   window.CoffeeJournal={data,shops,byId,areas,lines,escape,icon,external,filteredShops,setFilter,blankFilters,getState:()=>({...state}),isVisited:id=>journal.visited.has(id),openDetail:(id,trigger)=>openDetail(byId.get(id),trigger),showToast,reduced};
   if(location.hash==='#walks')history.replaceState(null,'',location.pathname+location.search+'#directory');
-  syncControls();writeFilters();render();
+  drawCover();syncControls();writeFilters();render();
 })();

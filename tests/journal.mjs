@@ -16,6 +16,32 @@ try {
   await page.goto(base);await page.evaluate(()=>localStorage.setItem('tokyo-coffee-journal-v1',JSON.stringify({saved:['cafe-012'],visited:['cafe-043']})));
   await reset();assert.equal(await page.locator('#nav-saved').innerText(),'1');assert.equal(await page.locator('#visited-total').innerText(),'1');
   await page.evaluate(()=>localStorage.removeItem('tokyo-coffee-journal-v1'));await reset();
+  const cover = async () => {
+    await page.waitForFunction(()=>document.querySelectorAll('.cover-photo').length===3 && [...document.querySelectorAll('.cover-photo img')].every(i=>i.complete&&i.naturalWidth>0));
+    const result = await page.evaluate(()=>{
+      const shops=new Map(window.CAFE_DATA.shops.map(s=>[s.id,s]));
+      const figures=[...document.querySelectorAll('[data-cover-id]')];
+      return {ids:figures.map(f=>f.dataset.coverId),provenance:figures.every(f=>{
+        const s=shops.get(f.dataset.coverId),image=f.querySelector('img'),credit=f.querySelector('.cover-credit');
+        return s && image.getAttribute('src')===s.image && image.alt===s.imageAlt && credit.getAttribute('href')===s.imageSource && credit.textContent.includes(s.imageCredit) && f.querySelector('.cover-name span').textContent===s.name;
+      })};
+    });
+    assert.equal(new Set(result.ids).size,3);assert.equal(result.provenance,true);return result.ids;
+  };
+  let previousCover=await cover();
+  const savedCoverId=previousCover[0];
+  await page.locator(`[data-cover-id="${savedCoverId}"] .bookmark-button`).click();
+  assert.equal(await page.locator('#nav-saved').innerText(),'1');
+  assert.equal(await page.evaluate(()=>document.activeElement.closest('[data-cover-id]')?.dataset.coverId),savedCoverId);
+  await page.locator('#shuffle-cover').focus();await page.keyboard.press('Enter');
+  let nextCover=await cover();assert.ok(nextCover.every(id=>!previousCover.includes(id)));
+  assert.equal(await page.evaluate(id=>JSON.parse(localStorage.getItem('tokyo-coffee-journal-v1')).saved.includes(id),savedCoverId),true);
+  assert.equal(await page.evaluate(()=>document.activeElement.id),'shuffle-cover');
+  previousCover=nextCover;
+  for(let i=0;i<3;i++) {await page.reload();await count(69);nextCover=await cover();assert.ok(nextCover.every(id=>!previousCover.includes(id)));previousCover=nextCover;}
+  await page.locator('.cover-photo-open').first().click();await page.locator('#shop-dialog').waitFor({state:'visible'});
+  assert.equal(await page.locator('#dialog-title').innerText(),await page.evaluate(id=>window.CAFE_DATA.shops.find(s=>s.id===id).name,previousCover[0]));await page.keyboard.press('Escape');
+  await page.evaluate(()=>{sessionStorage.setItem('tokyo-coffee-cover-v1','invalid json');localStorage.removeItem('tokyo-coffee-journal-v1');});await reset();await cover();
   await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/desktop-cover.png`});
   assert.equal(await page.locator('#area-index button').count(),16);
   assert.equal(await page.locator('.main-nav a').count(),4);
@@ -23,9 +49,20 @@ try {
   assert.doesNotMatch(await page.locator('main').innerText(),/CHAPTER|BONUS PAGES|用户更正|已更正|原始目錄/);
   const publishedNotes=await page.evaluate(()=>window.CAFE_DATA.shops.map(s=>[s.sourceNote,s.note].filter(Boolean).join(' ')).join(' '));
   assert.doesNotMatch(publishedNotes,/用户更正|用戶更正|已更正|原始目錄|原表店名|gorp\.jp/);
-  assert.equal(await page.locator('.shop-card .shop-photo img').count(),9);
+  assert.equal(await page.locator('.shop-card .shop-photo img').count(),6);
+  assert.equal(await page.locator('#browse-options').getAttribute('open'),null);
+  assert.equal(await page.locator('#sort').inputValue(),'random');
   await scroll('#directory');await page.locator('.shop-card img').first().evaluate(image=>image.decode());
   await page.screenshot({path:`${output}/photo-directory.png`});
+  const initialOrder=await page.locator('.shop-card').evaluateAll(cards=>cards.map(c=>c.dataset.id));
+  await page.locator('#load-more').click();assert.deepEqual(await page.locator('.shop-card').evaluateAll(cards=>cards.slice(0,6).map(c=>c.dataset.id)),initialOrder);
+  await page.locator('#browse-options summary').click();await page.locator('#sort').selectOption('page');
+  assert.equal(await page.locator('.shop-card').first().getAttribute('data-id'),'cafe-001');
+  await page.locator('#sort').selectOption('random');assert.deepEqual(await page.locator('.shop-card').evaluateAll(cards=>cards.map(c=>c.dataset.id)),initialOrder);
+  await page.locator('#sort').focus();await page.keyboard.press('Escape');assert.equal(await page.locator('#browse-options').getAttribute('open'),null);
+  assert.equal(await page.locator('.card-links').first().isVisible(),false);
+  await page.locator('[data-view="list"]').click();assert.equal(await page.locator('.card-links').first().isVisible(),true);
+  await page.locator('[data-view="grid"]').click();assert.deepEqual(await page.locator('.shop-card').evaluateAll(cards=>cards.map(c=>c.dataset.id)),initialOrder);
   while(await page.locator('#load-more-wrap').isVisible()) await page.locator('#load-more').click();
   assert.equal(await page.locator('.shop-card').count(),69);
   const imageChecks=await page.evaluate(async()=>{
@@ -89,7 +126,9 @@ try {
     await page.setViewportSize({width,height:900});await reset();
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`Page overflow at ${width}`);
     if(width===390){await page.screenshot({path:`${output}/mobile-cover.png`});await scroll('#directory');await page.screenshot({path:`${output}/mobile-photos.png`});await scroll('#coffee-map');await page.screenshot({path:`${output}/mobile-map.png`});await scroll('#notebook');await page.screenshot({path:`${output}/mobile-passport.png`});}
+    await page.locator('[data-view="list"]').click();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`List overflow at ${width}`);
     await page.locator('#shop-grid .details-button').first().click();assert.equal(await page.locator('#shop-dialog').evaluate(dialog=>dialog.scrollWidth<=dialog.clientWidth),true,`Dialog overflow at ${width}`);await page.keyboard.press('Escape');
+    await page.locator('[data-view="grid"]').click();
   }
   await page.goto(base+'?route=ginza');await count(10);assert.match(page.url(),/area=ginza/);
   await page.goto(base+'?route=constructor&area=unknown&kind=bad');await count(69);
@@ -101,5 +140,5 @@ try {
   assert.equal(await page.locator('#shop-grid .ink-stamp').count(),0); // Undo existing stamp first.
   await page.locator('#shop-grid [data-action="visited"]').click();assert.equal(await page.locator('#shop-grid .ink-stamp').evaluate(el=>getComputedStyle(el).animationName),'none');
   assert.deepEqual(errors,[]);
-  console.log('PASS: unified catalogue, reader-facing copy, 69 photos, 16 neighborhoods, legacy links, maps, stamps, notes, railway references, keyboard access, reduced motion and 320–1440px layouts.');
+  console.log('PASS: changing random covers and photo credits, stable shuffled browsing, gallery/list views, 69 photos, 16 neighborhoods, maps, stamps, journal preservation, railway references, keyboard access, reduced motion and 320–1440px layouts.');
 } finally {await browser.close();}
