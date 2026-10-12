@@ -77,7 +77,7 @@
     "address": "東京都渋谷区初台1-38-10 二名ビル2F",
     "sourceUrl": "https://fuzkue.com/shops/hatsudai",
     "description": "帶上一本書，把一段安靜的讀書時間留給初台。",
-    "note": "以安靜閱讀為主的店，入店前請查看官方使用方式與收費。",
+    "note": "以安靜閱讀為主，入店方式與收費見官網。",
     "mapUrl": "https://goo.gl/maps/TKTxwuVwKecbENAq6"
   },
   "cafe-012": {
@@ -86,7 +86,6 @@
     "address": "東京都世田谷区代沢5-32-12",
     "sourceUrl": "https://rblcafe.jp/",
     "description": "下北澤的書與咖啡，讓好奇心帶你翻到下一頁。",
-    "note": "原始目錄第 021 頁已更正為 RBL CAFE。",
     "mapUrl": "https://goo.gl/maps/fERKQo3eNjYfiTmd6"
   },
   "cafe-013": {
@@ -102,7 +101,7 @@
     "address": "東京都あきる野市戸倉208-2",
     "sourceUrl": "https://recomoon.amebaownd.com/",
     "description": "把巡禮延伸到東京西邊，探訪戶倉的小山咖啡館。",
-    "note": "武蔵五日市下車後仍需轉乘；臨時休業請查看官方公告。"
+    "note": "武蔵五日市站下車後需轉乘。"
   },
   "cafe-015": {
     "officialUrl": "https://www.instagram.com/tokyo_station_cafe_/",
@@ -133,7 +132,7 @@
     "address": "東京都墨田区本所2-16-5 KAIKA東京1F",
     "sourceUrl": "https://safn.jp/",
     "description": "在美術倉庫的氛圍裡，享受咖啡與甜點的相遇。",
-    "note": "官方說明僅接受非現金支付。"
+    "note": "僅接受非現金支付。"
   },
   "cafe-019": {
     "officialUrl": "https://cafe.warehouseofart.org/",
@@ -149,7 +148,7 @@
     "address": "東京都港区三田3-16-1 MoN Takanawa 1F",
     "sourceUrl": "https://www.spiral.co.jp/access",
     "description": "在 MoN 高輪的文化散步中，帶走一杯咖啡。",
-    "note": "外帶式咖啡館；目前入口與交通以官方資訊為準。",
+    "note": "提供外帶咖啡與輕食。",
     "mapUrl": "https://maps.app.goo.gl/4EcysMhfyfAx3DHR7"
   },
   "cafe-021": {
@@ -171,8 +170,7 @@
     "linkType": "unconfirmed",
     "address": "東京都港区南青山5-9-5 村山ビル2F",
     "sourceUrl": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
-    "description": "表參道的路口之外，南青山二樓的喫茶一站。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。"
+    "description": "表參道的路口之外，南青山二樓的喫茶一站。"
   },
   "cafe-024": {
     "officialUrl": "https://x.com/9mama34",
@@ -186,8 +184,7 @@
     "linkType": "unconfirmed",
     "address": "東京都品川区東五反田5-27-12 扇寿ビルB1F",
     "sourceUrl": "https://www.enjoytokyo.jp/spot/l_20016110/",
-    "description": "五反田車站旁的地下空間，留給一杯深焙咖啡。",
-    "note": "尚未確認店家自營官網或官方社群；原有 gorp.jp 連結已轉向第三方餐廳目錄，另提供店鋪資訊來源。"
+    "description": "五反田車站旁的地下空間，留給一杯深焙咖啡。"
   },
   "cafe-026": {
     "officialUrl": "https://www.afm-teahouse.com/aoyama",
@@ -225,7 +222,7 @@
     "address": "東京都板橋区中丸町50-2 2F",
     "sourceUrl": "https://www.as-craft.com/news/",
     "description": "家具、古道具與虹吸咖啡，在大山的散步裡相遇。",
-    "note": "連結為經營者 AS.CRAFT 的店鋪介紹；營業日期不固定，請查看官方最新公告。"
+    "note": "營業日期不固定，出發前請查看營業公告。"
   },
   "cafe-031": {
     "officialUrl": "https://www.instagram.com/hamorebi.tokyo/",
@@ -240,7 +237,7 @@
     "address": "東京都台東区浅草4-7-11 2F",
     "sourceUrl": "https://annorum.jp/cafe/",
     "description": "淺草的二樓咖啡館，給安靜的時光留一個位置。",
-    "note": "店家請客人輕聲交談。"
+    "note": "請輕聲交談。"
   },
   "cafe-033": {
     "officialUrl": "https://www.toraya-group.co.jp/shops/shop-6",
@@ -319,7 +316,6 @@
     "address": "東京都台東区蔵前4-14-11 ウグイスビル1F",
     "sourceUrl": "https://www.fromafar-tokyo.com/kissahangetsu",
     "description": "蔵前的新喫茶半月，讓散步停在咖啡與甜點之間。",
-    "note": "目前地址為蔵前4-14-11；請勿前往舊址4-31-11。",
     "mapUrl": "https://maps.app.goo.gl/w5PV3k8zrcWYYPD5A"
   },
   "cafe-044": {
@@ -342,7 +338,6 @@
     "address": "東京都大田区大森北1-36-2",
     "sourceUrl": "https://tabelog.com/tokyo/A1315/A131502/13008294/",
     "description": "大森北的昭和喫茶，收藏街角的老時光。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
     "mapUrl": "https://maps.app.goo.gl/crbhUxa1yVyiKgtK9"
   },
   "cafe-047": {
@@ -350,16 +345,14 @@
     "linkType": "unconfirmed",
     "address": "東京都杉並区高円寺南3-56-7",
     "sourceUrl": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
-    "description": "走進高圓寺南，在名曲喫茶裡停留一會兒。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。"
+    "description": "走進高圓寺南，在名曲喫茶裡停留一會兒。"
   },
   "cafe-048": {
     "officialUrl": "https://metro-net.co.jp/",
     "linkType": "website",
     "address": "東京都新宿区歌舞伎町1-6-12 ハナミチ東京歌舞伎町2F",
     "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000029.000028177.html",
-    "description": "在歌舞伎町的新址，遇見珈琲西武的昭和風景。",
-    "note": "本店已遷至歌舞伎町；連結為經營者新宿メトログループ。"
+    "description": "在歌舞伎町的新址，遇見珈琲西武的昭和風景。"
   },
   "cafe-049": {
     "officialUrl": "https://www.instagram.com/kojyo_kyoko/",
@@ -373,8 +366,7 @@
     "linkType": "facility",
     "address": "東京都千代田区有楽町2-10-1 東京交通会館B1F",
     "sourceUrl": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
-    "description": "有樂町的地下喫茶，在東京交通會館喝一杯。",
-    "note": "原表店名「ローヤル」；館方官方名稱為「ローヤル」。"
+    "description": "有樂町的地下喫茶，在東京交通會館喝一杯。"
   },
   "cafe-051": {
     "officialUrl": "http://www.jazzeigakan.com/",
@@ -410,8 +402,7 @@
     "linkType": "unconfirmed",
     "address": "東京都千代田区神田駿河台4-5-3 御茶ノ水穂高ビル1F",
     "sourceUrl": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
-    "description": "御茶之水車站旁，山小屋般的一段喫茶時光。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。"
+    "description": "御茶之水車站旁，山小屋般的一段喫茶時光。"
   },
   "cafe-056": {
     "officialUrl": null,
@@ -419,7 +410,7 @@
     "address": "東京都西多摩郡日の出町大久野1157",
     "sourceUrl": "https://tokyogrown.jp/node/571846",
     "description": "東京西邊的木工與喫茶，把一日旅途延伸到日之出町。",
-    "note": "尚未確認自營官網；提供東京都農林水產振興財團的介紹。萱窪巴士站下車即達。"
+    "note": "萱窪巴士站下車即達。"
   },
   "cafe-057": {
     "officialUrl": "https://www.instagram.com/hatou_coffee_shibuya/",
@@ -433,8 +424,7 @@
     "linkType": "unconfirmed",
     "address": "東京都世田谷区代沢5-36-14 湯浅ビル2F",
     "sourceUrl": "https://www.kanko-setagaya.jp/activity/view/600",
-    "description": "下北澤的老喫茶，從代澤的二樓看一段街景。",
-    "note": "尚未確認自營官網；提供世田谷觀光協會的店鋪介紹。"
+    "description": "下北澤的老喫茶，從代澤的二樓看一段街景。"
   },
   "cafe-059": {
     "officialUrl": "https://www.instagram.com/coffee_lawn/",
@@ -449,7 +439,6 @@
     "address": "東京都中野区鷺宮1-27-3",
     "sourceUrl": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
     "description": "都立家政的老喫茶，在中庭風景旁享用午餐。",
-    "note": "尚未確認自營官網；提供西武鐵道的採訪介紹。",
     "mapUrl": "https://maps.app.goo.gl/okd6UUvZSKCmqME66"
   },
   "cafe-061": {
@@ -464,8 +453,7 @@
     "linkType": "website",
     "address": "東京都千代田区神田小川町3-1-7",
     "sourceUrl": "https://visit-chiyoda.tokyo/app/spot/detail/834",
-    "description": "在神保町的書香之間，停留在一杯咖啡裡。",
-    "note": "官網連結由千代田區觀光協會的店鋪資料確認。"
+    "description": "在神保町的書香之間，停留在一杯咖啡裡。"
   },
   "cafe-063": {
     "officialUrl": "https://www.instagram.com/kissaamerican/",
@@ -479,16 +467,14 @@
     "linkType": "unconfirmed",
     "address": "東京都港区西新橋1-20-11 安藤ビル1F",
     "sourceUrl": "https://chikudays.com/omise/tokyo_hkkerun/",
-    "description": "西新橋的喫茶小店，留一站給咖啡與布丁。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。"
+    "description": "西新橋的喫茶小店，留一站給咖啡與布丁。"
   },
   "cafe-065": {
     "officialUrl": null,
     "linkType": "unconfirmed",
     "address": "東京都台東区浅草3-8-4",
     "sourceUrl": "https://asakusanioideyo.com/56/1018/",
-    "description": "淺草三丁目的喫茶，讓散步走得更深一點。",
-    "note": "尚未確認自營官網；提供淺草商店聯合會的店鋪介紹。"
+    "description": "淺草三丁目的喫茶，讓散步走得更深一點。"
   },
   "cafe-066": {
     "officialUrl": "https://www.instagram.com/kissa_you/",
@@ -517,7 +503,6 @@
     "linkType": "unconfirmed",
     "address": "東京都墨田区江東橋4-26-12",
     "sourceUrl": "https://www.kinshi-scope.com/sp/shop/1094.html",
-    "description": "錦糸町的老喫茶，把今天的一站留給ニット。",
-    "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。"
+    "description": "錦糸町的老喫茶，把今天的一站留給ニット。"
   }
 }

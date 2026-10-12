@@ -127,7 +127,7 @@
     "ward": "世田谷区",
     "neighborhood": "代沢・下北沢",
     "station": "下北沢",
-    "sourceNote": "用户更正；地址：代沢5-32-12",
+    "sourceNote": "",
     "id": "cafe-012",
     "sourceRow": 17
   },
@@ -468,7 +468,7 @@
     "ward": "台東区",
     "neighborhood": "蔵前",
     "station": "蔵前",
-    "sourceNote": "現址：蔵前4-14-11；旧址と混同注意",
+    "sourceNote": "",
     "id": "cafe-043",
     "sourceRow": 48
   },

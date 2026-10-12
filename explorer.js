@@ -8,7 +8,7 @@
   const cityBounds=[[35.53,139.58],[35.79,139.88]];
 
   function mapPopup(shop) {
-    return `<div class="map-popup"><img src="${escape(shop.image)}" alt="${escape(shop.imageAlt)}" width="450" height="300"><a class="map-popup-credit" href="${escape(shop.imageSource)}" target="_blank" rel="noopener noreferrer">${escape(shop.imageCredit)} ↗</a><h3>${escape(shop.name)}</h3><p>${escape(areas.get(shop.areaId).name)} · ${escape(shop.station)} 站</p><p>${shop.coordinatePrecision==='shop'?'已核對店鋪座標':shop.coordinatePrecision==='approximate'?'街區約略位置，請由 Google Maps 確認店址':'地址定位，入口請參考 Google Maps'}${api.isVisited(shop.id)?' · 已蓋巡禮章':''}</p><div class="map-popup-actions"><button type="button" data-popup-shop="${shop.id}">照片與店鋪筆記 ↗</button>${external(shop.mapUrl,'Google Maps')}</div></div>`;
+    return `<div class="map-popup"><img src="${escape(shop.image)}" alt="${escape(shop.imageAlt)}" width="450" height="300"><a class="map-popup-credit" href="${escape(shop.imageSource)}" target="_blank" rel="noopener noreferrer">${escape(shop.imageCredit)} ↗</a><h3>${escape(shop.name)}</h3><p>${escape(areas.get(shop.areaId).name)} · ${escape(shop.station)} 站</p><p>${shop.coordinatePrecision==='approximate'?'街區約略位置，請查看店家地圖':shop.coordinatePrecision==='address'?'地址定位，入口請查看店家地圖':''}${api.isVisited(shop.id)?' · 已蓋巡禮章':''}</p><div class="map-popup-actions"><button type="button" data-popup-shop="${shop.id}">照片與店鋪筆記 ↗</button>${external(shop.mapUrl,'Google Maps')}</div></div>`;
   }
   function initializeMap() {
     if(map||!window.L) return;
@@ -35,7 +35,7 @@
       marker.on('click',()=>selectListItem(shop.id));markers.set(shop.id,marker);
     }
     const state=api.getState();
-    if(state.area||state.line||state.station||state.q||state.ward||state.status!=='all'||state.kind!=='all'||state.route) fitCurrent();
+    if(state.area||state.line||state.station||state.q||state.ward||state.status!=='all'||state.kind!=='all') fitCurrent();
     else if(initial) map.fitBounds(cityBounds,{padding:[12,12],animate:false});
     if(selectedMarker&&markers.has(selectedMarker))markers.get(selectedMarker).openPopup();
   }
@@ -48,7 +48,7 @@
     selectListItem(id);map.setView(marker.getLatLng(),Math.max(map.getZoom(),15),{animate:!api.reduced()});marker.openPopup();
   }
   function renderMapList() {
-    $('#map-count').textContent=`${matched.length} 家咖啡座標`;
+    $('#map-count').textContent=`${matched.length} 家店鋪`;
     $('#map-list-total').textContent=matched.length;
     $('#map-shop-list').innerHTML=matched.length?matched.map(s=>`<button type="button" class="map-list-item" data-map-shop="${s.id}"><img src="${escape(s.image)}" alt="${escape(s.imageAlt)}" width="100" height="100" loading="lazy"><span><strong>${escape(s.name)}</strong><small>${escape(s.station)} 站 · ${escape(areas.get(s.areaId).name)}</small>${api.isVisited(s.id)?'<span class="map-visited-label">巡禮済</span>':''}</span></button>`).join(''):'<p class="map-list-empty">這片範圍暫時沒有店鋪。換一片街區，或清除目錄篩選。</p>';
   }

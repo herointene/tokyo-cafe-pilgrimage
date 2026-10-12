@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Merge the lossless Excel import with researched links and produce browser data."""
+"""Build the cafe catalogue from shop records, photographs, and geography."""
 
 import argparse
 import json
 from collections import Counter
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit
+
+from public_notes import public_note
 
 ROOT = Path(__file__).resolve().parents[1]
 CATEGORIES = {"カフェ編": "cafe", "人気スイーツ": "sweets", "喫茶店編": "kissaten"}
@@ -25,6 +27,9 @@ def build():
     for row in source:
         extra = research[row["id"]]
         shop = {**row, **extra, **geography["shops"][row["id"]], **photos[row["id"]], "kind": CATEGORIES[row["category"]]}
+        shop["sourceNote"] = public_note(shop.get("sourceNote"))
+        if "note" in shop:
+            shop["note"] = public_note(shop["note"])
         if not (ROOT / shop["image"]).is_file():
             raise ValueError(f"Missing photo for {row['name']}")
         if not (35 < shop["lat"] < 36.5 and 138.5 < shop["lng"] < 140.5):

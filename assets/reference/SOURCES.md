@@ -1,49 +1,21 @@
-# Railway map preview sources
+# 電車路線圖來源
 
-Checked on 2026-10-12. These small previews accompany the cafe route commentary
-and link visitors to the complete maps published by the railway operators.
-The PDFs are not redistributed by this site.
+## 東京地下鐵與都營線
 
-## metro-map-preview.webp
+- 預覽：日文完整路線圖，2023 年 3 月版。
+- 作者：東京都交通局、東京 Metro。
+- [預覽圖刊載頁](https://tokyo.letsgojp.com/archives/81715/)
+- [官方繁體中文 PDF](https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf)
+- [Tokyo Metro 路線圖](https://www.tokyometro.jp/tcn/subwaymap/index.html)
 
-- Content: the complete Tokyo Metro / Toei subway map, Japanese, March 2023.
-- Author: Tokyo Metropolitan Bureau of Transportation / Tokyo Metro.
-- Public image quoted for the preview:
-  https://d1grca2t3zpuug.cloudfront.net/2026/02/subwaymapnew-1740x1000-1771320765.webp
-- Public page carrying the image:
-  https://tokyo.letsgojp.com/archives/81715/
-- Current official Traditional Chinese PDF linked by the site:
-  https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf
-- Official map directory:
-  https://www.tokyometro.jp/tcn/subwaymap/index.html
+## JR East 東京近郊線
 
-The thumbnail is Japanese; opening the official link provides the Traditional
-Chinese map. It is not described as a rendering of that Traditional Chinese PDF.
+- 預覽：完整路線網，2024 年 3 月 16 日版。
+- 作者：JR 東日本。
+- [預覽圖來源](https://shopping.jreast.co.jp/products/detail/s001/s001-C025684)
+- [官方完整 PDF](https://www.jreast.co.jp/map/pdf/map_tokyo.pdf)
+- [JR East 路線圖](https://www.jreast.co.jp/map/)
 
-## jr-map-preview.webp
+路線圖權利屬各鐵路公司。轉乘、停靠車站與班次請以官方最新資訊為準。
 
-- Content: the complete JR East Tokyo suburban railway network, 2024-03-16.
-- Author: East Japan Railway Company.
-- Public official product image quoted for the preview:
-  https://shopping.jreast.co.jp/media/shop/S001/product/S001-C025684/type/2
-- Original official product page:
-  https://shopping.jreast.co.jp/products/detail/s001/s001-C025684
-- Current official map PDF linked by the site:
-  https://www.jreast.co.jp/map/pdf/map_tokyo.pdf
-- Official map directory:
-  https://www.jreast.co.jp/map/
-
-Only the white product-photo margins were removed; the entire printed network,
-its legend, and its date remain visible. The product listing is now discontinued;
-the public official image remains available.
-
-## Preparation
-
-The operator PDF downloads reject this research client's network requests.
-The previews therefore quote the public images above, rather than claiming
-successful downloads or PDF rendering. The real official PDF links remain the
-destination for detailed route planning and current operator information.
-
-The smaller coffee station diagrams in the application use the independently
-compiled station sequences in data/geography.json. They omit non-catalogue
-stations and are explicitly labelled as cafe route schematics.
+手帖內的咖啡車站示意圖只列附近有收錄店鋪的車站，省略中間站。

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Read the cafe workbook without dependencies; preserve every catalogue column."""
+"""Import the cafe catalogue and its visitor information."""
 
 import argparse
 import json
 from collections import Counter
 from pathlib import Path
+
+from public_notes import public_note
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
@@ -40,6 +42,7 @@ def read_workbook(path):
             if values.get("B") not in {"カフェ編", "人気スイーツ", "喫茶店編"}:
                 continue
             shop = dict(zip(FIELDS, (values.get(c, "") for c in "ABCDEFG")))
+            shop["sourceNote"] = public_note(shop["sourceNote"])
             shop["page"] = int(shop["page"])
             shop["id"] = f"cafe-{len(shops) + 1:03d}"
             shop["sourceRow"] = int(row.get("r"))

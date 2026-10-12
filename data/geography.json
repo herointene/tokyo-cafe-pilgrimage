@@ -2879,16 +2879,12 @@
       "checkedAt": "2026-10-12"
     }
   ],
-  "coordinateNotes": {
-    "shop": "已核對店鋪名稱與完整地址，採用官網、官方觀光協會或店鋪目錄公開標記的店鋪位置；入口仍請開啟店鋪 Google Maps 確認。",
-    "address": "依核對地址或所在建築定位，入口位置仍請開啟店鋪 Google Maps。",
-    "approximate": "地址服務僅回傳街區或地番代表點，請以店鋪 Google Maps 及官方交通方式為準。"
-  },
+  "coordinateNotes": "店鋪點與地址定位點分別標示，店面入口請以店家地圖為準。",
   "coordinateAttribution": {
     "title": "国土地理院 地名・住所検索",
     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch",
     "termsUrl": "https://maps.gsi.go.jp/help/termsofuse.html"
   },
-  "transitNote": "路線列表是 Excel 所列車站的主要可用路線參照，不表示全部運行系統、停靠列車或最佳轉乘方案；直通與班次請查各鐵路官方路線圖。",
+  "transitNote": "咖啡車站圖省略中間站，完整路線與轉乘請參考各鐵路官方資料。",
   "schematicNote": "coffeeStations 按同線站序列出本目錄相關車站，省略其他車站；只有山手線標為環線。這是咖啡巡禮站點示意資料，不是完整運行圖。"
 }

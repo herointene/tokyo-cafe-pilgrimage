@@ -18,8 +18,12 @@ try {
   await page.evaluate(()=>localStorage.removeItem('tokyo-coffee-journal-v1'));await reset();
   await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/desktop-cover.png`});
   assert.equal(await page.locator('#area-index button').count(),16);
-  assert.equal(await page.locator('#area option').count(),17);
-  assert.equal(await page.locator('.shop-card .shop-photo img').count(),12);
+  assert.equal(await page.locator('.main-nav a').count(),4);
+  assert.equal(await page.locator('#walks, #area-featured').count(),0);
+  assert.doesNotMatch(await page.locator('main').innerText(),/CHAPTER|BONUS PAGES|用户更正|已更正|原始目錄/);
+  const publishedNotes=await page.evaluate(()=>window.CAFE_DATA.shops.map(s=>[s.sourceNote,s.note].filter(Boolean).join(' ')).join(' '));
+  assert.doesNotMatch(publishedNotes,/用户更正|用戶更正|已更正|原始目錄|原表店名|gorp\.jp/);
+  assert.equal(await page.locator('.shop-card .shop-photo img').count(),9);
   await scroll('#directory');await page.locator('.shop-card img').first().evaluate(image=>image.decode());
   await page.screenshot({path:`${output}/photo-directory.png`});
   while(await page.locator('#load-more-wrap').isVisible()) await page.locator('#load-more').click();
@@ -31,7 +35,7 @@ try {
   });
   assert.equal(imageChecks.filter(r=>r.status!==200||!r.type.startsWith('image/')||r.bytes<1000).length,0,JSON.stringify(imageChecks.filter(r=>r.status!==200)));
 
-  await reset();await page.locator('#area-index [data-area="ginza"]').click();await count(10);
+  await reset();await page.locator('#neighborhoods summary').click();await page.locator('#area-index [data-area="ginza"]').click();await count(10);
   assert.equal(await page.locator('#selected-area').isVisible(),true);
   assert.match(page.url(),/area=ginza/);assert.equal(await page.locator('#map-area').inputValue(),'ginza');
   await scroll('#coffee-map');await page.waitForSelector('.coffee-pin');assert.equal(await page.locator('.coffee-pin').count(),10);
@@ -74,7 +78,9 @@ try {
   await scroll('#transit');await page.locator('#train-line').selectOption('TY');await page.locator('#browse-line').click();
   const expected=await page.evaluate(()=>window.CAFE_DATA.shops.filter(s=>s.lines.includes('TY')).length);await count(expected);
   await scroll('#transit');await page.locator('#train-line').selectOption('G');await page.screenshot({path:`${output}/train-reference.png`});
-  assert.equal(await page.locator('.transit-reference-image img').evaluateAll(imgs=>imgs.every(img=>img.complete&&img.naturalWidth>0)),true);
+  await page.locator('#full-routes summary').click();
+  await page.locator('.transit-reference-image').first().scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>[...document.querySelectorAll('.transit-reference-image img')].every(img=>img.complete&&img.naturalWidth>0));
   await page.locator('[data-reference="metro-map"]').click();await page.locator('#reference-dialog').waitFor({state:'visible'});
   await page.locator('#reference-plus').click();assert.equal(await page.locator('#reference-zoom').innerText(),'150%');
   assert.match(await page.locator('#reference-source').getAttribute('href'),/tokyometro/);await page.keyboard.press('Escape');
@@ -85,10 +91,15 @@ try {
     if(width===390){await page.screenshot({path:`${output}/mobile-cover.png`});await scroll('#directory');await page.screenshot({path:`${output}/mobile-photos.png`});await scroll('#coffee-map');await page.screenshot({path:`${output}/mobile-map.png`});await scroll('#notebook');await page.screenshot({path:`${output}/mobile-passport.png`});}
     await page.locator('#shop-grid .details-button').first().click();assert.equal(await page.locator('#shop-dialog').evaluate(dialog=>dialog.scrollWidth<=dialog.clientWidth),true,`Dialog overflow at ${width}`);await page.keyboard.press('Escape');
   }
+  await page.goto(base+'?route=ginza');await count(10);assert.match(page.url(),/area=ginza/);
+  await page.goto(base+'?route=constructor&area=unknown&kind=bad');await count(69);
+  await page.locator('#search').fill('RBL');await page.locator('#shop-grid .details-button').click();
+  assert.doesNotMatch(await page.locator('#dialog-content').innerText(),/更正|原始目錄|原書頁碼|查核|校對/);await page.keyboard.press('Escape');
+  await page.locator('#about-button').click();assert.doesNotMatch(await page.locator('#about-dialog').innerText(),/Excel|目錄來自你|更正|生成|第二版/);await page.keyboard.press('Escape');
   // Respect the OS motion preference while keeping the physical stamp visible.
   await page.emulateMedia({reducedMotion:'reduce'});await reset();await page.locator('#search').fill('RBL');await page.locator('#shop-grid [data-action="visited"]').click();
   assert.equal(await page.locator('#shop-grid .ink-stamp').count(),0); // Undo existing stamp first.
   await page.locator('#shop-grid [data-action="visited"]').click();assert.equal(await page.locator('#shop-grid .ink-stamp').evaluate(el=>getComputedStyle(el).animationName),'none');
   assert.deepEqual(errors,[]);
-  console.log('PASS: 69 real photos, 16 neighborhoods, map filtering/popups, stamp animation and persistence, unfinished note preservation, notebook/export, railway station links, full route previews, keyboard access, reduced motion and 320–1440px layouts.');
+  console.log('PASS: unified catalogue, reader-facing copy, 69 photos, 16 neighborhoods, legacy links, maps, stamps, notes, railway references, keyboard access, reduced motion and 320–1440px layouts.');
 } finally {await browser.close();}
