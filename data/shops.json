@@ -1,7 +1,1146 @@
 {
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-12",
   "total": 69,
   "districts": 20,
+  "areas": [
+    {
+      "id": "ginza",
+      "name": "銀座・日比谷",
+      "jaName": "銀座・日比谷",
+      "subtitle": "洋菓子、茶香與老派喫茶",
+      "description": "從銀座巷口的喫茶到日比谷的飯店沙龍，把和菓子與咖啡排成一頁午後手帖。",
+      "accent": "#a55045",
+      "shopIds": [
+        "cafe-007",
+        "cafe-033",
+        "cafe-035",
+        "cafe-038",
+        "cafe-044",
+        "cafe-045",
+        "cafe-050",
+        "cafe-053",
+        "cafe-063",
+        "cafe-066"
+      ],
+      "count": 10,
+      "neighborhoods": [
+        "内幸町・日比谷",
+        "銀座七丁目",
+        "銀座・GINZA SIX",
+        "銀座二丁目",
+        "銀座七丁目",
+        "銀座五丁目",
+        "有楽町・東京交通会館",
+        "銀座八丁目",
+        "銀座四丁目・東銀座",
+        "銀座四丁目・東銀座"
+      ],
+      "stations": [
+        "日比谷",
+        "銀座",
+        "銀座一丁目",
+        "東銀座／銀座",
+        "有楽町",
+        "新橋",
+        "東銀座"
+      ],
+      "center": [
+        35.670726,
+        139.76415
+      ],
+      "lines": [
+        "H",
+        "C",
+        "I",
+        "G",
+        "M",
+        "Y",
+        "A",
+        "JY",
+        "JK"
+      ]
+    },
+    {
+      "id": "tokyo-nihonbashi",
+      "name": "丸之內・日本橋",
+      "jaName": "丸の内・日本橋",
+      "subtitle": "紅磚車站旁的一杯",
+      "description": "在丸之內的歷史建築與日本橋的街角之間，找一間適合出發或旅途停靠的店。",
+      "accent": "#6c7975",
+      "shopIds": [
+        "cafe-001",
+        "cafe-015",
+        "cafe-016",
+        "cafe-017",
+        "cafe-037"
+      ],
+      "count": 5,
+      "neighborhoods": [
+        "日本橋本町",
+        "丸の内・東京駅北ドーム",
+        "丸の内",
+        "丸の内・三菱一号館",
+        "日本橋室町・COREDO室町テラス"
+      ],
+      "stations": [
+        "三越前",
+        "東京",
+        "二重橋前〈丸の内〉",
+        "二重橋前〈丸の内〉／東京",
+        "三越前／新日本橋"
+      ],
+      "center": [
+        35.682587,
+        139.768112
+      ],
+      "lines": [
+        "G",
+        "Z",
+        "JY",
+        "JK",
+        "JC",
+        "JO",
+        "M",
+        "C"
+      ]
+    },
+    {
+      "id": "aoyama",
+      "name": "表參道・青山",
+      "jaName": "表参道・青山",
+      "subtitle": "花、設計與烘焙香",
+      "description": "沿著表參道、Cat Street 與青山一丁目，收藏花店茶屋和講究空間的咖啡。",
+      "accent": "#7b8559",
+      "shopIds": [
+        "cafe-004",
+        "cafe-006",
+        "cafe-010",
+        "cafe-023",
+        "cafe-026",
+        "cafe-034"
+      ],
+      "count": 6,
+      "neighborhoods": [
+        "神宮前・Cat Street",
+        "赤坂・草月会館",
+        "南青山",
+        "南青山",
+        "南青山",
+        "南青山"
+      ],
+      "stations": [
+        "明治神宮前〈原宿〉",
+        "青山一丁目",
+        "表参道"
+      ],
+      "center": [
+        35.665348,
+        139.715424
+      ],
+      "lines": [
+        "C",
+        "F",
+        "G",
+        "Z",
+        "E"
+      ]
+    },
+    {
+      "id": "shibuya",
+      "name": "澀谷・惠比壽・代官山",
+      "jaName": "渋谷・恵比寿・代官山",
+      "subtitle": "熱鬧街頭的慢一拍",
+      "description": "從澀谷喫茶、代官山小店到惠比壽飯店沙龍，在不同節奏裡挑一張座位。",
+      "accent": "#ba825b",
+      "shopIds": [
+        "cafe-008",
+        "cafe-024",
+        "cafe-057"
+      ],
+      "count": 3,
+      "neighborhoods": [
+        "三田・恵比寿ガーデンプレイス",
+        "猿楽町・代官山",
+        "渋谷一丁目"
+      ],
+      "stations": [
+        "恵比寿",
+        "代官山",
+        "渋谷"
+      ],
+      "center": [
+        35.650646,
+        139.706747
+      ],
+      "lines": [
+        "JY",
+        "H",
+        "TY",
+        "G",
+        "Z",
+        "F",
+        "DT",
+        "IN"
+      ]
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷・學藝大學",
+      "jaName": "世田谷・学芸大学",
+      "subtitle": "沿電車走進日常",
+      "description": "下北澤、三軒茶屋、經堂、學藝大學與二子玉川，以車站為一頁，把住宅街的小店逐站收好。",
+      "accent": "#7f8066",
+      "shopIds": [
+        "cafe-002",
+        "cafe-003",
+        "cafe-012",
+        "cafe-029",
+        "cafe-039",
+        "cafe-052",
+        "cafe-058"
+      ],
+      "count": 7,
+      "neighborhoods": [
+        "中央町",
+        "太子堂",
+        "代沢・下北沢",
+        "宮坂",
+        "玉川・二子玉川",
+        "鷹番",
+        "代沢・下北沢"
+      ],
+      "stations": [
+        "学芸大学",
+        "三軒茶屋",
+        "下北沢",
+        "経堂",
+        "二子玉川"
+      ],
+      "center": [
+        35.641515,
+        139.664361
+      ],
+      "lines": [
+        "TY",
+        "DT",
+        "SG",
+        "OH",
+        "IN",
+        "OM"
+      ]
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿・四谷・初台",
+      "jaName": "新宿・四谷・初台",
+      "subtitle": "霓虹之外的閱讀角落",
+      "description": "歌舞伎町的洋館喫茶、四谷的經典座位與初台的讀書店，留給城市裡安靜的一段。",
+      "accent": "#86616b",
+      "shopIds": [
+        "cafe-011",
+        "cafe-048",
+        "cafe-059"
+      ],
+      "count": 3,
+      "neighborhoods": [
+        "初台",
+        "歌舞伎町",
+        "四谷"
+      ],
+      "stations": [
+        "初台",
+        "西武新宿／新宿",
+        "四ツ谷"
+      ],
+      "center": [
+        35.68668,
+        139.706332
+      ],
+      "lines": [
+        "KO",
+        "SS",
+        "JY",
+        "JC",
+        "JB",
+        "OH",
+        "M",
+        "S",
+        "E",
+        "N"
+      ]
+    },
+    {
+      "id": "kagurazaka",
+      "name": "神樂坂",
+      "jaName": "神楽坂",
+      "subtitle": "坡道與可麗餅",
+      "description": "從飯田橋或牛込神樂坂進入小巷，為一份法式可麗餅留出散步的空白。",
+      "accent": "#ab956b",
+      "shopIds": [
+        "cafe-009"
+      ],
+      "count": 1,
+      "neighborhoods": [
+        "神楽坂"
+      ],
+      "stations": [
+        "牛込神楽坂／飯田橋"
+      ],
+      "center": [
+        35.701813,
+        139.739639
+      ],
+      "lines": [
+        "E",
+        "JB",
+        "T",
+        "Y",
+        "N"
+      ]
+    },
+    {
+      "id": "jinbocho",
+      "name": "神保町・御茶之水",
+      "jaName": "神保町・御茶ノ水",
+      "subtitle": "書頁間的深焙",
+      "description": "古書街與神田小川町的咖啡香相鄰；逛完書店，再找一間地下室或樓上的喫茶。",
+      "accent": "#786858",
+      "shopIds": [
+        "cafe-054",
+        "cafe-055",
+        "cafe-062",
+        "cafe-068"
+      ],
+      "count": 4,
+      "neighborhoods": [
+        "神田小川町・神保町",
+        "神田駿河台",
+        "神田小川町",
+        "神田神保町"
+      ],
+      "stations": [
+        "神保町",
+        "御茶ノ水",
+        "神保町／御茶ノ水／小川町"
+      ],
+      "center": [
+        35.696609,
+        139.761565
+      ],
+      "lines": [
+        "I",
+        "Z",
+        "S",
+        "JC",
+        "JB",
+        "M"
+      ]
+    },
+    {
+      "id": "ueno-yanesen",
+      "name": "上野・根津・本鄉",
+      "jaName": "上野・根津・本郷",
+      "subtitle": "老東京的生活紋理",
+      "description": "在上野、入谷、根津、白山與本鄉之間，記錄舊浴場、爵士和歷史街角的咖啡。",
+      "accent": "#9b7458",
+      "shopIds": [
+        "cafe-021",
+        "cafe-022",
+        "cafe-049",
+        "cafe-051",
+        "cafe-067"
+      ],
+      "count": 5,
+      "neighborhoods": [
+        "根津",
+        "下谷",
+        "東上野",
+        "白山",
+        "本郷"
+      ],
+      "stations": [
+        "根津",
+        "入谷",
+        "上野",
+        "白山",
+        "東大前"
+      ],
+      "center": [
+        35.717369,
+        139.768158
+      ],
+      "lines": [
+        "C",
+        "H",
+        "JY",
+        "JK",
+        "G",
+        "I",
+        "N"
+      ]
+    },
+    {
+      "id": "asakusa",
+      "name": "淺草・藏前・淺草橋",
+      "jaName": "浅草・蔵前・浅草橋",
+      "subtitle": "隅田川兩岸的古物與喫茶",
+      "description": "淺草的經典座位、藏前的甜點與淺草橋的小店，讓古物、河岸和一杯咖啡串成一天。",
+      "accent": "#738d8c",
+      "shopIds": [
+        "cafe-018",
+        "cafe-031",
+        "cafe-032",
+        "cafe-043",
+        "cafe-065"
+      ],
+      "count": 5,
+      "neighborhoods": [
+        "本所",
+        "浅草橋",
+        "浅草",
+        "蔵前",
+        "浅草三丁目"
+      ],
+      "stations": [
+        "浅草",
+        "浅草橋",
+        "蔵前"
+      ],
+      "center": [
+        35.708864,
+        139.793697
+      ],
+      "lines": [
+        "G",
+        "A",
+        "JB",
+        "E"
+      ]
+    },
+    {
+      "id": "east-tokyo",
+      "name": "門前仲町・錦糸町・龜戶",
+      "jaName": "門前仲町・錦糸町・亀戸",
+      "subtitle": "下町的甜香與早餐",
+      "description": "從深川的花與麵包，到錦糸町與龜戶的日常喫茶，以三個車站收集東京東側的味道。",
+      "accent": "#a88362",
+      "shopIds": [
+        "cafe-028",
+        "cafe-042",
+        "cafe-069"
+      ],
+      "count": 3,
+      "neighborhoods": [
+        "富岡・門前仲町",
+        "亀戸八丁目",
+        "江東橋・錦糸町"
+      ],
+      "stations": [
+        "門前仲町",
+        "亀戸水神",
+        "錦糸町"
+      ],
+      "center": [
+        35.689587,
+        139.816152
+      ],
+      "lines": [
+        "T",
+        "E",
+        "TK",
+        "JB",
+        "JO",
+        "Z"
+      ]
+    },
+    {
+      "id": "minato",
+      "name": "新橋・麻布台",
+      "jaName": "新橋・麻布台",
+      "subtitle": "茶、布丁與都心小憩",
+      "description": "在新橋的茶香與手作布丁之間，再添上麻布台的法式甜點，留一頁給辦公街裡的休息時間。",
+      "accent": "#627c77",
+      "shopIds": [
+        "cafe-036",
+        "cafe-040",
+        "cafe-064"
+      ],
+      "count": 3,
+      "neighborhoods": [
+        "新橋六丁目",
+        "麻布台ヒルズ",
+        "西新橋"
+      ],
+      "stations": [
+        "御成門",
+        "神谷町／六本木一丁目",
+        "虎ノ門／内幸町"
+      ],
+      "center": [
+        35.664144,
+        139.748695
+      ],
+      "lines": [
+        "I",
+        "H",
+        "N",
+        "G"
+      ]
+    },
+    {
+      "id": "south-tokyo",
+      "name": "品川・大森・池上",
+      "jaName": "品川・大森・池上",
+      "subtitle": "運河、古民家與經典喫茶",
+      "description": "高輪與天王洲的開放空間、五反田的咖啡地下室，再往南到大森與池上的老店。",
+      "accent": "#71808d",
+      "shopIds": [
+        "cafe-013",
+        "cafe-019",
+        "cafe-020",
+        "cafe-025",
+        "cafe-046"
+      ],
+      "count": 5,
+      "neighborhoods": [
+        "池上",
+        "東品川・天王洲",
+        "高輪・三田",
+        "東五反田",
+        "大森北"
+      ],
+      "stations": [
+        "池上",
+        "天王洲アイル",
+        "泉岳寺",
+        "五反田",
+        "大森"
+      ],
+      "center": [
+        35.610406,
+        139.728744
+      ],
+      "lines": [
+        "IK",
+        "R",
+        "MO",
+        "A",
+        "KK",
+        "JY",
+        "JK"
+      ]
+    },
+    {
+      "id": "ikebukuro-itabashi",
+      "name": "池袋・板橋",
+      "jaName": "池袋・板橋",
+      "subtitle": "乾燥花與住宅街咖啡",
+      "description": "從池袋西口的花與咖啡，搭東上線到大山、中板橋，翻看住宅街的另一面。",
+      "accent": "#998b66",
+      "shopIds": [
+        "cafe-027",
+        "cafe-030",
+        "cafe-041",
+        "cafe-061"
+      ],
+      "count": 4,
+      "neighborhoods": [
+        "西池袋",
+        "中丸町",
+        "中板橋",
+        "西池袋"
+      ],
+      "stations": [
+        "池袋",
+        "大山",
+        "中板橋"
+      ],
+      "center": [
+        35.741024,
+        139.703018
+      ],
+      "lines": [
+        "JY",
+        "M",
+        "Y",
+        "F",
+        "SI",
+        "TJ"
+      ]
+    },
+    {
+      "id": "west-neighborhoods",
+      "name": "高圓寺・鷺宮",
+      "jaName": "高円寺・鷺宮",
+      "subtitle": "中央線與西武線的喫茶日常",
+      "description": "高圓寺的藝術小店與都立家政附近的庭園、午餐喫茶，適合按車站安排各自的半日。",
+      "accent": "#8d7371",
+      "shopIds": [
+        "cafe-005",
+        "cafe-047",
+        "cafe-060"
+      ],
+      "count": 3,
+      "neighborhoods": [
+        "中村南",
+        "高円寺南",
+        "鷺宮"
+      ],
+      "stations": [
+        "都立家政",
+        "高円寺"
+      ],
+      "center": [
+        35.717871,
+        139.646707
+      ],
+      "lines": [
+        "SS",
+        "JC",
+        "JB"
+      ]
+    },
+    {
+      "id": "akigawa",
+      "name": "秋川・日之出",
+      "jaName": "秋川・日の出",
+      "subtitle": "把咖啡帶進山色",
+      "description": "以武藏五日市為轉乘起點，沿秋川與日之出找一間小店；出發前記得核對巴士班次。",
+      "accent": "#749070",
+      "shopIds": [
+        "cafe-014",
+        "cafe-056"
+      ],
+      "count": 2,
+      "neighborhoods": [
+        "戸倉",
+        "大久野"
+      ],
+      "stations": [
+        "武蔵五日市"
+      ],
+      "center": [
+        35.735439,
+        139.220724
+      ],
+      "lines": [
+        "JI"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "id": "G",
+      "name": "銀座線",
+      "jaName": "銀座線",
+      "color": "#f39700",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "渋谷",
+        "表参道",
+        "青山一丁目",
+        "虎ノ門",
+        "新橋",
+        "銀座",
+        "三越前",
+        "上野",
+        "浅草"
+      ]
+    },
+    {
+      "id": "M",
+      "name": "丸之內線",
+      "jaName": "丸ノ内線",
+      "color": "#e60012",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "池袋",
+        "御茶ノ水",
+        "東京",
+        "銀座",
+        "四ツ谷",
+        "新宿"
+      ]
+    },
+    {
+      "id": "H",
+      "name": "日比谷線",
+      "jaName": "日比谷線",
+      "color": "#9caeb7",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "入谷",
+        "上野",
+        "東銀座",
+        "銀座",
+        "日比谷",
+        "神谷町",
+        "恵比寿"
+      ]
+    },
+    {
+      "id": "T",
+      "name": "東西線",
+      "jaName": "東西線",
+      "color": "#00a7db",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "飯田橋",
+        "門前仲町"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "千代田線",
+      "jaName": "千代田線",
+      "color": "#009944",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "明治神宮前〈原宿〉",
+        "表参道",
+        "日比谷",
+        "二重橋前〈丸の内〉",
+        "根津"
+      ]
+    },
+    {
+      "id": "Y",
+      "name": "有樂町線",
+      "jaName": "有楽町線",
+      "color": "#d7c447",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "池袋",
+        "飯田橋",
+        "有楽町",
+        "銀座一丁目"
+      ]
+    },
+    {
+      "id": "Z",
+      "name": "半藏門線",
+      "jaName": "半蔵門線",
+      "color": "#9b7cb6",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "渋谷",
+        "表参道",
+        "青山一丁目",
+        "神保町",
+        "三越前",
+        "錦糸町"
+      ]
+    },
+    {
+      "id": "N",
+      "name": "南北線",
+      "jaName": "南北線",
+      "color": "#00ada9",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "六本木一丁目",
+        "四ツ谷",
+        "飯田橋",
+        "東大前"
+      ]
+    },
+    {
+      "id": "F",
+      "name": "副都心線",
+      "jaName": "副都心線",
+      "color": "#9c5e31",
+      "sourceUrl": "https://www.tokyometro.jp/station/index.html",
+      "coffeeStations": [
+        "池袋",
+        "明治神宮前〈原宿〉",
+        "渋谷"
+      ]
+    },
+    {
+      "id": "A",
+      "name": "都營淺草線",
+      "jaName": "都営浅草線",
+      "color": "#e85298",
+      "sourceUrl": "https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf",
+      "coffeeStations": [
+        "五反田",
+        "泉岳寺",
+        "新橋",
+        "東銀座",
+        "浅草橋",
+        "蔵前",
+        "浅草"
+      ]
+    },
+    {
+      "id": "I",
+      "name": "都營三田線",
+      "jaName": "都営三田線",
+      "color": "#0079c2",
+      "sourceUrl": "https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf",
+      "coffeeStations": [
+        "御成門",
+        "内幸町",
+        "日比谷",
+        "神保町",
+        "白山"
+      ]
+    },
+    {
+      "id": "S",
+      "name": "都營新宿線",
+      "jaName": "都営新宿線",
+      "color": "#6cbb5a",
+      "sourceUrl": "https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf",
+      "coffeeStations": [
+        "新宿",
+        "神保町",
+        "小川町"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "都營大江戶線",
+      "jaName": "都営大江戸線",
+      "color": "#b6007a",
+      "sourceUrl": "https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf",
+      "coffeeStations": [
+        "牛込神楽坂",
+        "飯田橋",
+        "蔵前",
+        "門前仲町",
+        "青山一丁目",
+        "新宿"
+      ]
+    },
+    {
+      "id": "JY",
+      "name": "JR 山手線",
+      "jaName": "JR山手線",
+      "color": "#80c241",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "池袋",
+        "新宿",
+        "渋谷",
+        "恵比寿",
+        "五反田",
+        "新橋",
+        "有楽町",
+        "東京",
+        "上野"
+      ],
+      "isLoop": true,
+      "note": "環線示意只保留本目錄相關站，省略中間站；內外環方向請查官方路線圖。"
+    },
+    {
+      "id": "JK",
+      "name": "JR 京濱東北線",
+      "jaName": "JR京浜東北線",
+      "color": "#00b2e5",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "大森",
+        "新橋",
+        "有楽町",
+        "東京",
+        "上野"
+      ],
+      "note": "日間快速列車不停靠新橋與有樂町；這兩站可改搭山手線。請查當日車站時刻表。",
+      "noteSourceUrl": "https://timetables.jreast.co.jp/2610/timetable-v/623d2p.html"
+    },
+    {
+      "id": "JC",
+      "name": "JR 中央線快速",
+      "jaName": "JR中央線快速",
+      "color": "#f15a22",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "東京",
+        "御茶ノ水",
+        "四ツ谷",
+        "新宿",
+        "高円寺"
+      ],
+      "note": "中央線快速在週六、週日及假日不停靠高圓寺；前往高圓寺請搭中央・總武線各站停車。",
+      "noteSourceUrl": "https://timetables.jreast.co.jp/timetable/list0663.html"
+    },
+    {
+      "id": "JB",
+      "name": "JR 中央・總武線各站停車",
+      "jaName": "JR中央・総武線各駅停車",
+      "color": "#ffd400",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "高円寺",
+        "新宿",
+        "四ツ谷",
+        "飯田橋",
+        "御茶ノ水",
+        "浅草橋",
+        "錦糸町"
+      ]
+    },
+    {
+      "id": "JO",
+      "name": "JR 總武線快速",
+      "jaName": "JR総武線快速",
+      "color": "#007ac0",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "東京",
+        "新日本橋",
+        "錦糸町"
+      ]
+    },
+    {
+      "id": "JI",
+      "name": "JR 五日市線",
+      "jaName": "JR五日市線",
+      "color": "#f15a22",
+      "sourceUrl": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "coffeeStations": [
+        "武蔵五日市"
+      ]
+    },
+    {
+      "id": "TY",
+      "name": "東急東橫線",
+      "jaName": "東急東横線",
+      "color": "#da0442",
+      "sourceUrl": "https://www.tokyu.co.jp/railway/ty/",
+      "coffeeStations": [
+        "渋谷",
+        "代官山",
+        "学芸大学"
+      ]
+    },
+    {
+      "id": "DT",
+      "name": "東急田園都市線",
+      "jaName": "東急田園都市線",
+      "color": "#00a040",
+      "sourceUrl": "https://www.tokyu.co.jp/railway/dt/",
+      "coffeeStations": [
+        "渋谷",
+        "三軒茶屋",
+        "二子玉川"
+      ]
+    },
+    {
+      "id": "OM",
+      "name": "東急大井町線",
+      "jaName": "東急大井町線",
+      "color": "#f18c43",
+      "sourceUrl": "https://www.tokyu.co.jp/railway/",
+      "coffeeStations": [
+        "二子玉川"
+      ]
+    },
+    {
+      "id": "IK",
+      "name": "東急池上線",
+      "jaName": "東急池上線",
+      "color": "#ee86a7",
+      "sourceUrl": "https://www.tokyu.co.jp/railway/",
+      "coffeeStations": [
+        "五反田",
+        "池上"
+      ]
+    },
+    {
+      "id": "SG",
+      "name": "東急世田谷線",
+      "jaName": "東急世田谷線",
+      "color": "#fcc70d",
+      "sourceUrl": "https://www.tokyu.co.jp/railway/",
+      "coffeeStations": [
+        "三軒茶屋"
+      ]
+    },
+    {
+      "id": "OH",
+      "name": "小田急小田原線",
+      "jaName": "小田急小田原線",
+      "color": "#2288c9",
+      "sourceUrl": "https://www.odakyu.jp/station/",
+      "coffeeStations": [
+        "新宿",
+        "下北沢",
+        "経堂"
+      ]
+    },
+    {
+      "id": "IN",
+      "name": "京王井之頭線",
+      "jaName": "京王井の頭線",
+      "color": "#1e83bd",
+      "sourceUrl": "https://www.keio.co.jp/train/station/",
+      "coffeeStations": [
+        "渋谷",
+        "下北沢"
+      ]
+    },
+    {
+      "id": "KO",
+      "name": "京王新線",
+      "jaName": "京王新線",
+      "color": "#dd0077",
+      "sourceUrl": "https://www.keio.co.jp/train/station/",
+      "coffeeStations": [
+        "新宿",
+        "初台"
+      ]
+    },
+    {
+      "id": "SS",
+      "name": "西武新宿線",
+      "jaName": "西武新宿線",
+      "color": "#00a6bf",
+      "sourceUrl": "https://www.seiburailway.jp/company/youran/file/2025youran.pdf",
+      "coffeeStations": [
+        "西武新宿",
+        "都立家政"
+      ]
+    },
+    {
+      "id": "SI",
+      "name": "西武池袋線",
+      "jaName": "西武池袋線",
+      "color": "#ed7700",
+      "sourceUrl": "https://www.seiburailway.jp/company/youran/file/2025youran.pdf",
+      "coffeeStations": [
+        "池袋"
+      ]
+    },
+    {
+      "id": "TJ",
+      "name": "東武東上線",
+      "jaName": "東武東上線",
+      "color": "#004098",
+      "sourceUrl": "https://www.tobu.co.jp/railway/guide/childcare_support/station/",
+      "coffeeStations": [
+        "池袋",
+        "大山",
+        "中板橋"
+      ]
+    },
+    {
+      "id": "TK",
+      "name": "東武龜戶線",
+      "jaName": "東武亀戸線",
+      "color": "#007bbb",
+      "sourceUrl": "https://www.tobu.co.jp/railway/guide/childcare_support/station/",
+      "coffeeStations": [
+        "亀戸水神"
+      ]
+    },
+    {
+      "id": "KK",
+      "name": "京急本線",
+      "jaName": "京急本線",
+      "color": "#0098bb",
+      "sourceUrl": "https://www.keikyu.co.jp/ride/kakueki/",
+      "coffeeStations": [
+        "泉岳寺"
+      ]
+    },
+    {
+      "id": "R",
+      "name": "臨海線",
+      "jaName": "りんかい線",
+      "color": "#00418e",
+      "sourceUrl": "https://www.twr.co.jp/Default.aspx?TabId=114&TabModule1028=0",
+      "coffeeStations": [
+        "天王洲アイル"
+      ]
+    },
+    {
+      "id": "MO",
+      "name": "東京單軌電車",
+      "jaName": "東京モノレール",
+      "color": "#0078bf",
+      "sourceUrl": "https://www.tokyo-monorail.co.jp/guidance/tennouzuairu/",
+      "coffeeStations": [
+        "天王洲アイル"
+      ]
+    }
+  ],
+  "transitSources": [
+    {
+      "id": "metro-map",
+      "title": "Tokyo Metro 官方繁體中文路線圖",
+      "url": "https://www.tokyometro.jp/station/pdf/202305/202305_number_tcn.pdf",
+      "pageUrl": "https://www.tokyometro.jp/tcn/subwaymap/index.html",
+      "type": "pdf",
+      "note": "包含東京Metro與都營地下鐵。官方頁面現行下載連結，原檔檔名202305。",
+      "checkedAt": "2026-10-12",
+      "preview": "assets/reference/metro-map-preview.webp",
+      "previewSourceUrl": "https://d1grca2t3zpuug.cloudfront.net/2026/02/subwaymapnew-1740x1000-1771320765.webp",
+      "previewSourcePage": "https://tokyo.letsgojp.com/archives/81715/",
+      "previewCaption": "都營與東京Metro地下鐵完整路線圖（日文，2023年3月版）；點開官方繁體中文PDF。",
+      "previewAttribution": "東京都交通局／東京Metro；路線圖縮圖引用。"
+    },
+    {
+      "id": "jr-map",
+      "title": "JR East 官方東京近郊路線圖",
+      "url": "https://www.jreast.co.jp/map/pdf/map_tokyo.pdf",
+      "pageUrl": "https://www.jreast.co.jp/map/",
+      "type": "pdf",
+      "note": "可查山手線、中央線、總武線與通往武藏五日市的五日市線。",
+      "checkedAt": "2026-10-12",
+      "preview": "assets/reference/jr-map-preview.webp",
+      "previewSourceUrl": "https://shopping.jreast.co.jp/media/shop/S001/product/S001-C025684/type/2",
+      "previewSourcePage": "https://shopping.jreast.co.jp/products/detail/s001/s001-C025684",
+      "previewCaption": "JR East 東京近郊完整路線網（2024年3月16日版）；點開官方PDF。",
+      "previewAttribution": "JR東日本；官方路線圖商品圖片之路線圖縮圖引用。"
+    },
+    {
+      "id": "tokyu-map",
+      "title": "東急電鐵路線與車站",
+      "url": "https://www.tokyu.co.jp/railway/",
+      "type": "page",
+      "note": "東橫線、田園都市線、大井町線、池上線與世田谷線。",
+      "checkedAt": "2026-10-12"
+    },
+    {
+      "id": "odakyu-map",
+      "title": "小田急路線圖與車站",
+      "url": "https://www.odakyu.jp/station/",
+      "type": "page",
+      "note": "前往下北澤與經堂的路線參照。",
+      "checkedAt": "2026-10-12"
+    },
+    {
+      "id": "keio-map",
+      "title": "京王路線與車站",
+      "url": "https://www.keio.co.jp/train/station/",
+      "type": "page",
+      "note": "初台及井之頭線的下北澤。",
+      "checkedAt": "2026-10-12"
+    },
+    {
+      "id": "seibu-map",
+      "title": "西武新宿線 都立家政站",
+      "url": "https://www.seiburailway.jp/railway/station/toritsu-kasei/",
+      "type": "page",
+      "note": "沿線小店與各站停車時刻。",
+      "checkedAt": "2026-10-12"
+    },
+    {
+      "id": "tobu-map",
+      "title": "東武車站與路線",
+      "url": "https://www.tobu.co.jp/railway/guide/childcare_support/station/",
+      "type": "page",
+      "note": "東上線池袋、大山、中板橋與龜戶線龜戶水神。",
+      "checkedAt": "2026-10-12"
+    }
+  ],
+  "coordinateNotes": {
+    "shop": "已核對店鋪名稱與完整地址，採用官網、官方觀光協會或店鋪目錄公開標記的店鋪位置；入口仍請開啟店鋪 Google Maps 確認。",
+    "address": "依核對地址或所在建築定位，入口位置仍請開啟店鋪 Google Maps。",
+    "approximate": "地址服務僅回傳街區或地番代表點，請以店鋪 Google Maps 及官方交通方式為準。"
+  },
   "shops": [
     {
       "page": 6,
@@ -19,6 +1158,34 @@
       "sourceUrl": "https://shop.glitchcoffee.com/en/pages/store-tokyo",
       "description": "把日本橋的一小段散步，交給一杯單一產地咖啡。",
       "mapUrl": "https://maps.app.goo.gl/QqnYaLirvpiRcK7D9",
+      "areaId": "tokyo-nihonbashi",
+      "lat": 35.6852785,
+      "lng": 139.7761723,
+      "coordinateSource": "https://maps.app.goo.gl/QqnYaLirvpiRcK7D9",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "GLITCH TOKYO",
+      "verifiedAddress": "東京都中央区日本橋本町1-1-3 立石本町ビル1F",
+      "addressSource": "https://shop.glitchcoffee.com/en/pages/store-tokyo",
+      "lines": [
+        "G",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "三越前",
+          "lines": [
+            "G",
+            "Z"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-001.webp",
+      "imageAlt": "GLITCH TOKYO 日本橋店的焙煎機與黑色吧檯",
+      "imageSource": "https://www.timeout.jp/tokyo/ja/レストラン/glitch-tokyo",
+      "imageCredit": "Time Out Tokyo / Genya Aoki",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://media.timeout.com/images/106325995/image.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -39,6 +1206,32 @@
       "address": "東京都目黒区中央町1-4-14",
       "sourceUrl": "https://kannocoffee.com/contents/shopinfo/factory_labo/",
       "description": "有焙煎工場的咖啡館，從學藝大學開始今天的巡禮。",
+      "areaId": "setagaya",
+      "lat": 35.628399,
+      "lng": 139.694122,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E4%B8%AD%E5%A4%AE%E7%94%BA1-4-14",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都目黒区中央町一丁目４番１４号",
+      "verifiedAddress": "東京都目黒区中央町1-4-14",
+      "addressSource": "https://kannocoffee.com/contents/shopinfo/factory_labo/",
+      "lines": [
+        "TY"
+      ],
+      "stationLines": [
+        {
+          "station": "学芸大学",
+          "lines": [
+            "TY"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-002.webp",
+      "imageAlt": "Factory & Labo 神乃珈琲的玻璃窗與焙煎工場空間",
+      "imageSource": "https://kannocoffee.com/contents/shopinfo/factory_labo/",
+      "imageCredit": "神乃珈琲 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://kannocoffee.com/contents/wp-content/uploads/2022/03/kv_img01-1.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Factory+%26+Labo+%E7%A5%9E%E4%B9%83%E7%8F%88%E7%90%B2+%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E4%B8%AD%E5%A4%AE%E7%94%BA1-4-14",
       "mapType": "name-and-address-search",
@@ -61,6 +1254,34 @@
       "sourceUrl": "https://www.enjoytokyo.jp/spot/l_20116578/",
       "description": "三軒茶屋住宅街裡，自家焙煎咖啡與一面書架。",
       "mapUrl": "https://maps.app.goo.gl/3WActiv7ejVJdMBHA",
+      "areaId": "setagaya",
+      "lat": 35.648571,
+      "lng": 139.6721912,
+      "coordinateSource": "https://maps.app.goo.gl/3WActiv7ejVJdMBHA",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "pluto",
+      "verifiedAddress": "東京都世田谷区太子堂2-38-3",
+      "addressSource": "https://www.enjoytokyo.jp/spot/l_20116578/",
+      "lines": [
+        "DT",
+        "SG"
+      ],
+      "stationLines": [
+        {
+          "station": "三軒茶屋",
+          "lines": [
+            "DT",
+            "SG"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-003.webp",
+      "imageAlt": "pluto 三軒茶屋店的木門與灰色外牆",
+      "imageSource": "https://www.enjoytokyo.jp/spot/l_20116578/",
+      "imageCredit": "レッツエンジョイ東京",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://rstatic.enjoytokyo.jp/assets/images/spot_draft/c6/l_20116578/img_1.jpg?1761217742&p=t&w=1200",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -81,6 +1302,34 @@
       "address": "東京都渋谷区神宮前5-17-13",
       "sourceUrl": "https://nozy-coffee.jp/",
       "description": "沿著 Cat Street 散步，停在單一產地咖啡的香氣裡。",
+      "areaId": "aoyama",
+      "lat": 35.665409,
+      "lng": 139.705017,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D5-17-13",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都渋谷区神宮前五丁目１７番１３号",
+      "verifiedAddress": "東京都渋谷区神宮前5-17-13",
+      "addressSource": "https://nozy-coffee.jp/",
+      "lines": [
+        "C",
+        "F"
+      ],
+      "stationLines": [
+        {
+          "station": "明治神宮前〈原宿〉",
+          "lines": [
+            "C",
+            "F"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-004.webp",
+      "imageAlt": "THE ROASTERY 的咖啡吧檯與暖光店內",
+      "imageSource": "https://www.tysons.jp/roastery/",
+      "imageCredit": "TYSONS & COMPANY 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.tysons.jp/roastery/wp-content/themes/build/images/roastery/home/slide1.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=THE+ROASTERY+BY+NOZY+COFFEE+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%AE%AE%E5%89%8D5-17-13",
       "mapType": "name-and-address-search",
@@ -102,6 +1351,32 @@
       "address": "東京都練馬区中村南1-27-20 ガーデンスクウェア1F",
       "sourceUrl": "https://life.one-me.jp/shop/1183",
       "description": "從都立家政走進中村南，留一段時間給花園咖啡。",
+      "areaId": "west-neighborhoods",
+      "lat": 35.726604,
+      "lng": 139.647369,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E4%B8%AD%E6%9D%91%E5%8D%971-27-20",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都練馬区中村南一丁目２７番２０号",
+      "verifiedAddress": "東京都練馬区中村南1-27-20 ガーデンスクウェア1F",
+      "addressSource": "https://life.one-me.jp/shop/1183",
+      "lines": [
+        "SS"
+      ],
+      "stationLines": [
+        {
+          "station": "都立家政",
+          "lines": [
+            "SS"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-005.webp",
+      "imageAlt": "カフェ・フェリーチェ 被綠植包圍的窗邊與露台",
+      "imageSource": "https://life.one-me.jp/shop/1183",
+      "imageCredit": "ONE ME Life 店鋪介紹",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://life.one-me.jp/storage/8iFQb8DZ2EUgPBTY7Hm7gBbEEMdBptfZZnYgkiMv.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%81%E3%82%A7+%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%B7%B4%E9%A6%AC%E5%8C%BA%E4%B8%AD%E6%9D%91%E5%8D%971-27-20+%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%82%B9%E3%82%AF%E3%82%A6%E3%82%A7%E3%82%A21F",
       "mapType": "name-and-address-search",
@@ -123,6 +1398,38 @@
       "address": "東京都港区赤坂7-2-21 草月会館2F",
       "sourceUrl": "https://connelcoffee.jp/",
       "description": "草月會館的二樓，在窗邊收集一點赤坂的綠意。",
+      "areaId": "aoyama",
+      "lat": 35.67405914870877,
+      "lng": 139.72936737433798,
+      "coordinateSource": "https://tabelog.com/tokyo/A1306/A130603/13185974/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "CONNEL COFFEE — 東京都港区赤坂7-2-21 草月会館 2F",
+      "verifiedAddress": "東京都港区赤坂7-2-21 草月会館2F",
+      "addressSource": "https://connelcoffee.jp/",
+      "lines": [
+        "G",
+        "Z",
+        "E"
+      ],
+      "stationLines": [
+        {
+          "station": "青山一丁目",
+          "lines": [
+            "G",
+            "Z",
+            "E"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-006.webp",
+      "imageAlt": "CONNEL COFFEE 草月會館的長吧檯與落地玻璃窗",
+      "imageSource": "https://connelcoffee.jp/",
+      "imageCredit": "CONNEL COFFEE 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://connelcoffee.jp/img/sliders/Slide_sm.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CONNEL+COFFEE+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%B5%A4%E5%9D%827-2-21+%E8%8D%89%E6%9C%88%E4%BC%9A%E9%A4%A82F",
       "mapType": "name-and-address-search",
@@ -144,6 +1451,38 @@
       "address": "東京都千代田区内幸町1-1-1 帝国ホテル東京 本館1F",
       "sourceUrl": "https://www.imperialhotel.co.jp/tokyo/restaurant/rendezvous",
       "description": "日比谷的散步中途，在帝國飯店留下一段茶時光。",
+      "areaId": "ginza",
+      "lat": 35.67233012871906,
+      "lng": 139.75824727430026,
+      "coordinateSource": "https://tabelog.com/tokyo/A1301/A130102/13019119/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "ランデブーラウンジ — 東京都千代田区内幸町1-1-1 帝国ホテル 東京 本館 1F",
+      "verifiedAddress": "東京都千代田区内幸町1-1-1 帝国ホテル東京 本館1F",
+      "addressSource": "https://www.imperialhotel.co.jp/tokyo/restaurant/rendezvous",
+      "lines": [
+        "H",
+        "C",
+        "I"
+      ],
+      "stationLines": [
+        {
+          "station": "日比谷",
+          "lines": [
+            "H",
+            "C",
+            "I"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-007.webp",
+      "imageAlt": "帝國飯店東京 Rendezvous Lounge 的沙發座席與大廳",
+      "imageSource": "https://www.imperialhotel.co.jp/tokyo/restaurant/rendezvous",
+      "imageCredit": "帝国ホテル 東京 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.imperialhotel.co.jp/sites/default/files/styles/webp/public/img/2024-12/e92d3f6c03335b02c4ff1d3c5bf5d55a.jpg.webp?itok=Z9KZO0P9",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B8%9D%E5%9B%BD%E3%83%9B%E3%83%86%E3%83%AB+%E6%9D%B1%E4%BA%AC+%E3%83%A9%E3%83%B3%E3%83%87%E3%83%96%E3%83%BC%E3%83%A9%E3%82%A6%E3%83%B3%E3%82%B8+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%86%85%E5%B9%B8%E7%94%BA1-1-1+%E5%B8%9D%E5%9B%BD%E3%83%9B%E3%83%86%E3%83%AB%E6%9D%B1%E4%BA%AC+%E6%9C%AC%E9%A4%A81F",
       "mapType": "name-and-address-search",
@@ -165,6 +1504,34 @@
       "address": "東京都目黒区三田1-4-1 ウェスティンホテル東京1F",
       "sourceUrl": "https://www.marriott.com/ja/hotels/tyowi-the-westin-tokyo/overview/",
       "description": "恵比壽花園廣場的一站，收藏飯店大廳的悠閒午後。",
+      "areaId": "shibuya",
+      "lat": 35.642441,
+      "lng": 139.71579,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E4%B8%89%E7%94%B01-4-1",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都目黒区三田一丁目４番１号",
+      "verifiedAddress": "東京都目黒区三田1-4-1 ウェスティンホテル東京1F",
+      "addressSource": "https://www.marriott.com/ja/hotels/tyowi-the-westin-tokyo/overview/",
+      "lines": [
+        "JY",
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "恵比寿",
+          "lines": [
+            "JY",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-008.webp",
+      "imageAlt": "Westin Tokyo The Lounge 面向花園的座席",
+      "imageSource": "https://www.theloungetokyo.com/jp/",
+      "imageCredit": "The Lounge / Marriott 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/tyowi-lobby-lounge-the-lounge/site-images/migrated-images/lounge.jpg?cropY=435&cropW=2000&cropH=898&width=1800&height=808",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A6%E3%82%A7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%E6%9D%B1%E4%BA%AC+%E3%82%B6%E3%83%BB%E3%83%A9%E3%82%A6%E3%83%B3%E3%82%B8+%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E4%B8%89%E7%94%B01-4-1+%E3%82%A6%E3%82%A7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%E6%9D%B1%E4%BA%AC1F",
       "mapType": "name-and-address-search",
@@ -186,6 +1553,46 @@
       "address": "東京都新宿区神楽坂4-2",
       "sourceUrl": "https://le-bretagne.com/creperie/",
       "description": "在神樂坂的石板路之間，遇見布列塔尼的可麗餅。",
+      "areaId": "kagurazaka",
+      "lat": 35.701813,
+      "lng": 139.739639,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%A5%9E%E6%A5%BD%E5%9D%824-2",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都新宿区神楽坂四丁目２番地",
+      "verifiedAddress": "東京都新宿区神楽坂4-2",
+      "addressSource": "https://le-bretagne.com/creperie/",
+      "lines": [
+        "E",
+        "JB",
+        "T",
+        "Y",
+        "N"
+      ],
+      "stationLines": [
+        {
+          "station": "牛込神楽坂",
+          "lines": [
+            "E"
+          ]
+        },
+        {
+          "station": "飯田橋",
+          "lines": [
+            "JB",
+            "T",
+            "Y",
+            "N",
+            "E"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-009.webp",
+      "imageAlt": "LE BRETAGNE 神樂坂店官網的鹹味蕎麥可麗餅",
+      "imageSource": "https://le-bretagne.com/creperie/kagurazaka/",
+      "imageCredit": "LE BRETAGNE 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://le-bretagne.com/wp-content/uploads/2022/07/Kagurazaka2.webp",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7+%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%97%E3%83%AA%E3%83%BC+%E3%83%AB+%E3%83%96%E3%83%AB%E3%82%BF%E3%83%BC%E3%83%8B%E3%83%A5+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%A5%9E%E6%A5%BD%E5%9D%824-2",
       "mapType": "name-and-address-search",
@@ -207,6 +1614,38 @@
       "address": "東京都港区南青山3-15-9",
       "sourceUrl": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
       "description": "表參道之外，走進南青山的 Café Kitsuné。",
+      "areaId": "aoyama",
+      "lat": 35.664761,
+      "lng": 139.715326,
+      "coordinateSource": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都港区南青山3-15-9",
+      "verifiedAddress": "東京都港区南青山3-15-9",
+      "addressSource": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
+      "lines": [
+        "G",
+        "C",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "表参道",
+          "lines": [
+            "G",
+            "C",
+            "Z"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Official Aoyama branch page publishes an Apple Maps pin with the matching branch name and 3-15-9 address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-010.webp",
+      "imageAlt": "Café Kitsuné Aoyama 的玻璃門面與露台座席",
+      "imageSource": "https://maisonkitsune.com/fr/storelocator-cafekitsune-aoyama",
+      "imageCredit": "Maison Kitsuné 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://media.maisonkitsune.com/media/contentmanager/content/sl/Cafe_Kitsune_Aoyama_new1.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Kitsun%C3%A9+Aoyama+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B13-15-9",
       "mapType": "name-and-address-search",
@@ -230,6 +1669,32 @@
       "description": "帶上一本書，把一段安靜的讀書時間留給初台。",
       "note": "以安靜閱讀為主的店，入店前請查看官方使用方式與收費。",
       "mapUrl": "https://goo.gl/maps/TKTxwuVwKecbENAq6",
+      "areaId": "shinjuku",
+      "lat": 35.6802894,
+      "lng": 139.6869601,
+      "coordinateSource": "https://goo.gl/maps/TKTxwuVwKecbENAq6",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "本の読める店 fuzkue 初台",
+      "verifiedAddress": "東京都渋谷区初台1-38-10 二名ビル2F",
+      "addressSource": "https://fuzkue.com/shops/hatsudai",
+      "lines": [
+        "KO"
+      ],
+      "stationLines": [
+        {
+          "station": "初台",
+          "lines": [
+            "KO"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-011.webp",
+      "imageAlt": "fuzkue 初台店所在建築的入口與街角",
+      "imageSource": "https://fuzkue.com/shops/hatsudai",
+      "imageCredit": "fuzkue 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://fuzkue.com/assets/newAssets/narrativePicture/narrativePicture_shop_hatsudai_01.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -252,6 +1717,34 @@
       "description": "下北澤的書與咖啡，讓好奇心帶你翻到下一頁。",
       "note": "原始目錄第 021 頁已更正為 RBL CAFE。",
       "mapUrl": "https://goo.gl/maps/fERKQo3eNjYfiTmd6",
+      "areaId": "setagaya",
+      "lat": 35.658946,
+      "lng": 139.6680761,
+      "coordinateSource": "https://goo.gl/maps/fERKQo3eNjYfiTmd6",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "RBL CAFE",
+      "verifiedAddress": "東京都世田谷区代沢5-32-12",
+      "addressSource": "https://rblcafe.jp/",
+      "lines": [
+        "OH",
+        "IN"
+      ],
+      "stationLines": [
+        {
+          "station": "下北沢",
+          "lines": [
+            "OH",
+            "IN"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-012.webp",
+      "imageAlt": "RBL CAFE 的長書架與木桌座席",
+      "imageSource": "https://rblcafe.jp/",
+      "imageCredit": "RBL CAFE 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://rblcafe.jp/wordpress2019/wp-content/themes/rbl_cafe2019/common/img/pic_main_image01.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -272,6 +1765,32 @@
       "address": "東京都大田区池上2-20-11",
       "sourceUrl": "https://rengetsu.net/",
       "description": "在池上的古民家裡，喝一杯帶著昭和風景的咖啡。",
+      "areaId": "south-tokyo",
+      "lat": 35.577175,
+      "lng": 139.703827,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E6%B1%A0%E4%B8%8A2-20-11",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都大田区池上二丁目２０番１１号",
+      "verifiedAddress": "東京都大田区池上2-20-11",
+      "addressSource": "https://rengetsu.net/",
+      "lines": [
+        "IK"
+      ],
+      "stationLines": [
+        {
+          "station": "池上",
+          "lines": [
+            "IK"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-013.webp",
+      "imageAlt": "古民家カフェ 蓮月 的木造門面與藍色暖簾",
+      "imageSource": "https://rengetsu.net/",
+      "imageCredit": "蓮月 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://rengetsu.net/wplogin/wp-content/uploads/2015/09/home_main.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E6%B0%91%E5%AE%B6%E3%82%AB%E3%83%95%E3%82%A7+%E8%93%AE%E6%9C%88+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA%E6%B1%A0%E4%B8%8A2-20-11",
       "mapType": "name-and-address-search",
@@ -294,6 +1813,34 @@
       "sourceUrl": "https://recomoon.amebaownd.com/",
       "description": "把巡禮延伸到東京西邊，探訪戶倉的小山咖啡館。",
       "note": "武蔵五日市下車後仍需轉乘；臨時休業請查看官方公告。",
+      "areaId": "akigawa",
+      "lat": 35.727115038508025,
+      "lng": 139.20482903524157,
+      "coordinateSource": "https://tabelog.com/tokyo/A1330/A133001/13228712/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "POUND — 東京都あきる野市戸倉208-2",
+      "verifiedAddress": "東京都あきる野市戸倉208-2",
+      "addressSource": "https://recomoon.amebaownd.com/",
+      "lines": [
+        "JI"
+      ],
+      "stationLines": [
+        {
+          "station": "武蔵五日市",
+          "lines": [
+            "JI"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-014.webp",
+      "imageAlt": "POUND 官網的拉花拿鐵",
+      "imageSource": "https://recomoon.amebaownd.com/",
+      "imageCredit": "POUND 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/548636/f9c4cb309f22cb8fdc673156a3cfc205_73c2226534d8e4ff72faf22c7cf32acc.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=POUND+%E6%9D%B1%E4%BA%AC%E9%83%BD%E3%81%82%E3%81%8D%E3%82%8B%E9%87%8E%E5%B8%82%E6%88%B8%E5%80%89208-2",
       "mapType": "name-and-address-search",
@@ -316,6 +1863,42 @@
       "sourceUrl": "https://visit-chiyoda.tokyo/app/spot/detail/1026",
       "description": "在東京站北圓頂的歷史建築裡，暫停一下旅程。",
       "note": "位於丸之內北口驗票閘門外。",
+      "areaId": "tokyo-nihonbashi",
+      "lat": 35.6824516,
+      "lng": 139.7664222,
+      "coordinateSource": "https://visit-chiyoda.tokyo/app/spot/detail/1026",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都千代田区丸の内1-9-1 東京駅丸の内北口改札外",
+      "verifiedAddress": "東京都千代田区丸の内1-9-1 東京駅丸の内北口改札外",
+      "addressSource": "https://visit-chiyoda.tokyo/app/spot/detail/1026",
+      "lines": [
+        "JY",
+        "JK",
+        "JC",
+        "JO",
+        "M"
+      ],
+      "stationLines": [
+        {
+          "station": "東京",
+          "lines": [
+            "JY",
+            "JK",
+            "JC",
+            "JO",
+            "M"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Chiyoda tourism association page labels this map pin TOKYO STATION CAFE - THE NORTH DOME- with its Marunouchi North Gate address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-015.webp",
+      "imageAlt": "TOKYO STATION CAFE 的草莓鮮奶油蛋糕",
+      "imageSource": "https://visit-chiyoda.tokyo/app/spot/detail/1026",
+      "imageCredit": "千代田区観光協会 Visit Chiyoda",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://visit-chiyoda.tokyo/app/upload/images/ts-cafe04.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=TOKYO+STATION+CAFE+-THE+NORTH+DOME-+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%851-9-1+%E6%9D%B1%E4%BA%AC%E9%A7%85%E4%B8%B8%E3%81%AE%E5%86%85%E5%8C%97%E5%8F%A3%E6%94%B9%E6%9C%AD%E5%A4%96",
       "mapType": "name-and-address-search",
@@ -337,6 +1920,34 @@
       "address": "東京都千代田区丸の内2-1-1 明治生命館1F",
       "sourceUrl": "https://www.attable.co.jp/cafe/meijiyasuda/",
       "description": "在明治生命館的光與裝飾之間，安放一段午後。",
+      "areaId": "tokyo-nihonbashi",
+      "lat": 35.679107338716015,
+      "lng": 139.76217298436598,
+      "coordinateSource": "https://tabelog.com/tokyo/A1302/A130201/13316178/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "明治安田CAFE 丸の内 — 東京都千代田区丸の内2-1-1 明治生命館 1F",
+      "verifiedAddress": "東京都千代田区丸の内2-1-1 明治生命館1F",
+      "addressSource": "https://www.attable.co.jp/cafe/meijiyasuda/",
+      "lines": [
+        "C"
+      ],
+      "stationLines": [
+        {
+          "station": "二重橋前〈丸の内〉",
+          "lines": [
+            "C"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-016.webp",
+      "imageAlt": "明治安田 CAFE 丸之內的古典扶手椅與圓桌",
+      "imageSource": "https://www.attable.co.jp/cafe/meijiyasuda/",
+      "imageCredit": "明治安田 CAFE 丸の内 / アターブル松屋",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.attable.co.jp/wp-content/themes/attable/img/meijiyasuda/img-kv2.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%98%8E%E6%B2%BB%E5%AE%89%E7%94%B0CAFE+%E4%B8%B8%E3%81%AE%E5%86%85+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%852-1-1+%E6%98%8E%E6%B2%BB%E7%94%9F%E5%91%BD%E9%A4%A81F",
       "mapType": "name-and-address-search",
@@ -359,6 +1970,47 @@
       "sourceUrl": "https://mimt.jp/cafe1894/",
       "description": "丸之內的美術館咖啡，一杯咖啡與一段建築時光。",
       "mapUrl": "https://goo.gl/maps/5jUHKgLjvo72",
+      "areaId": "tokyo-nihonbashi",
+      "lat": 35.678271,
+      "lng": 139.763271,
+      "coordinateSource": "https://goo.gl/maps/5jUHKgLjvo72",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "Café 1894",
+      "verifiedAddress": "東京都千代田区丸の内2-6-2 三菱一号館美術館1F",
+      "addressSource": "https://mimt.jp/cafe1894/",
+      "lines": [
+        "C",
+        "JY",
+        "JK",
+        "JC",
+        "JO",
+        "M"
+      ],
+      "stationLines": [
+        {
+          "station": "二重橋前〈丸の内〉",
+          "lines": [
+            "C"
+          ]
+        },
+        {
+          "station": "東京",
+          "lines": [
+            "JY",
+            "JK",
+            "JC",
+            "JO",
+            "M"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-017.webp",
+      "imageAlt": "Café 1894 的高挑空間與咖啡座席",
+      "imageSource": "https://mimt.jp/cafe1894/",
+      "imageCredit": "三菱一号館美術館 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://mimt.jp/wp-content/themes/mimt/assets/img/cafe1894/top/bg_top.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -380,6 +2032,34 @@
       "sourceUrl": "https://safn.jp/",
       "description": "在美術倉庫的氛圍裡，享受咖啡與甜點的相遇。",
       "note": "官方說明僅接受非現金支付。",
+      "areaId": "asakusa",
+      "lat": 35.704994,
+      "lng": 139.80011,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%9C%AC%E6%89%802-16-5",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都墨田区本所二丁目１６番５号",
+      "verifiedAddress": "東京都墨田区本所2-16-5 KAIKA東京1F",
+      "addressSource": "https://safn.jp/",
+      "lines": [
+        "G",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "浅草",
+          "lines": [
+            "G",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-018.webp",
+      "imageAlt": "safn° 的灰色工業風空間與暖色木座席",
+      "imageSource": "https://safn.jp/",
+      "imageCredit": "safn° 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://safn.jp/_next/static/images/image_top_concept-3840-27dc9d94f73c5abc2fd5c77f6f34a0fa.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=safn%C2%B0+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%9C%AC%E6%89%802-16-5+KAIKA%E6%9D%B1%E4%BA%AC1F",
       "mapType": "name-and-address-search",
@@ -402,6 +2082,34 @@
       "sourceUrl": "https://www.enjoytokyo.jp/spot/l_20017461/",
       "description": "沿著天王洲散步，留下一站給藝術與咖啡。",
       "mapUrl": "https://goo.gl/maps/iUSC5oR3QLMJm7nr5",
+      "areaId": "south-tokyo",
+      "lat": 35.6219868,
+      "lng": 139.7479771,
+      "coordinateSource": "https://goo.gl/maps/iUSC5oR3QLMJm7nr5",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "WHAT CAFE",
+      "verifiedAddress": "東京都品川区東品川2-1-11",
+      "addressSource": "https://www.enjoytokyo.jp/spot/l_20017461/",
+      "lines": [
+        "R",
+        "MO"
+      ],
+      "stationLines": [
+        {
+          "station": "天王洲アイル",
+          "lines": [
+            "R",
+            "MO"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-019.webp",
+      "imageAlt": "WHAT CAFE 的開放座席與藝術展示空間",
+      "imageSource": "https://www.enjoytokyo.jp/spot/l_20017461/",
+      "imageCredit": "レッツエンジョイ東京",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://rstatic.enjoytokyo.jp/assets/images/spot/ab/l_20017461/img_1.jpg?1709270124&p=t&w=1200",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -424,6 +2132,34 @@
       "description": "在 MoN 高輪的文化散步中，帶走一杯咖啡。",
       "note": "外帶式咖啡館；目前入口與交通以官方資訊為準。",
       "mapUrl": "https://maps.app.goo.gl/4EcysMhfyfAx3DHR7",
+      "areaId": "south-tokyo",
+      "lat": 35.6396988,
+      "lng": 139.7418178,
+      "coordinateSource": "https://maps.app.goo.gl/4EcysMhfyfAx3DHR7",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都港区三田3-16-1 MoN Takanawa 1F",
+      "verifiedAddress": "東京都港区三田3-16-1 MoN Takanawa 1F",
+      "addressSource": "https://www.spiral.co.jp/access",
+      "lines": [
+        "A",
+        "KK"
+      ],
+      "stationLines": [
+        {
+          "station": "泉岳寺",
+          "lines": [
+            "A",
+            "KK"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-020.webp",
+      "imageAlt": "MoN Park Cafe by Spiral 的明亮內景與曲線座椅",
+      "imageSource": "https://www.spiral.co.jp/shoplist/mon-park-cafe-by-spiral",
+      "imageCredit": "SPIRAL 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.spiral.co.jp/wp-content/uploads/2026/03/★MoN_Park_Cafe_by_Spiral_内観_web.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -444,6 +2180,32 @@
       "address": "東京都文京区根津2-19-8 SENTOビル1F",
       "sourceUrl": "https://www.miyanoyu.tokyo/lp",
       "description": "舊銭湯裡的新日常，抹茶與 espresso 在根津相遇。",
+      "areaId": "ueno-yanesen",
+      "lat": 35.718433,
+      "lng": 139.765244,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%A0%B9%E6%B4%A52-19-8",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都文京区根津二丁目１９番８号",
+      "verifiedAddress": "東京都文京区根津2-19-8 SENTOビル1F",
+      "addressSource": "https://www.miyanoyu.tokyo/lp",
+      "lines": [
+        "C"
+      ],
+      "stationLines": [
+        {
+          "station": "根津",
+          "lines": [
+            "C"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-021.webp",
+      "imageAlt": "MIYANO-YU 官網的冰咖啡、拿鐵與咖啡豆",
+      "imageSource": "https://www.miyanoyu.tokyo/",
+      "imageCredit": "MIYANO-YU 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/3287934/678151_158953.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=MATCHA%26ESPRESSO+MIYANO-YU+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%A0%B9%E6%B4%A52-19-8+SENTO%E3%83%93%E3%83%AB1F",
       "mapType": "name-and-address-search",
@@ -465,6 +2227,32 @@
       "address": "東京都台東区下谷2-17-11",
       "sourceUrl": "https://www.tokyoartbeat.com/venues/-/rebon-kaisaiyu",
       "description": "在快哉湯留下的銭湯記憶中，喝一杯咖啡。",
+      "areaId": "ueno-yanesen",
+      "lat": 35.722218,
+      "lng": 139.784943,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8B%E8%B0%B72-17-11",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区下谷二丁目１７番１１号",
+      "verifiedAddress": "東京都台東区下谷2-17-11",
+      "addressSource": "https://www.tokyoartbeat.com/venues/-/rebon-kaisaiyu",
+      "lines": [
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "入谷",
+          "lines": [
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-022.webp",
+      "imageAlt": "レボン快哉湯 所在浴場建築的木造入口",
+      "imageSource": "https://www.tokyoartbeat.com/venues/-/rebon-kaisaiyu",
+      "imageCredit": "Tokyo Art Beat",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://cdn.prod.tabdev.net/asset_files/transferred/images.ctfassets.net/j05yk38inose/6U1A44DfNoTtYiLHyiDdLw/0ed18ec137da12e074fb1443d779facb/__________.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AC%E3%83%9C%E3%83%B3%E5%BF%AB%E5%93%89%E6%B9%AF+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8B%E8%B0%B72-17-11",
       "mapType": "name-and-address-search",
@@ -487,6 +2275,38 @@
       "sourceUrl": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
       "description": "表參道的路口之外，南青山二樓的喫茶一站。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
+      "areaId": "aoyama",
+      "lat": 35.66307257871014,
+      "lng": 139.71176856423932,
+      "coordinateSource": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都港区南青山5-9-5 村山ビル2F",
+      "verifiedAddress": "東京都港区南青山5-9-5 村山ビル2F",
+      "addressSource": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
+      "lines": [
+        "G",
+        "C",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "表参道",
+          "lines": [
+            "G",
+            "C",
+            "Z"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Restaurant GeoCoordinates and matching 5-9-5 Minami-Aoyama Murayama building address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-023.webp",
+      "imageAlt": "Café Les Jeux Au Grenier 的咖啡與花紋瓷杯",
+      "imageSource": "https://tabelog.com/tokyo/A1306/A130602/13007510/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://tblg.k-img.com/resize/640x640c/restaurant/images/Rvw/51731/51731595.jpg?token=5cbf190&api=v2",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Les+Jeux+Au+Grenier+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B15-9-5+%E6%9D%91%E5%B1%B1%E3%83%93%E3%83%AB2F",
       "mapType": "name-and-address-search",
@@ -508,6 +2328,32 @@
       "address": "東京都渋谷区猿楽町23-3 鳥居ビルB1F",
       "sourceUrl": "https://tabelog.com/tokyo/A1303/A130303/13012517/",
       "description": "代官山的地下喫茶，藏在猿樂町的散步路線裡。",
+      "areaId": "shibuya",
+      "lat": 35.64901,
+      "lng": 139.701981,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%8C%BF%E6%A5%BD%E7%94%BA23-3",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都渋谷区猿楽町２３番３号",
+      "verifiedAddress": "東京都渋谷区猿楽町23-3 鳥居ビルB1F",
+      "addressSource": "https://tabelog.com/tokyo/A1303/A130303/13012517/",
+      "lines": [
+        "TY"
+      ],
+      "stationLines": [
+        {
+          "station": "代官山",
+          "lines": [
+            "TY"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-024.webp",
+      "imageAlt": "CAFFE FOGLIO 通往地下店鋪的入口與招牌",
+      "imageSource": "https://tabelog.com/tokyo/A1303/A130303/13012517/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/149958/640x640_rect_149958808.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CAFFE+FOGLIO+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%8C%BF%E6%A5%BD%E7%94%BA23-3+%E9%B3%A5%E5%B1%85%E3%83%93%E3%83%ABB1F",
       "mapType": "name-and-address-search",
@@ -530,6 +2376,38 @@
       "sourceUrl": "https://www.enjoytokyo.jp/spot/l_20016110/",
       "description": "五反田車站旁的地下空間，留給一杯深焙咖啡。",
       "note": "尚未確認店家自營官網或官方社群；原有 gorp.jp 連結已轉向第三方餐廳目錄，另提供店鋪資訊來源。",
+      "areaId": "south-tokyo",
+      "lat": 35.62706521,
+      "lng": 139.7233084,
+      "coordinateSource": "https://www.enjoytokyo.jp/spot/l_20016110/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都品川区東五反田5-27-12 扇寿ビルB1F",
+      "verifiedAddress": "東京都品川区東五反田5-27-12 扇寿ビルB1F",
+      "addressSource": "https://www.enjoytokyo.jp/spot/l_20016110/",
+      "lines": [
+        "JY",
+        "A",
+        "IK"
+      ],
+      "stationLines": [
+        {
+          "station": "五反田",
+          "lines": [
+            "JY",
+            "A",
+            "IK"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Restaurant GeoCoordinates and Google Maps link with matching 5-27-12 Higashi-Gotanda Senju building address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-025.webp",
+      "imageAlt": "CAFÉ TOUJOURS DÉBUTER 的木製吧檯與瓷杯收藏",
+      "imageSource": "https://tabelog.com/tokyo/A1316/A131603/13059498/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/29543/640x640_rect_29543752.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CAF%C3%89+TOUJOURS+D%C3%89BUTER+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%93%81%E5%B7%9D%E5%8C%BA%E6%9D%B1%E4%BA%94%E5%8F%8D%E7%94%B05-27-12+%E6%89%87%E5%AF%BF%E3%83%93%E3%83%ABB1F",
       "mapType": "name-and-address-search",
@@ -551,6 +2429,38 @@
       "address": "東京都港区南青山5-4-41 グラッセリア青山1F",
       "sourceUrl": "https://www.afm-teahouse.com/aoyama",
       "description": "以溫室為靈感，在花與綠葉之間享受一杯茶。",
+      "areaId": "aoyama",
+      "lat": 35.66225446871121,
+      "lng": 139.71348990422985,
+      "coordinateSource": "https://tabelog.com/tokyo/A1306/A130602/13271007/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "青山フラワーマーケット グリーンハウス — 東京都港区南青山5-4-41 グラッセリア青山 1F",
+      "verifiedAddress": "東京都港区南青山5-4-41 グラッセリア青山1F",
+      "addressSource": "https://www.afm-teahouse.com/aoyama",
+      "lines": [
+        "G",
+        "C",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "表参道",
+          "lines": [
+            "G",
+            "C",
+            "Z"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-026.webp",
+      "imageAlt": "青山 GREEN HOUSE 的玻璃花房與露台桌椅",
+      "imageSource": "https://www.afm-teahouse.com/aoyama",
+      "imageCredit": "Aoyama Flower Market TEA HOUSE 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://www.afm-teahouse.com/wp/wp-content/uploads/2024/04/GREENHOUSE_AOYAMA_31.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%9D%92%E5%B1%B1%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+GREEN+HOUSE+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B15-4-41+%E3%82%B0%E3%83%A9%E3%83%83%E3%82%BB%E3%83%AA%E3%82%A2%E9%9D%92%E5%B1%B11F",
       "mapType": "name-and-address-search",
@@ -572,6 +2482,42 @@
       "address": "東京都豊島区西池袋3-30-6",
       "sourceUrl": "https://www.hanabar.tokyo/",
       "description": "池袋的乾燥花咖啡酒吧，收藏一點花的顏色。",
+      "areaId": "ikebukuro-itabashi",
+      "lat": 35.730656,
+      "lng": 139.706177,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E8%A5%BF%E6%B1%A0%E8%A2%8B3-30-6",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都豊島区西池袋三丁目３０番６号",
+      "verifiedAddress": "東京都豊島区西池袋3-30-6",
+      "addressSource": "https://www.hanabar.tokyo/",
+      "lines": [
+        "JY",
+        "M",
+        "Y",
+        "F",
+        "SI",
+        "TJ"
+      ],
+      "stationLines": [
+        {
+          "station": "池袋",
+          "lines": [
+            "JY",
+            "M",
+            "Y",
+            "F",
+            "SI",
+            "TJ"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-027.webp",
+      "imageAlt": "HANABAR 的花朵點綴飲品與甜點",
+      "imageSource": "https://www.hanabar.tokyo/",
+      "imageCredit": "HANABAR 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://static.wixstatic.com/media/5edd7c_022a3214e82445058616013924cd8d3e~mv2_d_2808_1872_s_2.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=HANABAR+%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E8%A5%BF%E6%B1%A0%E8%A2%8B3-30-6",
       "mapType": "name-and-address-search",
@@ -594,6 +2540,34 @@
       "sourceUrl": "https://www.bread-espresso.jp/shop/hanabana-monnaka.html",
       "description": "在門前仲町，讓花與法式吐司成為散步的小獎勵。",
       "mapUrl": "https://maps.app.goo.gl/DGaLpUG3ziJbu8bPA",
+      "areaId": "east-tokyo",
+      "lat": 35.6723298,
+      "lng": 139.7978675,
+      "coordinateSource": "https://maps.app.goo.gl/DGaLpUG3ziJbu8bPA",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "花ナ々ナ",
+      "verifiedAddress": "東京都江東区富岡1-14-5",
+      "addressSource": "https://www.bread-espresso.jp/shop/hanabana-monnaka.html",
+      "lines": [
+        "T",
+        "E"
+      ],
+      "stationLines": [
+        {
+          "station": "門前仲町",
+          "lines": [
+            "T",
+            "E"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-028.webp",
+      "imageAlt": "花ナ々ナ 門前仲町店的植栽與乾燥花店內",
+      "imageSource": "https://www.bread-espresso.jp/shop/hanabana-monnaka.html",
+      "imageCredit": "日と々と 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.bread-espresso.jp/common/img/shop/hanabana-monnaka_shop_02.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -615,6 +2589,32 @@
       "sourceUrl": "https://rawsugarroast.com/pages/privacy_policy",
       "description": "經堂的自家焙煎一站，尋找豆子本身的風味。",
       "mapUrl": "https://maps.app.goo.gl/pJa1TfQeuqVF1Dbw9",
+      "areaId": "setagaya",
+      "lat": 35.6526653,
+      "lng": 139.6379729,
+      "coordinateSource": "https://maps.app.goo.gl/pJa1TfQeuqVF1Dbw9",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "Raw Sugar Roast",
+      "verifiedAddress": "東京都世田谷区宮坂3-9-4 111",
+      "addressSource": "https://rawsugarroast.com/pages/privacy_policy",
+      "lines": [
+        "OH"
+      ],
+      "stationLines": [
+        {
+          "station": "経堂",
+          "lines": [
+            "OH"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-029.webp",
+      "imageAlt": "Raw Sugar Roast 經堂店的木製咖啡吧檯",
+      "imageSource": "https://wholesale.postcoffee.co/blogs/roaster/rawsugarroast",
+      "imageCredit": "PostCoffee 合作烘焙師專訪",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://cdn.shopify.com/s/files/1/0913/8300/5465/files/RawSugarRoast_02_a2989bc5-7095-4ff5-a4cc-73110637eb88.jpg?v=1750916429",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -636,6 +2636,32 @@
       "sourceUrl": "https://www.as-craft.com/news/",
       "description": "家具、古道具與虹吸咖啡，在大山的散步裡相遇。",
       "note": "連結為經營者 AS.CRAFT 的店鋪介紹；營業日期不固定，請查看官方最新公告。",
+      "areaId": "ikebukuro-itabashi",
+      "lat": 35.743511,
+      "lng": 139.703156,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E4%B8%AD%E4%B8%B8%E7%94%BA50-2",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都板橋区中丸町５０番２号",
+      "verifiedAddress": "東京都板橋区中丸町50-2 2F",
+      "addressSource": "https://www.as-craft.com/news/",
+      "lines": [
+        "TJ"
+      ],
+      "stationLines": [
+        {
+          "station": "大山",
+          "lines": [
+            "TJ"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-030.webp",
+      "imageAlt": "家具と古道具と珈琲 的木梁、古家具與窗邊座席",
+      "imageSource": "https://www.as-craft.com/news/",
+      "imageCredit": "AS.CRAFT 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.as-craft.com/cms/wp-content/uploads/2025/10/news2511-1.png",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%AE%B6%E5%85%B7%E3%81%A8%E5%8F%A4%E9%81%93%E5%85%B7%E3%81%A8%E7%8F%88%E7%90%B2+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E4%B8%AD%E4%B8%B8%E7%94%BA50-2+2F",
       "mapType": "name-and-address-search",
@@ -657,6 +2683,34 @@
       "address": "東京都台東区浅草橋3-4-4",
       "sourceUrl": "https://tabelog.com/tokyo/A1311/A131103/13231565/",
       "description": "從淺草橋出發，走進舊建築留下的光與影。",
+      "areaId": "asakusa",
+      "lat": 35.700516,
+      "lng": 139.785782,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%89%E6%A9%8B3-4-4",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区浅草橋三丁目４番４号",
+      "verifiedAddress": "東京都台東区浅草橋3-4-4",
+      "addressSource": "https://tabelog.com/tokyo/A1311/A131103/13231565/",
+      "lines": [
+        "JB",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "浅草橋",
+          "lines": [
+            "JB",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-031.webp",
+      "imageAlt": "葉もれ日 的木桌、花器與木製杯墊",
+      "imageSource": "https://tabelog.com/tokyo/A1311/A131103/13231565/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/275884/640x640_rect_d1fdc89a30858803a11f34fe6be40eb3.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%91%89%E3%82%82%E3%82%8C%E6%97%A5+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%89%E6%A9%8B3-4-4",
       "mapType": "name-and-address-search",
@@ -679,6 +2733,34 @@
       "sourceUrl": "https://annorum.jp/cafe/",
       "description": "淺草的二樓咖啡館，給安靜的時光留一個位置。",
       "note": "店家請客人輕聲交談。",
+      "areaId": "asakusa",
+      "lat": 35.718033,
+      "lng": 139.797607,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%894-7-11",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区浅草四丁目７番１１号",
+      "verifiedAddress": "東京都台東区浅草4-7-11 2F",
+      "addressSource": "https://annorum.jp/cafe/",
+      "lines": [
+        "G",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "浅草",
+          "lines": [
+            "G",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-032.webp",
+      "imageAlt": "annorum cafe 的木桌椅與安靜店內",
+      "imageSource": "https://annorum.jp/cafe/",
+      "imageCredit": "annorum 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://annorum.jp/wp-content/themes/annorum-v1.4.1/images/under/cafe/cafe1.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=annorum+cafe+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%894-7-11+2F",
       "mapType": "name-and-address-search",
@@ -700,6 +2782,36 @@
       "address": "東京都中央区銀座7-8-17 虎屋銀座ビル4F",
       "sourceUrl": "https://www.toraya-group.co.jp/shops/shop-6",
       "description": "銀座的和菓子喫茶，讓一杯茶接住甜美的片刻。",
+      "areaId": "ginza",
+      "lat": 35.669323,
+      "lng": 139.762344,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A77-8-17",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座七丁目８番１７号",
+      "verifiedAddress": "東京都中央区銀座7-8-17 虎屋銀座ビル4F",
+      "addressSource": "https://www.toraya-group.co.jp/shops/shop-6",
+      "lines": [
+        "G",
+        "M",
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "銀座",
+          "lines": [
+            "G",
+            "M",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-033.webp",
+      "imageAlt": "TORAYA GINZA 的茶席吧檯與現場製作區",
+      "imageSource": "https://www.toraya-group.co.jp/shops/shop-6",
+      "imageCredit": "とらや 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://cdn.shopify.com/s/files/1/0641/4503/1410/files/toraya-ginza-counter-01-2.jpg?v=1784182621&width=2000&height=1333&crop=center",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=TORAYA+GINZA+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A77-8-17+%E8%99%8E%E5%B1%8B%E9%8A%80%E5%BA%A7%E3%83%93%E3%83%AB4F",
       "mapType": "name-and-address-search",
@@ -721,6 +2833,38 @@
       "address": "東京都港区南青山4-23-6 2F",
       "sourceUrl": "https://www.ippodo-tea.shop/pages/store-aoyama",
       "description": "青山的日本茶一站，把步調交給茶香。",
+      "areaId": "aoyama",
+      "lat": 35.66253058871234,
+      "lng": 139.71757585422978,
+      "coordinateSource": "https://tabelog.com/tokyo/A1306/A130602/13313129/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "一保堂茶舖 青山店 — 東京都港区南青山4-23-6 2F",
+      "verifiedAddress": "東京都港区南青山4-23-6 2F",
+      "addressSource": "https://www.ippodo-tea.shop/pages/store-aoyama",
+      "lines": [
+        "G",
+        "C",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "表参道",
+          "lines": [
+            "G",
+            "C",
+            "Z"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-034.webp",
+      "imageAlt": "一保堂茶舖青山店的茶陳列與圓桌茶席",
+      "imageSource": "https://www.ippodo-tea.shop/pages/store-aoyama",
+      "imageCredit": "一保堂茶舗 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.ippodo-tea.shop/cdn/shop/files/img-aoyama-05_62f17b64-d1a3-485d-9d3d-ba546fd5bbbc.png?v=1770170535",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E4%BF%9D%E5%A0%82%E8%8C%B6%E8%88%97+%E9%9D%92%E5%B1%B1%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B14-23-6+2F",
       "mapType": "name-and-address-search",
@@ -742,6 +2886,36 @@
       "address": "東京都中央区銀座6-10-1 GINZA SIX 4F",
       "sourceUrl": "https://tokichi.jp/pages/ginza-store-page",
       "description": "銀座散步的茶香停靠點，收藏京都茶的滋味。",
+      "areaId": "ginza",
+      "lat": 35.669445,
+      "lng": 139.763351,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A76-10-1",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座六丁目１０番１号",
+      "verifiedAddress": "東京都中央区銀座6-10-1 GINZA SIX 4F",
+      "addressSource": "https://tokichi.jp/pages/ginza-store-page",
+      "lines": [
+        "G",
+        "M",
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "銀座",
+          "lines": [
+            "G",
+            "M",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-035.webp",
+      "imageAlt": "中村藤吉銀座店的木造茶舖入口",
+      "imageSource": "https://tokichi.jp/pages/ginza-store-page",
+      "imageCredit": "中村藤吉本店 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://tokichi.jp/cdn/shop/files/ginza_top_202305_1.jpg?v=1685349226&width=3840",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E8%97%A4%E5%90%89%E6%9C%AC%E5%BA%97+%E9%8A%80%E5%BA%A7%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A76-10-1+GINZA+SIX+4F",
       "mapType": "name-and-address-search",
@@ -763,6 +2937,34 @@
       "address": "東京都港区新橋6-4-1 ホテル1899東京1F",
       "sourceUrl": "https://1899.jp/hotels/tokyo/en/chaya-1899-tokyo/",
       "description": "新橋的日本茶咖啡館，慢慢品嘗茶與甜點。",
+      "areaId": "minato",
+      "lat": 35.66237752872397,
+      "lng": 139.75380103420284,
+      "coordinateSource": "https://tabelog.com/tokyo/A1314/A131401/13244259/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "CHAYA 1899 TOKYO — 東京都港区新橋 6-4-1 ホテル1899東京 1F",
+      "verifiedAddress": "東京都港区新橋6-4-1 ホテル1899東京1F",
+      "addressSource": "https://1899.jp/hotels/tokyo/en/chaya-1899-tokyo/",
+      "lines": [
+        "I"
+      ],
+      "stationLines": [
+        {
+          "station": "御成門",
+          "lines": [
+            "I"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-036.webp",
+      "imageAlt": "CHAYA 1899 TOKYO 的茶吧檯與店內座席",
+      "imageSource": "https://1899.jp/hotels/tokyo/en/chaya-1899-tokyo/",
+      "imageCredit": "1899 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://1899.jp/hotels/tokyo/chaya-1899-tokyo/img/tennnai.webp",
+      "imageCheckedAt": "2026-10-12",
       "kind": "cafe",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CHAYA+1899+TOKYO+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%96%B0%E6%A9%8B6-4-1+%E3%83%9B%E3%83%86%E3%83%AB1899%E6%9D%B1%E4%BA%AC1F",
       "mapType": "name-and-address-search",
@@ -785,6 +2987,41 @@
       "sourceUrl": "https://www.ishiya.co.jp/shop/001328.html",
       "description": "日本橋室町的甜點一站，把午後留給 ISHIYA。",
       "mapUrl": "https://goo.gl/maps/VbU4V82LYpFz4DcB6",
+      "areaId": "tokyo-nihonbashi",
+      "lat": 35.6878277,
+      "lng": 139.7725199,
+      "coordinateSource": "https://goo.gl/maps/VbU4V82LYpFz4DcB6",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区日本橋室町3-2-1 COREDO室町テラス1F",
+      "verifiedAddress": "東京都中央区日本橋室町3-2-1 COREDO室町テラス1F",
+      "addressSource": "https://www.ishiya.co.jp/shop/001328.html",
+      "lines": [
+        "G",
+        "Z",
+        "JO"
+      ],
+      "stationLines": [
+        {
+          "station": "三越前",
+          "lines": [
+            "G",
+            "Z"
+          ]
+        },
+        {
+          "station": "新日本橋",
+          "lines": [
+            "JO"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-037.webp",
+      "imageAlt": "ISHIYA NIHONBASHI 的玻璃轉角店面",
+      "imageSource": "https://www.ishiya.co.jp/shop/001328.html",
+      "imageCredit": "ISHIYA 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://www.ishiya.co.jp/shop/images/access_ph5_nihonbashi.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "sweets",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -805,6 +3042,32 @@
       "address": "東京都中央区銀座2-8-20 ヨネイビル1F",
       "sourceUrl": "https://www.henri-charpentier.com/shop/shop_products/cake/",
       "description": "在銀座二丁目，享受法式甜點的午後時光。",
+      "areaId": "ginza",
+      "lat": 35.673332,
+      "lng": 139.768082,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72-8-20",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座二丁目８番２０号",
+      "verifiedAddress": "東京都中央区銀座2-8-20 ヨネイビル1F",
+      "addressSource": "https://www.henri-charpentier.com/shop/shop_products/cake/",
+      "lines": [
+        "Y"
+      ],
+      "stationLines": [
+        {
+          "station": "銀座一丁目",
+          "lines": [
+            "Y"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-038.webp",
+      "imageAlt": "Henri Charpentier 銀座 Maison 的石造入口與甜點官方組圖",
+      "imageSource": "https://www.henri-charpentier.com/shop/ginza-maison/",
+      "imageCredit": "アンリ・シャルパンティエ 官網",
+      "imageType": "collage",
+      "imageOriginalUrl": "https://www.henri-charpentier.com/wp-content/uploads/2021/03/salon_ginzamaison_img01-pc.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "sweets",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%B3%E3%83%AA%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%91%E3%83%B3%E3%83%86%E3%82%A3%E3%82%A8+%E9%8A%80%E5%BA%A7%E3%83%A1%E3%82%BE%E3%83%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A72-8-20+%E3%83%A8%E3%83%8D%E3%82%A4%E3%83%93%E3%83%AB1F",
       "mapType": "name-and-address-search",
@@ -826,6 +3089,34 @@
       "address": "東京都世田谷区玉川3-9-7",
       "sourceUrl": "https://cafe.lisette.jp/magasin.html",
       "description": "二子玉川的甜點與喫茶，給散步一個溫柔的逗號。",
+      "areaId": "setagaya",
+      "lat": 35.61327,
+      "lng": 139.625778,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%8E%89%E5%B7%9D3-9-7",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都世田谷区玉川三丁目９番７号",
+      "verifiedAddress": "東京都世田谷区玉川3-9-7",
+      "addressSource": "https://cafe.lisette.jp/magasin.html",
+      "lines": [
+        "DT",
+        "OM"
+      ],
+      "stationLines": [
+        {
+          "station": "二子玉川",
+          "lines": [
+            "DT",
+            "OM"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-039.webp",
+      "imageAlt": "Café Lisette 二子玉川店的木桌椅與白色店內",
+      "imageSource": "https://cafe.lisette.jp/magasin.html",
+      "imageCredit": "Café Lisette 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://cafe.lisette.jp/magasin/img/futako_img.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "sweets",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Lisette+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E7%8E%89%E5%B7%9D3-9-7",
       "mapType": "name-and-address-search",
@@ -847,6 +3138,41 @@
       "address": "東京都港区麻布台1-2-3 麻布台ヒルズ レジデンスA1F",
       "sourceUrl": "https://www.lenotrejp.com/topics/new_azabudaihills",
       "description": "麻布台的法式甜點，為一日巡禮添一點甜。",
+      "areaId": "minato",
+      "lat": 35.66217985871974,
+      "lng": 139.74010106421045,
+      "coordinateSource": "https://tabelog.com/tokyo/A1307/A130701/13302282/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "LENÔTRE 麻布台ヒルズ店 — 東京都港区麻布台1-2-3 麻布台ヒルズ レジデンスA1 1F",
+      "verifiedAddress": "東京都港区麻布台1-2-3 麻布台ヒルズ レジデンスA1F",
+      "addressSource": "https://www.lenotrejp.com/topics/new_azabudaihills",
+      "lines": [
+        "H",
+        "N"
+      ],
+      "stationLines": [
+        {
+          "station": "神谷町",
+          "lines": [
+            "H"
+          ]
+        },
+        {
+          "station": "六本木一丁目",
+          "lines": [
+            "N"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-040.webp",
+      "imageAlt": "LENÔTRE 麻布台 Hills 店的甜點陳列與金色店裝",
+      "imageSource": "https://www.azabudai-hills.com/shop_list/7029.html",
+      "imageCredit": "麻布台ヒルズ 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.azabudai-hills.com/assets/images/gourmet_shops/shop/ah7029_02.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "sweets",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AB%E3%83%8E%E3%83%BC%E3%83%88%E3%83%AB+%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E9%BA%BB%E5%B8%83%E5%8F%B01-2-3+%E9%BA%BB%E5%B8%83%E5%8F%B0%E3%83%92%E3%83%AB%E3%82%BA+%E3%83%AC%E3%82%B8%E3%83%87%E3%83%B3%E3%82%B9A1F",
       "mapType": "name-and-address-search",
@@ -868,6 +3194,32 @@
       "address": "東京都板橋区中板橋30-1 コーポ亀井1F",
       "sourceUrl": "https://1room.fun/",
       "description": "中板橋的一間小咖啡館，把日常過得慢一些。",
+      "areaId": "ikebukuro-itabashi",
+      "lat": 35.757252,
+      "lng": 139.693008,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E4%B8%AD%E6%9D%BF%E6%A9%8B30-1",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都板橋区中板橋３０番１号",
+      "verifiedAddress": "東京都板橋区中板橋30-1 コーポ亀井1F",
+      "addressSource": "https://1room.fun/",
+      "lines": [
+        "TJ"
+      ],
+      "stationLines": [
+        {
+          "station": "中板橋",
+          "lines": [
+            "TJ"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-041.webp",
+      "imageAlt": "1 ROOM COFFEE 的木桌與柔和窗光",
+      "imageSource": "https://1room.fun/",
+      "imageCredit": "1 ROOM COFFEE 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://1room.fun/wp-content/themes/1roomcoffee/dist/img/gallery/Introspection04.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "sweets",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=1+ROOM+COFFEE+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E4%B8%AD%E6%9D%BF%E6%A9%8B30-1+%E3%82%B3%E3%83%BC%E3%83%9D%E4%BA%80%E4%BA%951F",
       "mapType": "name-and-address-search",
@@ -889,6 +3241,32 @@
       "address": "東京都江東区亀戸8-19-3 エミネンス亀戸",
       "sourceUrl": "https://www.enjoytokyo.jp/spot/l_20053708/",
       "description": "亀戶水神旁的喫茶店，日常裡的一小段寄り道。",
+      "areaId": "east-tokyo",
+      "lat": 35.700947,
+      "lng": 139.834091,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E4%BA%80%E6%88%B88-19-3",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都江東区亀戸八丁目１９番３号",
+      "verifiedAddress": "東京都江東区亀戸8-19-3 エミネンス亀戸",
+      "addressSource": "https://www.enjoytokyo.jp/spot/l_20053708/",
+      "lines": [
+        "TK"
+      ],
+      "stationLines": [
+        {
+          "station": "亀戸水神",
+          "lines": [
+            "TK"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-042.webp",
+      "imageAlt": "喫茶 東京郊外 的拱門、紅色座椅與吧檯",
+      "imageSource": "https://www.enjoytokyo.jp/spot/l_20053708/",
+      "imageCredit": "レッツエンジョイ東京",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://rstatic.enjoytokyo.jp/assets/images/spot/6e/l_20053708/img_1.jpg?1701739371&p=t&w=1200",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6+%E6%9D%B1%E4%BA%AC%E9%83%8A%E5%A4%96+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B1%9F%E6%9D%B1%E5%8C%BA%E4%BA%80%E6%88%B88-19-3+%E3%82%A8%E3%83%9F%E3%83%8D%E3%83%B3%E3%82%B9%E4%BA%80%E6%88%B8",
       "mapType": "name-and-address-search",
@@ -912,6 +3290,34 @@
       "description": "蔵前的新喫茶半月，讓散步停在咖啡與甜點之間。",
       "note": "目前地址為蔵前4-14-11；請勿前往舊址4-31-11。",
       "mapUrl": "https://maps.app.goo.gl/w5PV3k8zrcWYYPD5A",
+      "areaId": "asakusa",
+      "lat": 35.7037748,
+      "lng": 139.7899444,
+      "coordinateSource": "https://maps.app.goo.gl/w5PV3k8zrcWYYPD5A",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区蔵前4-14-11 ウグイスビル1F",
+      "verifiedAddress": "東京都台東区蔵前4-14-11 ウグイスビル1F",
+      "addressSource": "https://www.fromafar-tokyo.com/kissahangetsu",
+      "lines": [
+        "A",
+        "E"
+      ],
+      "stationLines": [
+        {
+          "station": "蔵前",
+          "lines": [
+            "A",
+            "E"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-043.webp",
+      "imageAlt": "喫茶 半月 官方的咖啡甜點與木椅店內組圖",
+      "imageSource": "https://www.fromafar-tokyo.com/kissahangetsu",
+      "imageCredit": "light source / 喫茶半月 官網",
+      "imageType": "collage",
+      "imageOriginalUrl": "https://images.squarespace-cdn.com/content/v1/558645fee4b04baa0307db5e/ae9a9397-e4a8-4285-bf0b-42acaee1f9e2/topimage.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -932,6 +3338,36 @@
       "address": "東京都中央区銀座7-3-6",
       "sourceUrl": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
       "description": "銀座老舖的喫茶時間，為今天留一點經典。",
+      "areaId": "ginza",
+      "lat": 35.670364,
+      "lng": 139.760773,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A77-3-6",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座七丁目３番６号",
+      "verifiedAddress": "東京都中央区銀座7-3-6",
+      "addressSource": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
+      "lines": [
+        "G",
+        "M",
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "銀座",
+          "lines": [
+            "G",
+            "M",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-044.webp",
+      "imageAlt": "銀座 WEST 本店的藍色遮棚與甜點櫥窗",
+      "imageSource": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
+      "imageCredit": "銀座ウエスト 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://www.ginza-west.com/pic-labo/page-shop01.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E5%BA%A7%E3%82%A6%E3%82%A8%E3%82%B9%E3%83%88+%E6%9C%AC%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A77-3-6",
       "mapType": "name-and-address-search",
@@ -953,6 +3389,44 @@
       "address": "東京都中央区銀座5-9-17",
       "sourceUrl": "https://www.ginza.jp/shop/873",
       "description": "銀座的紅磚喫茶店，一杯慢慢滴出的咖啡。",
+      "areaId": "ginza",
+      "lat": 35.670326,
+      "lng": 139.76506,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A75-9-17",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座五丁目９番１７号",
+      "verifiedAddress": "東京都中央区銀座5-9-17",
+      "addressSource": "https://www.ginza.jp/shop/873",
+      "lines": [
+        "H",
+        "A",
+        "G",
+        "M"
+      ],
+      "stationLines": [
+        {
+          "station": "東銀座",
+          "lines": [
+            "H",
+            "A"
+          ]
+        },
+        {
+          "station": "銀座",
+          "lines": [
+            "G",
+            "M",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-045.webp",
+      "imageAlt": "Tricolore 本店的木牆、吊燈與古典桌椅",
+      "imageSource": "https://www.ginza.jp/shop/873",
+      "imageCredit": "GINZA OFFICIAL",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.ginza.jp/wp-content/uploads/165a631337e8580b179a288bfde129b3.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%88%E3%83%AA%E3%82%B3%E3%83%AD%E3%83%BC%E3%83%AB+%E6%9C%AC%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A75-9-17",
       "mapType": "name-and-address-search",
@@ -976,6 +3450,32 @@
       "description": "大森北的昭和喫茶，收藏街角的老時光。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
       "mapUrl": "https://maps.app.goo.gl/crbhUxa1yVyiKgtK9",
+      "areaId": "south-tokyo",
+      "lat": 35.5861041,
+      "lng": 139.7267888,
+      "coordinateSource": "https://maps.app.goo.gl/crbhUxa1yVyiKgtK9",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "珈琲亭 ルアン",
+      "verifiedAddress": "東京都大田区大森北1-36-2",
+      "addressSource": "https://tabelog.com/tokyo/A1315/A131502/13008294/",
+      "lines": [
+        "JK"
+      ],
+      "stationLines": [
+        {
+          "station": "大森",
+          "lines": [
+            "JK"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-046.webp",
+      "imageAlt": "珈琲亭 ルアン 的紅花沙發、窗邊木桌與暖光吊燈",
+      "imageSource": "https://www.o-2.jp/feature/oomorieki150rekishisanpo/",
+      "imageCredit": "東京・大田観光協会 官方採訪",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.o-2.jp/ota2022/wp-content/uploads/2026/06/omori-15_rouen-inside.webp",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -997,6 +3497,34 @@
       "sourceUrl": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
       "description": "走進高圓寺南，在名曲喫茶裡停留一會兒。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
+      "areaId": "west-neighborhoods",
+      "lat": 35.704002,
+      "lng": 139.648193,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E9%AB%98%E5%86%86%E5%AF%BA%E5%8D%973-56-7",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都杉並区高円寺南三丁目５６番７号",
+      "verifiedAddress": "東京都杉並区高円寺南3-56-7",
+      "addressSource": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
+      "lines": [
+        "JC",
+        "JB"
+      ],
+      "stationLines": [
+        {
+          "station": "高円寺",
+          "lines": [
+            "JC",
+            "JB"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-047.webp",
+      "imageAlt": "ネルケン 的紅色布簾、繪畫與老式座椅",
+      "imageSource": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/343056/640x640_rect_62114874ca0392dd69aeca90ca354fce.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8D%E3%83%AB%E3%82%B1%E3%83%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%89%E4%B8%A6%E5%8C%BA%E9%AB%98%E5%86%86%E5%AF%BA%E5%8D%973-56-7",
       "mapType": "name-and-address-search",
@@ -1019,6 +3547,53 @@
       "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000029.000028177.html",
       "description": "在歌舞伎町的新址，遇見珈琲西武的昭和風景。",
       "note": "本店已遷至歌舞伎町；連結為經營者新宿メトログループ。",
+      "areaId": "shinjuku",
+      "lat": 35.69397,
+      "lng": 139.703079,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA1-6-12",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都新宿区歌舞伎町一丁目６番１２号",
+      "verifiedAddress": "東京都新宿区歌舞伎町1-6-12 ハナミチ東京歌舞伎町2F",
+      "addressSource": "https://prtimes.jp/main/html/rd/p/000000029.000028177.html",
+      "lines": [
+        "SS",
+        "JY",
+        "JC",
+        "JB",
+        "KO",
+        "OH",
+        "M",
+        "S",
+        "E"
+      ],
+      "stationLines": [
+        {
+          "station": "西武新宿",
+          "lines": [
+            "SS"
+          ]
+        },
+        {
+          "station": "新宿",
+          "lines": [
+            "JY",
+            "JC",
+            "JB",
+            "KO",
+            "OH",
+            "M",
+            "S",
+            "E"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-048.webp",
+      "imageAlt": "珈琲西武 新歌舞伎町本店的彩繪玻璃入口",
+      "imageSource": "https://hanamichi.tokyo/floor/coffee-seibu/",
+      "imageCredit": "ハナミチ東京 歌舞伎町 官網",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://hanamichi.tokyo/wp-content/uploads/2023/10/0G6A4579-2048x1365.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%8F%88%E7%90%B2%E8%A5%BF%E6%AD%A6+%E6%9C%AC%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA1-6-12+%E3%83%8F%E3%83%8A%E3%83%9F%E3%83%81%E6%9D%B1%E4%BA%AC%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA2F",
       "mapType": "name-and-address-search",
@@ -1040,6 +3615,38 @@
       "address": "東京都台東区東上野3-39-10 光和ビルB1F",
       "sourceUrl": "https://gyozai.com/kojyo-ueno/",
       "description": "上野的地下喫茶，收藏一點古城的光影。",
+      "areaId": "ueno-yanesen",
+      "lat": 35.711704,
+      "lng": 139.779022,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%9D%B1%E4%B8%8A%E9%87%8E3-39-10",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区東上野三丁目３９番１０号",
+      "verifiedAddress": "東京都台東区東上野3-39-10 光和ビルB1F",
+      "addressSource": "https://gyozai.com/kojyo-ueno/",
+      "lines": [
+        "JY",
+        "JK",
+        "G",
+        "H"
+      ],
+      "stationLines": [
+        {
+          "station": "上野",
+          "lines": [
+            "JY",
+            "JK",
+            "G",
+            "H"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-049.webp",
+      "imageAlt": "喫茶古城 的彩繪玻璃、木梁與壁燈",
+      "imageSource": "https://gyozai.com/kojyo-ueno/",
+      "imageCredit": "ぽかぽかまわり道 店鋪專文",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://gyozai.com/wp-content/uploads/2026/04/ueno-kojyou-10.jpeg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E5%8F%A4%E5%9F%8E+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%9D%B1%E4%B8%8A%E9%87%8E3-39-10+%E5%85%89%E5%92%8C%E3%83%93%E3%83%ABB1F",
       "mapType": "name-and-address-search",
@@ -1062,6 +3669,38 @@
       "sourceUrl": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
       "description": "有樂町的地下喫茶，在東京交通會館喝一杯。",
       "note": "原表店名「ローヤル」；館方官方名稱為「ローヤル」。",
+      "areaId": "ginza",
+      "lat": 35.67486432871925,
+      "lng": 139.76389170432188,
+      "coordinateSource": "https://tabelog.com/tokyo/A1301/A130102/13076352/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "ローヤル — 東京都千代田区有楽町2-10-1 東京交通会館 B1F",
+      "verifiedAddress": "東京都千代田区有楽町2-10-1 東京交通会館B1F",
+      "addressSource": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
+      "lines": [
+        "JY",
+        "JK",
+        "Y"
+      ],
+      "stationLines": [
+        {
+          "station": "有楽町",
+          "lines": [
+            "JY",
+            "JK",
+            "Y"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-050.webp",
+      "imageAlt": "東京交通會館 ローヤル 的餐盤、咖啡與沙拉",
+      "imageSource": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
+      "imageCredit": "東京交通会館 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://www.kotsukaikan.co.jp/wpv2/wp-content/uploads/2013/09/10-41.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AD%E3%83%BC%E3%83%A4%E3%83%AB+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%9C%89%E6%A5%BD%E7%94%BA2-10-1+%E6%9D%B1%E4%BA%AC%E4%BA%A4%E9%80%9A%E4%BC%9A%E9%A4%A8B1F",
       "mapType": "name-and-address-search",
@@ -1083,6 +3722,32 @@
       "address": "東京都文京区白山5-33-19",
       "sourceUrl": "https://cafe-cherche.com/place/14494",
       "description": "在白山的爵士喫茶，把時間交給音樂與咖啡。",
+      "areaId": "ueno-yanesen",
+      "lat": 35.721989,
+      "lng": 139.752213,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E7%99%BD%E5%B1%B15-33-19",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都文京区白山五丁目３３番１９号",
+      "verifiedAddress": "東京都文京区白山5-33-19",
+      "addressSource": "https://cafe-cherche.com/place/14494",
+      "lines": [
+        "I"
+      ],
+      "stationLines": [
+        {
+          "station": "白山",
+          "lines": [
+            "I"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-051.webp",
+      "imageAlt": "ジャズ喫茶映画館 的音響、唱片與暖光座席",
+      "imageSource": "http://www.jazzeigakan.com/",
+      "imageCredit": "ジャズ喫茶映画館 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "http://www.jazzeigakan.com/imgsite/photoEigakan.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B8%E3%83%A3%E3%82%BA%E5%96%AB%E8%8C%B6%E6%98%A0%E7%94%BB%E9%A4%A8+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E7%99%BD%E5%B1%B15-33-19",
       "mapType": "name-and-address-search",
@@ -1104,6 +3769,32 @@
       "address": "東京都目黒区鷹番3-7-5 2F",
       "sourceUrl": "https://tabilist.net/249450/",
       "description": "學藝大學的音樂喫茶，一杯咖啡與一段巴洛克。",
+      "areaId": "setagaya",
+      "lat": 35.629467,
+      "lng": 139.685028,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%B7%B9%E7%95%AA3-7-5",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都目黒区鷹番三丁目７番５号",
+      "verifiedAddress": "東京都目黒区鷹番3-7-5 2F",
+      "addressSource": "https://tabilist.net/249450/",
+      "lines": [
+        "TY"
+      ],
+      "stationLines": [
+        {
+          "station": "学芸大学",
+          "lines": [
+            "TY"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-052.webp",
+      "imageAlt": "喫茶 平均律 的木製吧檯、瓷杯收藏與店內",
+      "imageSource": "https://otonano-shumatsu.com/images/553142",
+      "imageCredit": "おとなの週末Web 店鋪專訪",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://otonano-shumatsu.com/wp-content/uploads/2026/04/2604__MG_5786.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6+%E5%B9%B3%E5%9D%87%E5%BE%8B+%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%B7%B9%E7%95%AA3-7-5+2F",
       "mapType": "name-and-address-search",
@@ -1126,6 +3817,38 @@
       "sourceUrl": "https://cafedelambre.com/pages/store-menu",
       "description": "銀座八丁目的咖啡經典，慢慢品味這一杯。",
       "mapUrl": "https://maps.app.goo.gl/ZtM1ZByUCQTWvAw59",
+      "areaId": "ginza",
+      "lat": 35.6679572,
+      "lng": 139.7623402,
+      "coordinateSource": "https://maps.app.goo.gl/ZtM1ZByUCQTWvAw59",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "カフェ・ド・ランブル",
+      "verifiedAddress": "東京都中央区銀座8-10-15",
+      "addressSource": "https://cafedelambre.com/pages/store-menu",
+      "lines": [
+        "JY",
+        "JK",
+        "G",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "新橋",
+          "lines": [
+            "JY",
+            "JK",
+            "G",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-053.webp",
+      "imageAlt": "Café de L’Ambre 的冰咖啡與復古紅色背景",
+      "imageSource": "https://cafedelambre.com/pages/store-menu",
+      "imageCredit": "CAFE DE LAMBRE 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://cafedelambre.com/cdn/shop/files/110519.jpg?v=1774543430&width=1800",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -1146,6 +3869,36 @@
       "address": "東京都千代田区神田小川町3-10 江本ビル2F",
       "sourceUrl": "https://kosetocoffee.themedia.jp/",
       "description": "書街散步之間，走進陶器與咖啡相伴的二樓。",
+      "areaId": "jinbocho",
+      "lat": 35.696098,
+      "lng": 139.761169,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E5%B0%8F%E5%B7%9D%E7%94%BA3-10",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都千代田区神田小川町三丁目１０番",
+      "verifiedAddress": "東京都千代田区神田小川町3-10 江本ビル2F",
+      "addressSource": "https://kosetocoffee.themedia.jp/",
+      "lines": [
+        "I",
+        "Z",
+        "S"
+      ],
+      "stationLines": [
+        {
+          "station": "神保町",
+          "lines": [
+            "I",
+            "Z",
+            "S"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-054.webp",
+      "imageAlt": "古瀬戸珈琲店 的瓷杯收藏牆與咖啡吧檯",
+      "imageSource": "https://kosetocoffee.themedia.jp/",
+      "imageCredit": "古瀬戸珈琲店 官網",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/676521/f399e1474eb6fcb09ece55e218a6e6df_7f63878676e304dfe7f5bd2046f32f3a.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8F%A4%E7%80%AC%E6%88%B8%E7%8F%88%E7%90%B2%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E5%B0%8F%E5%B7%9D%E7%94%BA3-10+%E6%B1%9F%E6%9C%AC%E3%83%93%E3%83%AB2F",
       "mapType": "name-and-address-search",
@@ -1168,6 +3921,38 @@
       "sourceUrl": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
       "description": "御茶之水車站旁，山小屋般的一段喫茶時光。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
+      "areaId": "jinbocho",
+      "lat": 35.69939572870401,
+      "lng": 139.76495332456895,
+      "coordinateSource": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都千代田区神田駿河台4-5-3 御茶ノ水穂高ビル1F",
+      "verifiedAddress": "東京都千代田区神田駿河台4-5-3 御茶ノ水穂高ビル1F",
+      "addressSource": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+      "lines": [
+        "JC",
+        "JB",
+        "M"
+      ],
+      "stationLines": [
+        {
+          "station": "御茶ノ水",
+          "lines": [
+            "JC",
+            "JB",
+            "M"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Restaurant GeoCoordinates and matching 4-5-3 Kanda-Surugadai Hotaka building address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-055.webp",
+      "imageAlt": "喫茶 穂高 的木製吧檯與暖色店內",
+      "imageSource": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+      "imageCredit": "食べログ 使用者投稿照片",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/202634/640x640_rect_6e2d401ee7632aed78f4b8c6ec7dd861.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6+%E7%A9%82%E9%AB%98+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E9%A7%BF%E6%B2%B3%E5%8F%B04-5-3+%E5%BE%A1%E8%8C%B6%E3%83%8E%E6%B0%B4%E7%A9%82%E9%AB%98%E3%83%93%E3%83%AB1F",
       "mapType": "name-and-address-search",
@@ -1190,6 +3975,32 @@
       "sourceUrl": "https://tokyogrown.jp/node/571846",
       "description": "東京西邊的木工與喫茶，把一日旅途延伸到日之出町。",
       "note": "尚未確認自營官網；提供東京都農林水產振興財團的介紹。萱窪巴士站下車即達。",
+      "areaId": "akigawa",
+      "lat": 35.743763,
+      "lng": 139.236618,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%97%A5%E3%81%AE%E5%87%BA%E7%94%BA%E5%A4%A7%E4%B9%85%E9%87%8E1157",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都日の出町大久野１１５７番地",
+      "verifiedAddress": "東京都西多摩郡日の出町大久野1157",
+      "addressSource": "https://tokyogrown.jp/node/571846",
+      "lines": [
+        "JI"
+      ],
+      "stationLines": [
+        {
+          "station": "武蔵五日市",
+          "lines": [
+            "JI"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-056.webp",
+      "imageAlt": "きりんかん 木屋二樓的喫茶角落",
+      "imageSource": "https://tokyogrown.jp/node/571846",
+      "imageCredit": "とうきょうの恵み TOKYO GROWN",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://assets.tokyogrown.jp/resource/0/img/20180910014142000000119.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8D%E3%82%8A%E3%82%93%E3%81%8B%E3%82%93+%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E6%97%A5%E3%81%AE%E5%87%BA%E7%94%BA%E5%A4%A7%E4%B9%85%E9%87%8E1157",
       "mapType": "name-and-address-search",
@@ -1211,6 +4022,45 @@
       "address": "東京都渋谷区渋谷1-15-19 二葉ビル2F",
       "sourceUrl": "https://tabelog.com/tokyo/A1303/A130301/13001169/",
       "description": "澀谷路地裡的一杯咖啡，讓鬧市暫時慢下來。",
+      "areaId": "shibuya",
+      "lat": 35.660488,
+      "lng": 139.702469,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B71-15-19",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都渋谷区渋谷一丁目１５番１９号",
+      "verifiedAddress": "東京都渋谷区渋谷1-15-19 二葉ビル2F",
+      "addressSource": "https://tabelog.com/tokyo/A1303/A130301/13001169/",
+      "lines": [
+        "JY",
+        "G",
+        "Z",
+        "F",
+        "TY",
+        "DT",
+        "IN"
+      ],
+      "stationLines": [
+        {
+          "station": "渋谷",
+          "lines": [
+            "JY",
+            "G",
+            "Z",
+            "F",
+            "TY",
+            "DT",
+            "IN"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-057.webp",
+      "imageAlt": "茶亭 羽當 的木椅、長吧檯與瓷杯收藏牆",
+      "imageSource": "https://loveretro.jp/2021/06/shibuya-chatei-hatou/",
+      "imageCredit": "レトロに恋して 原創店鋪專文",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://loveretro.jp/wp-content/uploads/2021/05/IMG_8240.jpg",
+      "imageCheckedAt": "2026-10-12",
+      "imageNote": "來源為2021年刊登的店內參考照片，現況可能略有不同。",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8C%B6%E4%BA%AD+%E7%BE%BD%E7%95%B6+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B71-15-19+%E4%BA%8C%E8%91%89%E3%83%93%E3%83%AB2F",
       "mapType": "name-and-address-search",
@@ -1233,6 +4083,34 @@
       "sourceUrl": "https://www.kanko-setagaya.jp/activity/view/600",
       "description": "下北澤的老喫茶，從代澤的二樓看一段街景。",
       "note": "尚未確認自營官網；提供世田谷觀光協會的店鋪介紹。",
+      "areaId": "setagaya",
+      "lat": 35.659286,
+      "lng": 139.667358,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E4%BB%A3%E6%B2%A25-36-14",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都世田谷区代沢五丁目３６番１４号",
+      "verifiedAddress": "東京都世田谷区代沢5-36-14 湯浅ビル2F",
+      "addressSource": "https://www.kanko-setagaya.jp/activity/view/600",
+      "lines": [
+        "OH",
+        "IN"
+      ],
+      "stationLines": [
+        {
+          "station": "下北沢",
+          "lines": [
+            "OH",
+            "IN"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-058.webp",
+      "imageAlt": "トロワ・シャンブル 的暖光木製吧檯",
+      "imageSource": "https://www.kanko-setagaya.jp/activity/view/600",
+      "imageCredit": "世田谷区産業振興公社 観光情報",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://img.kanko-setagaya.jp/dams/PH8-6ae.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%88%E3%83%AD%E3%83%AF%E3%83%BB%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%96%E3%83%AB+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E4%BB%A3%E6%B2%A25-36-14+%E6%B9%AF%E6%B5%85%E3%83%93%E3%83%AB2F",
       "mapType": "name-and-address-search",
@@ -1254,6 +4132,38 @@
       "address": "東京都新宿区四谷1-2",
       "sourceUrl": "https://cafe-cherche.com/place/3694",
       "description": "四谷的モダン喫茶，在珈琲ロン收藏一段午後。",
+      "areaId": "shinjuku",
+      "lat": 35.68578,
+      "lng": 139.728958,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%9B%9B%E8%B0%B71-2",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都新宿区四谷一丁目２番地",
+      "verifiedAddress": "東京都新宿区四谷1-2",
+      "addressSource": "https://cafe-cherche.com/place/3694",
+      "lines": [
+        "JC",
+        "JB",
+        "M",
+        "N"
+      ],
+      "stationLines": [
+        {
+          "station": "四ツ谷",
+          "lines": [
+            "JC",
+            "JB",
+            "M",
+            "N"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-059.webp",
+      "imageAlt": "珈琲ロン 的紅色座椅與木製店內",
+      "imageSource": "https://yamakenlab.com/archives/tokyo-coffee_lawn.html",
+      "imageCredit": "トーキョー建築トリップ",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://yamakenlab.com/wp-content/uploads/2021/08/珈琲ロン5.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%8F%88%E7%90%B2%E3%83%AD%E3%83%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%9B%9B%E8%B0%B71-2",
       "mapType": "name-and-address-search",
@@ -1277,6 +4187,32 @@
       "description": "都立家政的老喫茶，在中庭風景旁享用午餐。",
       "note": "尚未確認自營官網；提供西武鐵道的採訪介紹。",
       "mapUrl": "https://maps.app.goo.gl/okd6UUvZSKCmqME66",
+      "areaId": "west-neighborhoods",
+      "lat": 35.7230084,
+      "lng": 139.6445588,
+      "coordinateSource": "https://maps.app.goo.gl/okd6UUvZSKCmqME66",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "Coffee & Lunch つるや",
+      "verifiedAddress": "東京都中野区鷺宮1-27-3",
+      "addressSource": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
+      "lines": [
+        "SS"
+      ],
+      "stationLines": [
+        {
+          "station": "都立家政",
+          "lines": [
+            "SS"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-060.webp",
+      "imageAlt": "Coffee & Lunch つるや 的圓拱隔牆、木製桌椅與窗邊綠意",
+      "imageSource": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
+      "imageCredit": "西武鉄道 fillute 店鋪採訪",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://www.seiburailway.jp/railways/fillute/food/202606-03/images/img_05.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -1297,6 +4233,42 @@
       "address": "東京都豊島区西池袋1-39-1",
       "sourceUrl": "https://winebar-kura.foodre.jp/",
       "description": "池袋西口的炭火焙煎咖啡，為散步添一點香氣。",
+      "areaId": "ikebukuro-itabashi",
+      "lat": 35.732677,
+      "lng": 139.709732,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E8%A5%BF%E6%B1%A0%E8%A2%8B1-39-1",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都豊島区西池袋一丁目３９番１号",
+      "verifiedAddress": "東京都豊島区西池袋1-39-1",
+      "addressSource": "https://winebar-kura.foodre.jp/",
+      "lines": [
+        "JY",
+        "M",
+        "Y",
+        "F",
+        "SI",
+        "TJ"
+      ],
+      "stationLines": [
+        {
+          "station": "池袋",
+          "lines": [
+            "JY",
+            "M",
+            "Y",
+            "F",
+            "SI",
+            "TJ"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-061.webp",
+      "imageAlt": "炭火焼珈琲 蔵 的木梁天花、長吧檯與紅色座椅",
+      "imageSource": "https://winebar-kura.foodre.jp/",
+      "imageCredit": "炭火焼珈琲蔵 官方店鋪頁",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://ximg.retty.me/crop/s500x500/q80/das/-/retty/img_ebisu/restaurant/100000121352/archive/3232342-65ae04abc941a.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%82%AD%E7%81%AB%E7%84%BC%E7%8F%88%E7%90%B2+%E8%94%B5+%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E8%A5%BF%E6%B1%A0%E8%A2%8B1-39-1",
       "mapType": "name-and-address-search",
@@ -1319,6 +4291,55 @@
       "sourceUrl": "https://visit-chiyoda.tokyo/app/spot/detail/834",
       "description": "在神保町的書香之間，停留在一杯咖啡裡。",
       "note": "官網連結由千代田區觀光協會的店鋪資料確認。",
+      "areaId": "jinbocho",
+      "lat": 35.6945713,
+      "lng": 139.7619285,
+      "coordinateSource": "https://visit-chiyoda.tokyo/app/spot/detail/834",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "東京都千代田区神田小川町3-1-7",
+      "verifiedAddress": "東京都千代田区神田小川町3-1-7",
+      "addressSource": "https://visit-chiyoda.tokyo/app/spot/detail/834",
+      "lines": [
+        "I",
+        "Z",
+        "S",
+        "JC",
+        "JB",
+        "M"
+      ],
+      "stationLines": [
+        {
+          "station": "神保町",
+          "lines": [
+            "I",
+            "Z",
+            "S"
+          ]
+        },
+        {
+          "station": "御茶ノ水",
+          "lines": [
+            "JC",
+            "JB",
+            "M"
+          ]
+        },
+        {
+          "station": "小川町",
+          "lines": [
+            "S"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Chiyoda tourism association page labels this map pin 眞踏珈琲店 with its matching 3-1-7 Kanda-Ogawamachi address.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-062.webp",
+      "imageAlt": "眞踏珈琲店 的磚牆入口與紫色店名招牌",
+      "imageSource": "https://visit-chiyoda.tokyo/app/spot/detail/834",
+      "imageCredit": "千代田区観光協会 Visit Chiyoda",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://visit-chiyoda.tokyo/app/upload/spot_image/8660666addf7ed64b599ff621d22fd7d.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%9C%9E%E8%B8%8F%E7%8F%88%E7%90%B2%E5%BA%97+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E5%B0%8F%E5%B7%9D%E7%94%BA3-1-7",
       "mapType": "name-and-address-search",
@@ -1340,6 +4361,34 @@
       "address": "東京都中央区銀座4-11-7",
       "sourceUrl": "https://www.oshi-gourmet.tokyo/ginza_american/",
       "description": "東銀座的喫茶アメリカン，讓厚切三明治成為巡禮的一站。",
+      "areaId": "ginza",
+      "lat": 35.669804,
+      "lng": 139.768784,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A74-11-7",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座四丁目１１番７号",
+      "verifiedAddress": "東京都中央区銀座4-11-7",
+      "addressSource": "https://www.oshi-gourmet.tokyo/ginza_american/",
+      "lines": [
+        "H",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "東銀座",
+          "lines": [
+            "H",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-063.webp",
+      "imageAlt": "銀座 アメリカン 的厚切蛋沙拉三明治",
+      "imageSource": "https://www.oshi-gourmet.tokyo/ginza_american/",
+      "imageCredit": "おいしい店、みぃ～つけた。",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://www.oshi-gourmet.tokyo/wp-content/uploads/2025/06/img_20250617_08414524673472412528855896.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A74-11-7",
       "mapType": "name-and-address-search",
@@ -1362,6 +4411,41 @@
       "sourceUrl": "https://chikudays.com/omise/tokyo_hkkerun/",
       "description": "西新橋的喫茶小店，留一站給咖啡與布丁。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
+      "areaId": "minato",
+      "lat": 35.66787372871997,
+      "lng": 139.7521814042595,
+      "coordinateSource": "https://tabelog.com/tokyo/A1308/A130802/13057178/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "ヘッケルン — 東京都港区西新橋1-20-11 安藤ビル1S",
+      "verifiedAddress": "東京都港区西新橋1-20-11 安藤ビル1F",
+      "addressSource": "https://chikudays.com/omise/tokyo_hkkerun/",
+      "lines": [
+        "G",
+        "I"
+      ],
+      "stationLines": [
+        {
+          "station": "虎ノ門",
+          "lines": [
+            "G"
+          ]
+        },
+        {
+          "station": "内幸町",
+          "lines": [
+            "I"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-064.webp",
+      "imageAlt": "ヘッケルン 的轉角店面與咖啡布丁招牌",
+      "imageSource": "https://chikudays.com/omise/tokyo_hkkerun/",
+      "imageCredit": "chikudays 店鋪專文",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://i0.wp.com/chikudays.com/wp-content/uploads/2024/04/07e78fb8df820a5a2ab8176aa7284cbf.jpg?resize=800%2C533&ssl=1",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%98%E3%83%83%E3%82%B1%E3%83%AB%E3%83%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%A5%BF%E6%96%B0%E6%A9%8B1-20-11+%E5%AE%89%E8%97%A4%E3%83%93%E3%83%AB1F",
       "mapType": "name-and-address-search",
@@ -1384,6 +4468,34 @@
       "sourceUrl": "https://asakusanioideyo.com/56/1018/",
       "description": "淺草三丁目的喫茶，讓散步走得更深一點。",
       "note": "尚未確認自營官網；提供淺草商店聯合會的店鋪介紹。",
+      "areaId": "asakusa",
+      "lat": 35.717003,
+      "lng": 139.795044,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%893-8-4",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都台東区浅草三丁目８番４号",
+      "verifiedAddress": "東京都台東区浅草3-8-4",
+      "addressSource": "https://asakusanioideyo.com/56/1018/",
+      "lines": [
+        "G",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "浅草",
+          "lines": [
+            "G",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-065.webp",
+      "imageAlt": "ロッジ赤石 的暖光吊燈與粉色沙發座席",
+      "imageSource": "https://asakusanioideyo.com/56/1018/",
+      "imageCredit": "浅草観音通り商店街 公式網站",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://asakusanioideyo.com/shop/52_02_14.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%AD%E3%83%83%E3%82%B8%E8%B5%A4%E7%9F%B3+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%893-8-4",
       "mapType": "name-and-address-search",
@@ -1405,6 +4517,34 @@
       "address": "東京都中央区銀座4-13-17 高野ビル1F・2F",
       "sourceUrl": "https://cafe-cherche.com/place/205",
       "description": "歌舞伎座旁的喫茶時間，東銀座的一份蛋包飯。",
+      "areaId": "ginza",
+      "lat": 35.669518,
+      "lng": 139.768631,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A74-13-17",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都中央区銀座四丁目１３番１７号",
+      "verifiedAddress": "東京都中央区銀座4-13-17 高野ビル1F・2F",
+      "addressSource": "https://cafe-cherche.com/place/205",
+      "lines": [
+        "H",
+        "A"
+      ],
+      "stationLines": [
+        {
+          "station": "東銀座",
+          "lines": [
+            "H",
+            "A"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-066.webp",
+      "imageAlt": "喫茶 you 的紅色木椅與二樓座席",
+      "imageSource": "https://umamibites.com/zh-TW/food_and_drink/kissa-you-cafe-and-omurice-ginza",
+      "imageCredit": "Umami bites 店鋪採訪",
+      "imageType": "interior",
+      "imageOriginalUrl": "https://umamibites.com/wp-content/uploads/2025/05/UB431_01.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6you+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A74-13-17+%E9%AB%98%E9%87%8E%E3%83%93%E3%83%AB1F%E3%83%BB2F",
       "mapType": "name-and-address-search",
@@ -1426,6 +4566,32 @@
       "address": "東京都文京区本郷6-1-14",
       "sourceUrl": "https://cafe-cherche.com/place/14274",
       "description": "本鄉的經典喫茶，在東大正門對面留一段午餐時間。",
+      "areaId": "ueno-yanesen",
+      "lat": 35.712502,
+      "lng": 139.759369,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B76-1-14",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都文京区本郷六丁目１番１４号",
+      "verifiedAddress": "東京都文京区本郷6-1-14",
+      "addressSource": "https://cafe-cherche.com/place/14274",
+      "lines": [
+        "N"
+      ],
+      "stationLines": [
+        {
+          "station": "東大前",
+          "lines": [
+            "N"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-067.webp",
+      "imageAlt": "喫茶ルオー 的木製入口、磚牆與門前植栽",
+      "imageSource": "https://www.try-sky.com/town/gourmet/kissa_rouault/",
+      "imageCredit": "TRY タウンガイド 文京風景 店鋪專訪",
+      "imageType": "exterior",
+      "imageOriginalUrl": "https://www.try-sky.com/town/gourmet/kissa_rouault/img/01.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E3%83%AB%E3%82%AA%E3%83%BC+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B76-1-14",
       "mapType": "name-and-address-search",
@@ -1448,6 +4614,38 @@
       "sourceUrl": "https://troisbagues.com/",
       "description": "神保町的地下喫茶，讓咖啡陪你翻到下一頁。",
       "mapUrl": "https://www.google.co.jp/maps/place/%E3%83%88%E3%83%AD%E3%83%AF%E3%83%90%E3%82%B0/@35.6963632,139.7560503,17z/data=!3m1!4b1!4m2!3m1!1s0x60188c114e0e9cf9:0xc952e130a3bb8a32",
+      "areaId": "jinbocho",
+      "lat": 35.69636904870379,
+      "lng": 139.75821064454308,
+      "coordinateSource": "https://tabelog.com/tokyo/A1310/A131003/13011637/",
+      "coordinatePrecision": "shop",
+      "coordinateLabel": "カフェ・トロワバグ — 東京都千代田区神田神保町1-12-1 富田ビル B1F",
+      "verifiedAddress": "東京都千代田区神田神保町1-12-1 富田ビルB1",
+      "addressSource": "https://troisbagues.com/",
+      "lines": [
+        "I",
+        "Z",
+        "S"
+      ],
+      "stationLines": [
+        {
+          "station": "神保町",
+          "lines": [
+            "I",
+            "Z",
+            "S"
+          ]
+        }
+      ],
+      "coordinateEvidence": "Matching restaurant name and full address; published GeoCoordinates in the restaurant listing.",
+      "coordinateCheckedAt": "2026-10-12",
+      "image": "assets/shops/cafe-068.webp",
+      "imageAlt": "トロワバグ 的咖啡與紅金花紋瓷杯",
+      "imageSource": "https://troisbagues.com/",
+      "imageCredit": "トロワバグ 官網",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://troisbagues.com/wp-content/uploads/2015/11/12108216_1087838321233883_1516805025026425038_n.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapType": "place",
       "checkedAt": "2026-10-11",
@@ -1469,6 +4667,36 @@
       "sourceUrl": "https://www.kinshi-scope.com/sp/shop/1094.html",
       "description": "錦糸町的老喫茶，把今天的一站留給ニット。",
       "note": "尚未確認店家自營官網或官方社群，另提供店鋪資訊來源。",
+      "areaId": "east-tokyo",
+      "lat": 35.695484,
+      "lng": 139.816498,
+      "coordinateSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%B1%9F%E6%9D%B1%E6%A9%8B4-26-12",
+      "coordinatePrecision": "address",
+      "coordinateLabel": "東京都墨田区江東橋四丁目２６番１２号",
+      "verifiedAddress": "東京都墨田区江東橋4-26-12",
+      "addressSource": "https://www.kinshi-scope.com/sp/shop/1094.html",
+      "lines": [
+        "JB",
+        "JO",
+        "Z"
+      ],
+      "stationLines": [
+        {
+          "station": "錦糸町",
+          "lines": [
+            "JB",
+            "JO",
+            "Z"
+          ]
+        }
+      ],
+      "image": "assets/shops/cafe-069.webp",
+      "imageAlt": "喫茶 ニット 的厚鬆餅與飲品",
+      "imageSource": "https://www.kinshi-scope.com/sp/shop/1094.html",
+      "imageCredit": "錦糸スコープ 店鋪介紹",
+      "imageType": "menu",
+      "imageOriginalUrl": "https://www.kinshi-scope.com/data/photo/shop/t/1507185974.jpg",
+      "imageCheckedAt": "2026-10-12",
       "kind": "kissaten",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%83%E3%83%88+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%B1%9F%E6%9D%B1%E6%A9%8B4-26-12",
       "mapType": "name-and-address-search",

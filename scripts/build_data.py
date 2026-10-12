@@ -14,13 +14,21 @@ CATEGORIES = {"カフェ編": "cafe", "人気スイーツ": "sweets", "喫茶店
 def build():
     source = json.loads((ROOT / "data/source-shops.json").read_text())
     research = json.loads((ROOT / "data/enrichment.json").read_text())
+    photos = json.loads((ROOT / "data/shop-photos.json").read_text())
+    geography = json.loads((ROOT / "data/geography.json").read_text())
     ids = {shop["id"] for shop in source}
     if len(ids) != len(source) or ids != set(research):
         raise ValueError("Every source row must have exactly one research record")
+    if ids != set(photos) or ids != set(geography["shops"]):
+        raise ValueError("Every shop must have a photo and geography record")
     shops = []
     for row in source:
         extra = research[row["id"]]
-        shop = {**row, **extra, "kind": CATEGORIES[row["category"]]}
+        shop = {**row, **extra, **geography["shops"][row["id"]], **photos[row["id"]], "kind": CATEGORIES[row["category"]]}
+        if not (ROOT / shop["image"]).is_file():
+            raise ValueError(f"Missing photo for {row['name']}")
+        if not (35 < shop["lat"] < 36.5 and 138.5 < shop["lng"] < 140.5):
+            raise ValueError(f"Invalid Tokyo coordinate for {row['name']}")
         query = " ".join([row["name"], extra["address"] or "東京都 " + row["ward"] + " " + row["neighborhood"]])
         shop["mapUrl"] = extra.get("mapUrl") or "https://www.google.com/maps/search/?" + urlencode({"api": "1", "query": query})
         shop["mapType"] = "place" if extra.get("mapUrl") else "name-and-address-search"
@@ -35,7 +43,7 @@ def build():
         shops.append(shop)
     if len(shops) != 69:
         raise ValueError(f"Expected 69 catalogue shops, found {len(shops)}")
-    dataset = {"updatedAt": "2026-10-11", "total": len(shops), "districts": len({s["ward"] for s in shops}), "shops": shops}
+    dataset = {"updatedAt": "2026-10-12", "total": len(shops), "districts": len({s["ward"] for s in shops}), "areas": geography["areas"], "lines": geography["lines"], "transitSources": geography["transitSources"], "coordinateNotes": geography.get("coordinateNotes", ""), "shops": shops}
     return dataset
 
 

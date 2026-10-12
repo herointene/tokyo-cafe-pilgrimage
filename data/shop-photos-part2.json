@@ -1,0 +1,300 @@
+{
+  "cafe-037": {
+    "image": "assets/shops/cafe-037.webp",
+    "imageAlt": "ISHIYA NIHONBASHI 的玻璃轉角店面",
+    "imageSource": "https://www.ishiya.co.jp/shop/001328.html",
+    "imageCredit": "ISHIYA 官網",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://www.ishiya.co.jp/shop/images/access_ph5_nihonbashi.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-038": {
+    "image": "assets/shops/cafe-038.webp",
+    "imageAlt": "Henri Charpentier 銀座 Maison 的石造入口與甜點官方組圖",
+    "imageSource": "https://www.henri-charpentier.com/shop/ginza-maison/",
+    "imageCredit": "アンリ・シャルパンティエ 官網",
+    "imageType": "collage",
+    "imageOriginalUrl": "https://www.henri-charpentier.com/wp-content/uploads/2021/03/salon_ginzamaison_img01-pc.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-039": {
+    "image": "assets/shops/cafe-039.webp",
+    "imageAlt": "Café Lisette 二子玉川店的木桌椅與白色店內",
+    "imageSource": "https://cafe.lisette.jp/magasin.html",
+    "imageCredit": "Café Lisette 官網",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://cafe.lisette.jp/magasin/img/futako_img.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-040": {
+    "image": "assets/shops/cafe-040.webp",
+    "imageAlt": "LENÔTRE 麻布台 Hills 店的甜點陳列與金色店裝",
+    "imageSource": "https://www.azabudai-hills.com/shop_list/7029.html",
+    "imageCredit": "麻布台ヒルズ 官網",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://www.azabudai-hills.com/assets/images/gourmet_shops/shop/ah7029_02.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-041": {
+    "image": "assets/shops/cafe-041.webp",
+    "imageAlt": "1 ROOM COFFEE 的木桌與柔和窗光",
+    "imageSource": "https://1room.fun/",
+    "imageCredit": "1 ROOM COFFEE 官網",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://1room.fun/wp-content/themes/1roomcoffee/dist/img/gallery/Introspection04.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-042": {
+    "image": "assets/shops/cafe-042.webp",
+    "imageAlt": "喫茶 東京郊外 的拱門、紅色座椅與吧檯",
+    "imageSource": "https://www.enjoytokyo.jp/spot/l_20053708/",
+    "imageCredit": "レッツエンジョイ東京",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://rstatic.enjoytokyo.jp/assets/images/spot/6e/l_20053708/img_1.jpg?1701739371&p=t&w=1200",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-043": {
+    "image": "assets/shops/cafe-043.webp",
+    "imageAlt": "喫茶 半月 官方的咖啡甜點與木椅店內組圖",
+    "imageSource": "https://www.fromafar-tokyo.com/kissahangetsu",
+    "imageCredit": "light source / 喫茶半月 官網",
+    "imageType": "collage",
+    "imageOriginalUrl": "https://images.squarespace-cdn.com/content/v1/558645fee4b04baa0307db5e/ae9a9397-e4a8-4285-bf0b-42acaee1f9e2/topimage.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-044": {
+    "image": "assets/shops/cafe-044.webp",
+    "imageAlt": "銀座 WEST 本店的藍色遮棚與甜點櫥窗",
+    "imageSource": "https://www.ginza-west.com/hpgen/HPB/categories/17547.html",
+    "imageCredit": "銀座ウエスト 官網",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://www.ginza-west.com/pic-labo/page-shop01.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-045": {
+    "image": "assets/shops/cafe-045.webp",
+    "imageAlt": "Tricolore 本店的木牆、吊燈與古典桌椅",
+    "imageSource": "https://www.ginza.jp/shop/873",
+    "imageCredit": "GINZA OFFICIAL",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://www.ginza.jp/wp-content/uploads/165a631337e8580b179a288bfde129b3.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-046": {
+    "image": "assets/shops/cafe-046.webp",
+    "imageAlt": "珈琲亭 ルアン 的紅花沙發、窗邊木桌與暖光吊燈",
+    "imageSource": "https://www.o-2.jp/feature/oomorieki150rekishisanpo/",
+    "imageCredit": "東京・大田観光協会 官方採訪",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://www.o-2.jp/ota2022/wp-content/uploads/2026/06/omori-15_rouen-inside.webp",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-047": {
+    "image": "assets/shops/cafe-047.webp",
+    "imageAlt": "ネルケン 的紅色布簾、繪畫與老式座椅",
+    "imageSource": "https://tabelog.com/tokyo/A1319/A131904/13050786/",
+    "imageCredit": "食べログ 使用者投稿照片",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/343056/640x640_rect_62114874ca0392dd69aeca90ca354fce.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-048": {
+    "image": "assets/shops/cafe-048.webp",
+    "imageAlt": "珈琲西武 新歌舞伎町本店的彩繪玻璃入口",
+    "imageSource": "https://hanamichi.tokyo/floor/coffee-seibu/",
+    "imageCredit": "ハナミチ東京 歌舞伎町 官網",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://hanamichi.tokyo/wp-content/uploads/2023/10/0G6A4579-2048x1365.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-049": {
+    "image": "assets/shops/cafe-049.webp",
+    "imageAlt": "喫茶古城 的彩繪玻璃、木梁與壁燈",
+    "imageSource": "https://gyozai.com/kojyo-ueno/",
+    "imageCredit": "ぽかぽかまわり道 店鋪專文",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://gyozai.com/wp-content/uploads/2026/04/ueno-kojyou-10.jpeg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-050": {
+    "image": "assets/shops/cafe-050.webp",
+    "imageAlt": "東京交通會館 ローヤル 的餐盤、咖啡與沙拉",
+    "imageSource": "https://www.kotsukaikan.co.jp/food_shopping/food_tea/85/",
+    "imageCredit": "東京交通会館 官網",
+    "imageType": "menu",
+    "imageOriginalUrl": "https://www.kotsukaikan.co.jp/wpv2/wp-content/uploads/2013/09/10-41.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-051": {
+    "image": "assets/shops/cafe-051.webp",
+    "imageAlt": "ジャズ喫茶映画館 的音響、唱片與暖光座席",
+    "imageSource": "http://www.jazzeigakan.com/",
+    "imageCredit": "ジャズ喫茶映画館 官網",
+    "imageType": "interior",
+    "imageOriginalUrl": "http://www.jazzeigakan.com/imgsite/photoEigakan.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-052": {
+    "image": "assets/shops/cafe-052.webp",
+    "imageAlt": "喫茶 平均律 的木製吧檯、瓷杯收藏與店內",
+    "imageSource": "https://otonano-shumatsu.com/images/553142",
+    "imageCredit": "おとなの週末Web 店鋪專訪",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://otonano-shumatsu.com/wp-content/uploads/2026/04/2604__MG_5786.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-053": {
+    "image": "assets/shops/cafe-053.webp",
+    "imageAlt": "Café de L’Ambre 的冰咖啡與復古紅色背景",
+    "imageSource": "https://cafedelambre.com/pages/store-menu",
+    "imageCredit": "CAFE DE LAMBRE 官網",
+    "imageType": "menu",
+    "imageOriginalUrl": "https://cafedelambre.com/cdn/shop/files/110519.jpg?v=1774543430&width=1800",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-054": {
+    "image": "assets/shops/cafe-054.webp",
+    "imageAlt": "古瀬戸珈琲店 的瓷杯收藏牆與咖啡吧檯",
+    "imageSource": "https://kosetocoffee.themedia.jp/",
+    "imageCredit": "古瀬戸珈琲店 官網",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/676521/f399e1474eb6fcb09ece55e218a6e6df_7f63878676e304dfe7f5bd2046f32f3a.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-055": {
+    "image": "assets/shops/cafe-055.webp",
+    "imageAlt": "喫茶 穂高 的木製吧檯與暖色店內",
+    "imageSource": "https://tabelog.com/tokyo/A1310/A131002/13006537/",
+    "imageCredit": "食べログ 使用者投稿照片",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://tblg.k-img.com/restaurant/images/Rvw/202634/640x640_rect_6e2d401ee7632aed78f4b8c6ec7dd861.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-056": {
+    "image": "assets/shops/cafe-056.webp",
+    "imageAlt": "きりんかん 木屋二樓的喫茶角落",
+    "imageSource": "https://tokyogrown.jp/node/571846",
+    "imageCredit": "とうきょうの恵み TOKYO GROWN",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://assets.tokyogrown.jp/resource/0/img/20180910014142000000119.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-057": {
+    "image": "assets/shops/cafe-057.webp",
+    "imageAlt": "茶亭 羽當 的木椅、長吧檯與瓷杯收藏牆",
+    "imageSource": "https://loveretro.jp/2021/06/shibuya-chatei-hatou/",
+    "imageCredit": "レトロに恋して 原創店鋪專文",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://loveretro.jp/wp-content/uploads/2021/05/IMG_8240.jpg",
+    "imageCheckedAt": "2026-10-12",
+    "imageNote": "來源為2021年刊登的店內參考照片，現況可能略有不同。"
+  },
+  "cafe-058": {
+    "image": "assets/shops/cafe-058.webp",
+    "imageAlt": "トロワ・シャンブル 的暖光木製吧檯",
+    "imageSource": "https://www.kanko-setagaya.jp/activity/view/600",
+    "imageCredit": "世田谷区産業振興公社 観光情報",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://img.kanko-setagaya.jp/dams/PH8-6ae.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-059": {
+    "image": "assets/shops/cafe-059.webp",
+    "imageAlt": "珈琲ロン 的紅色座椅與木製店內",
+    "imageSource": "https://yamakenlab.com/archives/tokyo-coffee_lawn.html",
+    "imageCredit": "トーキョー建築トリップ",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://yamakenlab.com/wp-content/uploads/2021/08/珈琲ロン5.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-060": {
+    "image": "assets/shops/cafe-060.webp",
+    "imageAlt": "Coffee & Lunch つるや 的圓拱隔牆、木製桌椅與窗邊綠意",
+    "imageSource": "https://www.seiburailway.jp/railways/fillute/food/202606-03/",
+    "imageCredit": "西武鉄道 fillute 店鋪採訪",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://www.seiburailway.jp/railways/fillute/food/202606-03/images/img_05.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-061": {
+    "image": "assets/shops/cafe-061.webp",
+    "imageAlt": "炭火焼珈琲 蔵 的木梁天花、長吧檯與紅色座椅",
+    "imageSource": "https://winebar-kura.foodre.jp/",
+    "imageCredit": "炭火焼珈琲蔵 官方店鋪頁",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://ximg.retty.me/crop/s500x500/q80/das/-/retty/img_ebisu/restaurant/100000121352/archive/3232342-65ae04abc941a.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-062": {
+    "image": "assets/shops/cafe-062.webp",
+    "imageAlt": "眞踏珈琲店 的磚牆入口與紫色店名招牌",
+    "imageSource": "https://visit-chiyoda.tokyo/app/spot/detail/834",
+    "imageCredit": "千代田区観光協会 Visit Chiyoda",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://visit-chiyoda.tokyo/app/upload/spot_image/8660666addf7ed64b599ff621d22fd7d.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-063": {
+    "image": "assets/shops/cafe-063.webp",
+    "imageAlt": "銀座 アメリカン 的厚切蛋沙拉三明治",
+    "imageSource": "https://www.oshi-gourmet.tokyo/ginza_american/",
+    "imageCredit": "おいしい店、みぃ～つけた。",
+    "imageType": "menu",
+    "imageOriginalUrl": "https://www.oshi-gourmet.tokyo/wp-content/uploads/2025/06/img_20250617_08414524673472412528855896.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-064": {
+    "image": "assets/shops/cafe-064.webp",
+    "imageAlt": "ヘッケルン 的轉角店面與咖啡布丁招牌",
+    "imageSource": "https://chikudays.com/omise/tokyo_hkkerun/",
+    "imageCredit": "chikudays 店鋪專文",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://i0.wp.com/chikudays.com/wp-content/uploads/2024/04/07e78fb8df820a5a2ab8176aa7284cbf.jpg?resize=800%2C533&ssl=1",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-065": {
+    "image": "assets/shops/cafe-065.webp",
+    "imageAlt": "ロッジ赤石 的暖光吊燈與粉色沙發座席",
+    "imageSource": "https://asakusanioideyo.com/56/1018/",
+    "imageCredit": "浅草観音通り商店街 公式網站",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://asakusanioideyo.com/shop/52_02_14.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-066": {
+    "image": "assets/shops/cafe-066.webp",
+    "imageAlt": "喫茶 you 的紅色木椅與二樓座席",
+    "imageSource": "https://umamibites.com/zh-TW/food_and_drink/kissa-you-cafe-and-omurice-ginza",
+    "imageCredit": "Umami bites 店鋪採訪",
+    "imageType": "interior",
+    "imageOriginalUrl": "https://umamibites.com/wp-content/uploads/2025/05/UB431_01.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-067": {
+    "image": "assets/shops/cafe-067.webp",
+    "imageAlt": "喫茶ルオー 的木製入口、磚牆與門前植栽",
+    "imageSource": "https://www.try-sky.com/town/gourmet/kissa_rouault/",
+    "imageCredit": "TRY タウンガイド 文京風景 店鋪專訪",
+    "imageType": "exterior",
+    "imageOriginalUrl": "https://www.try-sky.com/town/gourmet/kissa_rouault/img/01.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-068": {
+    "image": "assets/shops/cafe-068.webp",
+    "imageAlt": "トロワバグ 的咖啡與紅金花紋瓷杯",
+    "imageSource": "https://troisbagues.com/",
+    "imageCredit": "トロワバグ 官網",
+    "imageType": "menu",
+    "imageOriginalUrl": "https://troisbagues.com/wp-content/uploads/2015/11/12108216_1087838321233883_1516805025026425038_n.jpg",
+    "imageCheckedAt": "2026-10-12"
+  },
+  "cafe-069": {
+    "image": "assets/shops/cafe-069.webp",
+    "imageAlt": "喫茶 ニット 的厚鬆餅與飲品",
+    "imageSource": "https://www.kinshi-scope.com/sp/shop/1094.html",
+    "imageCredit": "錦糸スコープ 店鋪介紹",
+    "imageType": "menu",
+    "imageOriginalUrl": "https://www.kinshi-scope.com/data/photo/shop/t/1507185974.jpg",
+    "imageCheckedAt": "2026-10-12"
+  }
+}
